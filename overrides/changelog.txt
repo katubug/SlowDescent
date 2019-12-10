@@ -1,0 +1,4 @@
+Changelog
+
+Pre-Beta:
+- PVJ Red Sandstone rocks and Mossy Cobblestone rocks have been disabled because there aren't Pyrotech things to assign as drops.

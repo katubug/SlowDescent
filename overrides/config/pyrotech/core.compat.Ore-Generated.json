@@ -23,8 +23,7 @@
     "oreGold": {
       "slagColor": "fcee4b",
       "langKey": [
-        "minecraft:tile.oreGold",
-        "mist:tile.gold_ore"
+        "minecraft:tile.oreGold"
       ],
       "output": [
         "minecraft:gold_nugget:0"
@@ -33,8 +32,7 @@
     "oreIron": {
       "slagColor": "d8af93",
       "langKey": [
-        "minecraft:tile.oreIron",
-        "mist:tile.iron_ore"
+        "minecraft:tile.oreIron"
       ],
       "output": [
         "minecraft:iron_nugget:0"
