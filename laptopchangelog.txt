@@ -1,0 +1,28 @@
+Changelog
+
+Pre-Beta:
+Configs:
+- Pyrotech campfire now gives off heat.
+- PVJ Bones when mined, give bone shards from Pyrotech.
+- PVJ ground cover rocks mine into Pyrotech rocks.
+- PVJ Mystical Grill has been disabled.
+- BWM Bonemeal option has been disabled, to allow Compost to apply bonemeal affect.
+- BWM potion brewing options disabled, but it's not a well-researched decision.
+- BWM HC fishing turned off because bait seems too much work.
+- BWM HC gloom disabled because I don't want the damage effects in darkness, and the "sanity" mechanic is already taken care of.
+- BWM, reenabled the removal of the Bone Meal crafting grid recipe. I think it might be overwritten by pyrotech anyway, but eh.
+- Changed the spoilage time for spider eyes.
+- Changed the spoilage time for all salted foods, plus XLFM's butter.
+- Disabled spoilage for SaltyMod's jarred foods and Corned Beef.
+
+Scripts:
+- PVJ Red Sandstone rocks and Mossy Cobblestone rocks have been disabled because there aren't Pyrotech things to assign as drops.
+- Changed hardness of all PVJ stone groundcover to match vanilla stone.
+- All salted foods added to OreDict to make them easier to change preservation values for.
+- Add tooltips to salted items and food to mention food spoilage.
+- BMW Cooked Eggs removed, BWM raw eggs now smelt into XLFM's Fried Eggs.
+- Disabled all Energy Drinks from XLFM.
+- TaN's campfire has been disabled in favor of Pyrotech's.
+- PVJ Bones can not be crafted into bones.
+- Hid unused FoodFunk items.
+- Prevent Bonemeal from being used on plants, to force players to use Compost.
