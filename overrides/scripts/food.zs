@@ -7,6 +7,7 @@ mods.jei.JEI.removeAndHide(<xlfoodmod:strong_energy_drink>);
 mods.jei.JEI.removeAndHide(<xlfoodmod:stealthy_energy_drink>);
 mods.jei.JEI.removeAndHide(<xlfoodmod:healthy_energy_drink>);
 mods.jei.JEI.removeAndHide(<xlfoodmod:speedy_energy_drink>);
+mods.jei.JEI.removeAndHide(<xlfoodmod:empty_can>);
 
 //Remove XL Food Mod's Salt
 mods.jei.JEI.hide(<xlfoodmod:salt>);
@@ -46,4 +47,7 @@ var salted = [
 
 for item in salted {
     <ore:saltedFood>.add(item);
+    item.addTooltip("Salted foods are preserved for longer.");
 }
+
+<saltmod:salt_pinch>.addTooltip("Adding salt to foods can protect against spoilage.");

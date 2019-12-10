@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import mods.pyrotech.GraniteAnvil;
 
 //Disables Tough as Nails' campfire in favor of Pyrotech's.
 mods.jei.JEI.removeAndHide(<toughasnails:campfire>);
@@ -19,7 +20,6 @@ var rocks = [
 for rock in rocks {
     rock.hardness = 1.5;
 }
-
 
 //===========These should probably go in other files===========
 
