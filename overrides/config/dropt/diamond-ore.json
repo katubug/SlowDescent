@@ -1,0 +1,84 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+              "minecraft:diamond_ore"
+            ]
+          },
+          "drops": {
+            "drops": [
+              "minecraft:diamond"
+            ]
+          },
+          "harvester": {
+            "type": "PLAYER",
+            "heldItemMainHand": {
+              "type": "WHITELIST",
+              "harvestLevel": "pickaxe;2;2"
+            }
+          }
+        },
+        "replaceStrategy": "REPLACE_ITEMS",
+        "dropCount": {
+            "min": 1,
+            "max": 4,
+            "fortuneModifier": 1
+          },
+        "drops": [
+            {
+                "item":{
+                    "items": [
+                        "pyrotech:material:18"
+                    ]
+                }
+            }
+        ]
+      },
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+              "minecraft:diamond_ore:*"
+            ]
+          },
+          "harvester": {
+            "type": "PLAYER",
+            "heldItemMainHand": {
+              "type": "WHITELIST",
+              "harvestLevel": "pickaxe;3;-1"
+            }
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+            {
+                "selector": {
+                    "weight": {
+                        "value": 90
+                    }
+                }
+            },
+            {
+                "selector": {
+                    "weight": {
+                        "value": 10,
+                        "fortuneModifier": 2
+                    },
+                "silktouch": "EXCLUDED"
+                },
+                "item":{
+                    "items": [
+                        "betterwithmods:material:45"
+                    ],
+                    "quantity": {
+                        "fixed": 1,
+                        "fortuneModifier": 2
+                    }
+                }
+            }
+        ]
+      }
+    ]
+  }
