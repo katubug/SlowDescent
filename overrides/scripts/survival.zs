@@ -31,17 +31,18 @@ mods.jei.JEI.hide(<foodfunk:rotted_item>);
 mods.jei.JEI.hide(<foodfunk:biodegradable_item>);
 
 //===Disable Diamond Nuggets and make Diamond Alloy Ingots use Pyrotech Shards instead===
+
 //Remove/Hide Nuggets
 mods.jei.JEI.removeAndHide(<betterwithmods:material:46>);
+
 //Remove 9x pieces > Ingot recipe, while leaving the recipe with Creeper Oysters in tact.
 recipes.removeByRecipeName("betterwithmods:decompress/material.diamond_ingot_compress");
 
-//Remove Ingot recipe from Crucible
+//Remove Ingot recipe w/ Nuggets from Crucible
 mods.betterwithmods.Crucible.remove([<betterwithmods:material:45>]);
 
-//Adds new Crucible recipe (unstoked)
-//On second thought - since there are no default recipes for unstoked cauldrons, I don't think the only one that exists should be for diamonds, lol.
-//mods.betterwithmods.Crucible.addUnstoked([<pyrotech:material:18> * 9],[<betterwithmods:material:45>]);
-
-//Adds new Crucible recipe (stoked)
+//Adds new Crucible recipe for Diamond Ingot w/ Shards (stoked)
 mods.betterwithmods.Crucible.addStoked([<pyrotech:material:18> * 9],[<betterwithmods:material:45>]);
+
+//Removes torch recipes to allow BWM to lock them behind Nethercoal
+recipes.remove(<minecraft:torch>);

@@ -1,1 +1,70 @@
-../../../Twitch/Minecraft/Instances/Testing/laptopchangelog.txt
+Changelog
+
+Pre-Beta:
+=====Commit 3 [12/11/19]=====
+Configs:
+- Edited splash.properties (but it needs further editing)
+- Unsure if I want BWM HCHunger or not. Currently leaving it enabled, because it could be interesting to balance nutrition values with getting fat.
+- Disabled HCHunting because with the amount of hostile mobs in the world, keeping a farm would become untenable.
+- Disabled HCJumping because it seems like it'd interfere with cases it's not meant to.
+- Disabled HCMobEquipment for now, because I think that's meant to make mobs not wear diamond armor etc.
+- Disabled HCOres because I don't want that feature.
+- Changed HCSaw to false because I don't want to lock doors etc behind machinery.
+- Disabled HCSpawn because losing time thanks to death should be punishment enough.
+- Disabled HCStumping because I don't want the leather processing (so don't need bark).
+- Disabled HCTorches.
+- HCStructures - kept recipes enabled for vanilla items, reduced "looted" distance to 700 from 2000.
+- Altered some of the smelting times for items to make them slightly less hardcore.
+
+Scripts:
+- Remove non-nethercoal torch recipes
+
+=====Commit 2 [12/10/19]=====
+Configs:
+- Disabled "HarderSteelRecipe" as I don't want to put heavy focus on the End.
+- Disabled Nether Growth Spores because I don't think nether mob farms are going to be crucial to the pack and I don't want it interfering with BetterNether.
+- Added purified water to the water wheel liquids. I don't foresee anyone doing that but eh.
+- Disabled Reduced Debug info because it was driving me nuts.
+- Disabled Conversion Recipes for the miniblocks because they're not needed.
+- Disabled the removal of crafting grid recipes that include items ground up in the mill ("Grinding Only").
+- Disabled "ExplosiveRecipes" - hellfire recipes in cauldron/crucible would cause explosions if stoked.
+- Disabled the inability to sleep.
+- Disabled HCBuckets for now because I don't think I will bother with water control.
+- Disabled HCCobblestone because Pyrotech overrides it anyway.
+- Disable HCCooking because it doesn't seem to be working, and also I'm not sure I want it anyway.
+- Disable HCDeadweight because the Infernal Enchanter seems too much work.
+- Disabled HCDiamond because I didn't want the tool changes. However, I plan to use the Diamond Alloy for something - maybe a few for armor or something?
+- Disabled the HCInfo reduced debug info because I hated it.
+- Changed vanilla diamond behavior w/ dropt. When mined with a pickaxe lower than diamond, only shards (1-5) drop. When mined with a diamond or higher pickaxe, there is a 10% chance (fortune-affected) of getting a diamond ingot as well as normal diamond.
+
+
+Scripts:
+- Disabled BWM Diamond nuggets.
+- Edited BWM Diamond Ingots to use Pyrotech Diamond Shards instead of nuggets in stoked crucible. Ingot recipe w/ iron and creeper oysters is untouched.
+
+=====Commit 1 [12/10/19]=====
+Configs:
+- Pyrotech campfire now gives off heat.
+- PVJ Bones when mined, give bone shards from Pyrotech.
+- PVJ ground cover rocks mine into Pyrotech rocks.
+- PVJ Mystical Grill has been disabled.
+- BWM Bonemeal option has been disabled, to allow Compost to apply bonemeal affect.
+- BWM potion brewing options disabled, but it's not a well-researched decision.
+- BWM HC fishing turned off because bait seems too much work.
+- BWM HC gloom disabled because I don't want the damage effects in darkness, and the "sanity" mechanic is already taken care of.
+- BWM, reenabled the removal of the Bone Meal crafting grid recipe. I think it might be overwritten by pyrotech anyway, but eh.
+- Changed the spoilage time for spider eyes.
+- Changed the spoilage time for all salted foods, plus XLFM's butter.
+- Disabled spoilage for SaltyMod's jarred foods and Corned Beef.
+
+Scripts:
+- PVJ Red Sandstone rocks and Mossy Cobblestone rocks have been disabled because there aren't Pyrotech things to assign as drops.
+- Changed hardness of all PVJ stone groundcover to match vanilla stone.
+- All salted foods added to OreDict to make them easier to change preservation values for.
+- Add tooltips to salted items and food to mention food spoilage.
+- BMW Cooked Eggs removed, BWM raw eggs now smelt into XLFM's Fried Eggs.
+- Disabled all Energy Drinks from XLFM.
+- TaN's campfire has been disabled in favor of Pyrotech's.
+- PVJ Bones can not be crafted into bones.
+- Hid unused FoodFunk items.
+- Prevent Bonemeal from being used on plants, to force players to use Compost.
