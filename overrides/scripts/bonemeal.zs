@@ -4,6 +4,7 @@ import crafttweaker.event.PlayerBonemealEvent;
 import crafttweaker.event.IEventCancelable;
 
 //Prevents vanilla bonemeal from being effective.
+//Thanks to Jared on the CrT discord for helping me figure this one out!
 events.onPlayerBonemeal(function(event as crafttweaker.event.PlayerBonemealEvent){
     if (<minecraft:dye:15>.matches(event.item)) {
     event.cancel();

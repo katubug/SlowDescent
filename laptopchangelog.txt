@@ -1,6 +1,40 @@
 Changelog
 
 Pre-Beta:
+=====Commit 4 [12/12/19]=====
+Configs:
+- Enabled BWM kid friendly option to see what it does.
+- Re-enabled HCFishing because I can control features I don't want.
+- If HCLumber is enabled, do I want to disable/remove bark? Or should I integrate that with Pyrotech? - Pyrotech does NOT have Bark.
+- Customized some of the hunger/fatness penalties
+- Changed boats to not require wooden shovel or override boat recipe, to allow Pyrotech's boat to be the only recipe. Also because of the wooden shovel being disabled.
+- Disabled HCFishing's recipes, changed water depth to 2, disabled the need for bait. Also disabled the need for line of sight to sky.
+- Allowed blocks affected by HC Piles to keep non-pile drops.
+- Changed normal and semi-abandoned village radiuses to be less far out. Disabled all villagers being nitwits.
+- Disabled the need for path-making shovels to be better than stone.
+- Altered some of the penalties for injury. Players can attack for longer, but lose mobility faster.
+- Disabled Dung because I don't want BWM leather processing, and I don't care about their fertilizer since there's compost.
+- Zombies don't have 100% chance to drop their gear.
+- Disabled Explosion Tracker because singleplayer only.
+- Disabled some Kiln stuff.
+- Disabled Saddle recipe, will likely add in elsewhere.
+- Keeping vine-related moss recipes.
+- Finally done with the BWM config! For now...
+- Enabled damage-mitigation ArmorUnders.
+- Turned off ArmorUnder's super compatibility mode.
+- Made Beer immune to spoilage.
+- Adjusted protectiveness of TaN wool armor.
+- Obsidian tools are now slightly sharper than diamond, to give them a use.
+- Drinks in this modlist no longer spoil.
+- Enabled durability and burn time tooltips via jei integration. May need to disable those elsewhere.
+- Disabled Pyrotech burn time tooltips.
+- Removed the Dynamic Lights blacklist for dim -1
+
+Scripts:
+- Removed BWM's wool armor.
+- Right clicking with TaN Thermometer now toggles the tempinfo command.
+- Drinks in this modlist no longer have hunger/saturation values.
+
 =====Commit 3 [12/11/19]=====
 Configs:
 - Edited splash.properties (but it needs further editing)

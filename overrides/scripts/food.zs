@@ -51,3 +51,9 @@ for item in salted {
 }
 
 <saltmod:salt_pinch>.addTooltip("Adding salt to foods can protect against spoilage.");
+
+//Remove food values from drinks
+mods.foodtweaker.changeFoodStats(<pvj:sugarcane_juice>, 0, 0);
+mods.foodtweaker.changeFoodStats(<xlfoodmod:coffee>, 0, 0);
+mods.foodtweaker.changeFoodStats(<pvj:coconut_milk>, 0, 0);
+mods.foodtweaker.changeFoodStats(<xlfoodmod:beer>, 0, 0);

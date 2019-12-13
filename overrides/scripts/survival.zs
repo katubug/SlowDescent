@@ -46,3 +46,9 @@ mods.betterwithmods.Crucible.addStoked([<pyrotech:material:18> * 9],[<betterwith
 
 //Removes torch recipes to allow BWM to lock them behind Nethercoal
 recipes.remove(<minecraft:torch>);
+
+//Remove and Hide BWM's Wool Armor in favor of TaN's.
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_boots>);
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_helmet>);
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_pants>);
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_chest>);
