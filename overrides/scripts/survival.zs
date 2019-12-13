@@ -52,3 +52,11 @@ mods.jei.JEI.removeAndHide(<betterwithmods:wool_boots>);
 mods.jei.JEI.removeAndHide(<betterwithmods:wool_helmet>);
 mods.jei.JEI.removeAndHide(<betterwithmods:wool_pants>);
 mods.jei.JEI.removeAndHide(<betterwithmods:wool_chest>);
+
+//Remove PVJ Limestone Stuff
+mods.jei.JEI.removeAndHide(<pvj:limestone>);
+mods.jei.JEI.removeAndHide(<pvj:limestone_stairs>);
+mods.jei.JEI.removeAndHide(<pvj:limestone_slab>);
+
+//Testing ingredient replacement
+recipes.replaceAllOccurences(<pyrotech:material:24>, <betterwithmods:unfired_pottery:4>, <*>);

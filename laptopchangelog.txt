@@ -1,6 +1,20 @@
 Changelog
 
 Pre-Beta:
+=====Commit 5 [12/13]19]=====
+Configs:
+- Changed PVJ Limestone density to 0.
+
+Scripts:
+- Moved BWM Kiln recipes over to the Pyrotech Kilns.
+- Unwanted food recipes have been removed from the Campfire.
+- Cakes can now be baked in Pyrotech's Ovens.
+- Cookies must now be smelted instead of crafted.
+- Plain Marshmallows are now crafted instead of smelted.
+- Fixed the BWM Egg > XLFM Egg thing.
+- Hid PVJ Limestone stuff from JEI.
+- Started replacing Pyrotech bricks w/ BWM's.
+
 =====Commit 4 [12/12/19]=====
 Configs:
 - Enabled BWM kid friendly option to see what it does.
