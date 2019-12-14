@@ -1,7 +1,22 @@
 Changelog
 
 Pre-Beta:
-=====Commit 5 [12/13]19]=====
+=====Commit 6 [12/13/19]=====
+Configs:
+- Made Blooms produce ingots instead of nuggets via the core.compat.Ore-Custom file. Hopefully only that (docs say it's fine).
+- Adjusted TaN's weather and season modifiers and the max amount of temperature that can change per turnover. Hopefully this will make it still challenging, but less punishing. I didn't change how often the temperature tries to change.
+- Changed the length of each subseason from 7 to 4.
+- Nerfed some handheld light sources (redstone and gold).
+
+Scripts:
+- Altered Diamond Armor recipes to use some Ingots instead of all gems.
+- Reformatted the Kiln Recipes, also added recipes for End Stone/White Cobble, Bricks and NetherBricks, and did other brick-related compatibility.
+- Removed some Crucible recipes for plain water and made it Purified Water instead.
+- Removed PVJ boat recipes and made them use Tarred Planks/Boards.
+- Disabled PVJ Limestone (partially in config).
+- Made PVJ stick ground cover take longer to break.
+
+=====Commit 5 [12/13/19]=====
 Configs:
 - Changed PVJ Limestone density to 0.
 

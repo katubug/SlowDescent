@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 
+//This should probably be named something else tbh.
+
 //Disables Tough as Nails' campfire in favor of Pyrotech's.
 mods.jei.JEI.removeAndHide(<toughasnails:campfire>);
 
@@ -20,43 +22,31 @@ for rock in rocks {
     rock.hardness = 1.5;
 }
 
-//===========These should probably go in other files===========
+var sticks = [
+    <pvj:oak_twigs>,
+    <pvj:birch_twigs>,
+    <pvj:spruce_twigs>,
+    <pvj:jungle_twigs>,
+    <pvj:acacia_twigs>,
+    <pvj:dark_oak_twigs>,
+    <pvj:willow_twigs>,
+    <pvj:mangrove_twigs>,
+    <pvj:baobab_twigs>,
+    <pvj:orange_maple_twigs>,
+    <pvj:red_maple_twigs>,
+    <pvj:aspen_twigs>,
+    <pvj:pine_twigs>,
+    <pvj:fir_twigs>,
+    <pvj:redwood_twigs>,
+    <pvj:palm_twigs>,
+    <pvj:cottonwood_twigs>,
+    <pvj:juniper_twigs>,
+    <pvj:juniper_berried_twigs>,
+    <pvj:white_cherry_blossom_twigs>,
+    <pvj:pink_cherry_blossom_twigs>,
+    <pvj:jacaranda_twigs>
+] as IItemStack[];
 
-//Hides disabled PVJ Ground Cover
-mods.jei.JEI.hide(<pvj:mossy_cobblestone_rocks>);
-mods.jei.JEI.hide(<pvj:red_sandstone_rocks>);
-
-//Hides unused Foodfunk items
-mods.jei.JEI.hide(<foodfunk:rotted_item>);
-mods.jei.JEI.hide(<foodfunk:biodegradable_item>);
-
-//===Disable Diamond Nuggets and make Diamond Alloy Ingots use Pyrotech Shards instead===
-
-//Remove/Hide Nuggets
-mods.jei.JEI.removeAndHide(<betterwithmods:material:46>);
-
-//Remove 9x pieces > Ingot recipe, while leaving the recipe with Creeper Oysters in tact.
-recipes.removeByRecipeName("betterwithmods:decompress/material.diamond_ingot_compress");
-
-//Remove Ingot recipe w/ Nuggets from Crucible
-mods.betterwithmods.Crucible.remove([<betterwithmods:material:45>]);
-
-//Adds new Crucible recipe for Diamond Ingot w/ Shards (stoked)
-mods.betterwithmods.Crucible.addStoked([<pyrotech:material:18> * 9],[<betterwithmods:material:45>]);
-
-//Removes torch recipes to allow BWM to lock them behind Nethercoal
-recipes.remove(<minecraft:torch>);
-
-//Remove and Hide BWM's Wool Armor in favor of TaN's.
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_boots>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_helmet>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_pants>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_chest>);
-
-//Remove PVJ Limestone Stuff
-mods.jei.JEI.removeAndHide(<pvj:limestone>);
-mods.jei.JEI.removeAndHide(<pvj:limestone_stairs>);
-mods.jei.JEI.removeAndHide(<pvj:limestone_slab>);
-
-//Testing ingredient replacement
-recipes.replaceAllOccurences(<pyrotech:material:24>, <betterwithmods:unfired_pottery:4>, <*>);
+for stick in sticks {
+    stick.hardness = 0.5;
+}
