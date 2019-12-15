@@ -1,0 +1,17 @@
+{
+	"name": "toughness",
+	"potion": "nutrition:toughness",
+	"amplifier": 0,
+	"minimum": 90,
+	"maximum": 100,
+	"detect": "cumulative",
+	"cumulative_modifier": 1,
+	"nutrients": [
+		"dairy",
+		"fruit",
+		"grain",
+		"protein",
+		"vegetable"
+	],
+	"enabled": true
+}

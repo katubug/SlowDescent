@@ -1,6 +1,36 @@
 Changelog
 
 Pre-Beta:
+=====Commit 7 [12/14/19]=====
+Configs:
+- New configs for CodeChickenLib, Sanity, PotionCore and Nutrition.
+- Disabled BWM's "fixing" of vanilla recipes, since I'm not keeping the ore > nugget thing.
+- Disabled BWM's Cheaper Axes to avoid Pyrotech conflict.
+- Added a dirt.json to the Dropt, currently not working. That's a project for another day.
+- Changed some JEI Integration stuff to be on debug instead of on by default.
+- Added a Sodium nutrient to certain foods, as well as a Weakness and Thirst effect for low or high sodium levels.
+- Changed the default nutrient effects to exclude Sodium.
+
+Scripts:
+- Did some nonsense with salted foods that didn't really work.
+- Hid XLFoodMod's Rock Salt from JEI.
+- Commented out the removal of food values from drinks, since I might ditch that mod.
+- Disabled ExtraTaN's juices because they don't have recipes.
+- Added behavior to a handful of drinks to allow them to adjust sodium levels.
+- Added recipes for the Granite Anvil to convert Coal Pieces/Charcoal Flakes into Coal/Charcoal Dusts.
+- Added recipe for the Granite Anvil to grind Salt Slabs into Pinches (and removed the crafting recipe).
+- Added a recipe to convert BWM Dirt Piles into PT's Dirt Clumps.
+- Added a Drying Rack recipe to convert Leather into BWM Tanned Leather.
+- Hid Scoured Leather items from JEI and removed their recipes.
+- Hid BWM's Bark items.
+- Added a Granite Anvil recipe to make Masonry Bricks directly from Stone Bricks, instead of having to craft Bricks > Slabs first.
+- Removed recipe for BWM Fertilizer, and hid it from JEI.
+- Hid BWM's Fertile Farmland from JEI.
+- Added Potash and Ash to an oredict entry.
+- Removed the old recipe for Potash Mulch and replaced it with one that uses the ash oredict, and Compost instead of meat items/bonemeal.
+- Added a tooltip to the Thermometer telling people they can use it to right click.
+- Cleaned a few excess imports from thermometer.zs and juices.zs.
+
 =====Commit 6 [12/13/19]=====
 Configs:
 - Made Blooms produce ingots instead of nuggets via the core.compat.Ore-Custom file. Hopefully only that (docs say it's fine).

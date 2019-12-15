@@ -1,0 +1,22 @@
+{
+	"name": "sodium",
+	"icon": "saltmod:salt",
+    "color": "abc7c2",
+    "decay": 5,
+    "visible": true,
+	"enabled": true,
+	"food": {
+		"oredict": [
+			"lumpSalt",
+			"dustSalt",
+			"saltedFood"
+		],
+		"items": [
+            "saltmod:saltwort_pie",
+            "saltmod:saltwort_seed",
+            "saltmod:saltwort_beef",
+            "saltmod:saltwort_porkchop",
+            "saltmod:saltwort_mutton"
+		]
+	}
+}

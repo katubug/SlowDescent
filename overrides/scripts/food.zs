@@ -50,21 +50,26 @@ var salted = [
     <saltmod:salt_beetroot_salad>,
     <saltmod:salt_hufc>,
     <saltmod:salt_dandelion_salad>,
-    <saltmod:salt_wheat_sprouts>
+    <saltmod:salt_wheat_sprouts>,
+    <xlfoodmod:salty_chips>
 ] as IItemStack[];
 
 for item in salted {
     <ore:saltedFood>.add(item);
-    item.addTooltip("Salted foods are preserved for longer.");
+    item.addTooltip(format.gold("Salted foods are preserved for longer."));
 }
 
-<saltmod:salt_pinch>.addTooltip("Adding salt to foods can protect against spoilage.");
+<saltmod:salt_pinch>.addTooltip(format.gold("Adding salt to foods can protect against spoilage."));
 
+//Hide XLFoodMod Rock Salt Ore
+mods.jei.JEI.hide(<xlfoodmod:rock_salt>);
+
+//==Deleted these because I might do HungerTweaker instead==
 //Remove food values from drinks
-mods.foodtweaker.changeFoodStats(<pvj:sugarcane_juice>, 0, 0);
-mods.foodtweaker.changeFoodStats(<xlfoodmod:coffee>, 0, 0);
-mods.foodtweaker.changeFoodStats(<pvj:coconut_milk>, 0, 0);
-mods.foodtweaker.changeFoodStats(<xlfoodmod:beer>, 0, 0);
+//mods.foodtweaker.changeFoodStats(<pvj:sugarcane_juice>, 0, 0);
+//mods.foodtweaker.changeFoodStats(<xlfoodmod:coffee>, 0, 0);
+//mods.foodtweaker.changeFoodStats(<pvj:coconut_milk>, 0, 0);
+//mods.foodtweaker.changeFoodStats(<xlfoodmod:beer>, 0, 0);
 
 //===Remove Unrealistic Campfire Recipes===
 
@@ -102,3 +107,8 @@ StoneOven.addRecipe("pyrotech_oven_cake", <minecraft:cake>, <betterwithmods:raw_
 
 //Remove Cookie Crafting recipe to force it to be smelting only
 recipes.removeByRecipeName("minecraft:cookie");
+
+//Disable unused Juices
+mods.jei.JEI.removeAndHide(<extratan:apple_juice>);
+mods.jei.JEI.removeAndHide(<extratan:lemonade>);
+mods.jei.JEI.removeAndHide(<extratan:orange_juice>);

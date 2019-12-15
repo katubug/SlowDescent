@@ -1,0 +1,13 @@
+{
+	"name": "thirst",
+	"potion": "toughasnails:thirst",
+	"amplifier": 0,
+	"minimum": 80,
+	"maximum": 100,
+	"detect": "any",
+	"nutrients": [
+        "salt"
+	],
+	"particles": "transparent",
+	"enabled": true
+}

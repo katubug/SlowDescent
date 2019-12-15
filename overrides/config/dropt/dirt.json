@@ -1,0 +1,36 @@
+{
+    "rules": [
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+              "minecraft:dirt:*",
+              "minecraft:grass"
+            ]
+          }
+        },
+        "replaceStrategy": "ADD",
+        "drops": [
+          {
+            "selector": {
+              "weight": {
+                "value": 30
+              }
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 70
+              }
+            },
+            "item": {
+              "items" : [
+                "pyrotech:rock:4"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
