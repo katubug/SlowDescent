@@ -2,6 +2,14 @@ import crafttweaker.item.IItemStack;
 import mods.pyrotech.Campfire;
 import mods.pyrotech.StoneOven;
 
+//Mods required for this script:
+//XL Food Mod
+//Better With Mods
+//Salty Mod
+//Project Vibrant Journeys
+//Pyrotech
+//ExtraTaN
+
 //Remove Energy Drinks from XL Food Mod
 mods.jei.JEI.removeAndHide(<xlfoodmod:super_energy_drink>);
 mods.jei.JEI.removeAndHide(<xlfoodmod:deadly_energy_drink>);

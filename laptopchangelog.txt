@@ -1,6 +1,22 @@
 Changelog
 
 Pre-Beta:
+=====Commit 8 [12/15/19]=====
+Configs:
+- New configs for Vaultopic, Refined Relocation, Simple Storage Network.
+- Capitalized "Sodium" in config so that it appears correctly ingame.
+
+Scripts:
+- Added commented sections at the top of each script specifying which mods it requires to work.
+- Created inventory.zs to make the inventory-related mods play nicely.
+
+Lang File:
+- Added resources folder to github to sync the lang file.
+- Renamed the following:
+- BWM "Crucible" > "Melting Pot" to avoid overlap with Pyrotech.
+- Refined Relocation's "Filtered Hopper" > "Sorting Hopper" to avoid overlap with BWM.
+- I also localized the nutrient names for Sodium and Fat.
+
 =====Commit 7 [12/14/19]=====
 Configs:
 - New configs for CodeChickenLib, Sanity, PotionCore and Nutrition.

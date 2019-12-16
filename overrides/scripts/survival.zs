@@ -1,5 +1,9 @@
 import crafttweaker.item.IItemStack;
 
+//Mods required for this script:
+//Tough As Nails
+//Project Vibrant Journeys
+
 //This should probably be named something else tbh.
 
 //Disables Tough as Nails' campfire in favor of Pyrotech's.

@@ -6,6 +6,13 @@ import mods.pyrotech.BrickCrucible;
 import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.CrudeDryingRack;
 
+//Mods required for this messy-ass script:
+//Pyrotech
+//Better With Mods
+//Project Vibrant Journeys
+//FoodFunk
+//SaltyMod
+
 //Removes plain water recipes from Crucibles
 StoneCrucible.removeRecipes(<liquid:water>);
 BrickCrucible.removeRecipes(<liquid:water>);

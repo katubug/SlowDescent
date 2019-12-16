@@ -2,6 +2,10 @@ import mods.pyrotech.PitKiln;
 import mods.pyrotech.BrickKiln;
 import mods.pyrotech.StoneKiln;
 
+//Mods required for this script:
+//Pyrotech
+//Better With Mods
+
 //This script is intended to remove references to the BWM Kiln Multiblock, replacing it when necessary with the Pyrotech Kilns.
 
 //===Remove all Kiln Recipes===

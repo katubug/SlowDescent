@@ -1,0 +1,15 @@
+tile.pyrotech.stone_crucible.name=Stone Crucible
+tile.pyrotech.brick_crucible.name=Refractory Crucible
+gui.pyrotech.jei.category.crucible.brick=Refractory Crucible
+gui.pyrotech.jei.category.crucible.stone=Stone Crucible
+
+tile.bwm:cooking_pot.0.name=Melting Pot
+tile.bwm:unfired_pottery.0.name=Unfired Melting Pot
+inv.crucible.name=Melting Pot
+inv.crucible.stoked.name=Stoked Melting Pot
+
+nutrient.nutrition:Sodium=Sodium
+nutrient.nutrition:fat=Fat
+
+tile.refinedrelocation:filtered_hopper.name=Sorting Hopper
+container.refinedrelocation:filtered_hopper=Sorting Hopper

@@ -3,6 +3,9 @@ import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerBonemealEvent;
 import crafttweaker.event.IEventCancelable;
 
+//Mods required for this script:
+//None
+
 //Prevents vanilla bonemeal from being effective.
 //Thanks to Jared on the CrT discord for helping me figure this one out!
 events.onPlayerBonemeal(function(event as crafttweaker.event.PlayerBonemealEvent){

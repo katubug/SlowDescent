@@ -1,6 +1,10 @@
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 import crafttweaker.item.IItemStack;
 
+//Mods required for this script:
+//Tough As Nails
+//Nutrition (soft requirement)
+
 var drinks = [
     <toughasnails:fruit_juice>,
     <toughasnails:fruit_juice:1>,
