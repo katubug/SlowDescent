@@ -1,0 +1,89 @@
+Note: potential_spawn.json and spawn.json must agree in order for mobs to show up properly. potential_spawn.json defines when and where the mob spawns. spawn.json defines how the mob spawns (how much health etc) as well as actually allowing the spawn.
+
+Rules:
+-----
+minheight: int
+maxheight: int
+minlight: int
+maxlight: int
+mintime :int (of day)
+maxtime: int
+weather: [rain|thunder] string
+tempcategory: [cold|medium|warm|ocean] string - can NOT be an array
+seesky: [true|false] bool
+mob: (can be an array, format "modid:mob") string
+mod: (can be an array) string
+biome: (can be an array, format "modid:biome") string
+biometype: (can be an array, follows biome dictionary below) string
+dimension: int
+block: (can use oredict but not metadata/nbt. cannot be an array) string
+winter|spring|summer|autumn: [true|false] bool
+(can also do by gamestage or based on equipped baubles!)
+random: this accepts a floating point number and it will fire the rule if a random number is less then this number. So if you want to have a rule that fires with 10% chance then use 0.1 here
+
+Example:
+-----
+[
+	{
+		"rule": "variable",		//This is the "if" statement
+		"result": "allow|deny"	//allow and deny are only used in spawn.json
+	},
+	{
+		"result": "deny"		//This is the "else" statement
+	}
+]
+
+Biome Dictionary:
+-----
+BEACH
+COLD
+CONIFEROUS
+DEAD
+DENSE
+DRY
+END
+FOREST
+HILLS
+HOT
+JUNGLE
+LUSH
+MESA
+MOUNTAIN
+MUSHROOM
+NETHER
+OCEAN
+PLAINS
+RARE
+RIVER
+SANDY
+SAVANNA
+SNOWY
+SPARSE
+SPOOKY
+SWAMP
+VOID
+WASTELAND
+WATER
+WET
+
+Example from ATM3 (spawn.json):
+-----
+[ 
+	{
+    "dimension": 0,
+	"block": "minecraft:grass",
+	"biome": "Roofed Forest",
+    "mob": "minecraft:evocation_illager",
+	"random": 0.9,
+    "result": "deny"
+  },
+
+
+  {
+    "dimension": 0,
+	"block": "minecraft:grass",
+	"biome": "Roofed Forest",
+    "mob": "minecraft:evocation_illager",
+    "result": "allow"
+  }
+]

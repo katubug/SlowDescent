@@ -1,0 +1,44 @@
+Fish's Undead Rising:
+-----
+Lavacow: Don't spawn naturally.
+Foglet: swamps, rivers, and underground in any warm and wet biomes.
+Undead Swine: Forests
+Ciuperca: hot and humid biomes, as well as in underground forests (spawn on grass at certain y-levels)
+Ingheta: Cold biomes and during the winter (more spawns in winter).
+Salamander: Nether only
+Wendigo: Coniferous forests, but rarely spawn in other forests.
+Mimicrab: Anywhere as long as it's near a chest. I'm not sure how that'll work. Note: don't put this in spawn.json, put it in potential_spawn.json only.
+Sludge Lord: In swamps or wet biomes, above ground only. Rare.
+Raven: In dark, dead, magical, or snowy biomes.
+Ptera: Jungle, desert, tropical
+Vespa: Don't spawn naturally?
+Scarecrow: On farmland or pumpkins in any biome.
+Piranha: water
+Swarmer: water, acid?
+
+Mutant Creatures:
+-----
+- Mutant Enderman:
+- Mutant Creeper:
+- Creeper Minion: does not spawn naturally
+- Mutant Snow Golem:
+- Mutant Zombie:
+- Spider-Pig:
+- Mutant Skeleton:
+
+Quark:
+-----
+Going to leave most of these be, because they shouldn't be spawning in the Misty World and their spawn rules are fine otherwise. The ones I am changing are:
+
+- Dweller: lower level of MW (below y20). In overworld, underground in cold/wet biomes.
+- Ashen: lower level of MW (below y20). In overworld, underground in dry/hot biomes.
+- Wraith: lower level of MW. Otherwise, only in Nether and on SoulSand.
+
+Mystical Wildlife:
+-----
+- Vrontosaurus: cold and mountainous biomes
+- Dusk Lurkers: forests, spawn only at night
+- azure cicapteras: plains, and more in the fall
+- verdant cicapteras: forests, and more in the spring
+- wintry cicapteras: cold biomes and during the winter
+- sandy cicapteras: deserts and hot biomes, more during the summer
