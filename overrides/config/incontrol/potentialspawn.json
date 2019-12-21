@@ -1,0 +1,95 @@
+[
+    {
+        "dimension": [0, 69],
+        "mobs": [
+            {
+                "mob": "mod_lavacow:zombiefrozen",
+                "weight": 8,
+                "groupcountmin": 1,
+                "groupcountmax": 3
+            }
+        ],
+        "blocks": ["minecraft:snow", "minecraft:ice", "minecraft:packed_ice", "minecraft:snow_layer"],
+        "winter": true
+    },
+    {
+        "dimension": [0, 69],
+        "mobs": [
+            {
+                "mob": "mod_lavacow:zombiefrozen",
+                "weight": 5,
+                "groupcountmin": 1,
+                "groupcountmax": 3
+            }
+        ],
+        "biometype": "SNOWY"
+    },
+    {
+        "dimension": [0, 69],
+        "mobs": [
+            {
+            "mob": "mod_lavacow:foglet",
+            "weight": 5,
+            "groupcountmin": 1,
+            "groupcountmax": 4
+            }
+        ],
+        "biometypes": ["SWAMP", "RIVER"],
+        "minheight": 50,
+        "maxlight": 7
+    },
+    {
+        "dimension": 0,
+        "mobs": [
+            {
+                "mob": "mod_lavacow:foglet",
+                "weight": 5,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ],
+        "biometype": ["RIVER", "SWAMP", "HOT", "WET"],
+        "maxheight": 25,
+        "seesky": false,
+        "blocks": ["minecraft:grass", "minecraft:leaves"]
+    },
+    {
+        "dimension": [0, 69],
+        "mobs": [
+            {
+                "mob":"mod_lavacow:undeadswine",
+                "weight":5,
+                "groupcountmin": 1,
+                "groupcountmax": 1
+            }
+        ],
+        "maxlight": 7,
+        "biometype": ["FOREST", "MUSHROOM"]
+    },
+    {
+        "dimension": 0,
+        "mobs": [
+            {
+                "mob": "mod_lavacow:zombiemushroom",
+                "weight": 5,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ],
+        "maxheight": 30,
+        "blocks": "minecraft:grass"
+    },
+    {
+        "dimension": [0, 69],
+        "mobs": [
+            {
+                "mob": "mod_lavacow:zombiemushroom",
+                "weight": 5,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ],
+        "biometype": ["HOT", "WET"],
+        "minheight": 50
+    }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "dimension": [0, 69],
+    "mob": "mod_lavacow:zombiefrozen",
+    "maxcount": {
+      "mob":"mod_lavacow:zombiefrozen",
+      "amount": 20,
+      "perplayer": true
+    },
+    "onjoin": true,
+    "result": "default"
+  },
+  {
+    "dimension": [0, 69],
+    "mob":"mod_lavacow:zombiefrozen",
+    "result": "deny"
+  },
+  {
+    "dimension": [0, 69],
+    "mob": "mod_lavacow:foglet",
+    "maxcount": 20,
+    "result": "default"
+  },
+  {
+    "dimension": [0, 69],
+    "mob": "mod_lavacow:foglet",
+    "result": "deny"
+  },
+  {
+    "dimension": [0, 69],
+    "mob": "mod_lavacow:undeadswine",
+    "result": "default"
+  },
+  {
+    "dimension": [0, 69],
+    "mob": "mod_lavacow:zombiemushroom",
+    "maxcount": 20,
+    "result": "default"
+  },
+  {
+    "dimension": [0, 69],
+    "mob": "mod_lavacow:zombiemushroom",
+    "result": "deny"
+  },
+  {
+    "potion": "minecraft:glowing,10000,1"
+  }
+]

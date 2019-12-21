@@ -1,6 +1,19 @@
 Changelog
 
 Pre-Beta:
+=====Commit 9 [12/21/19]=====
+Configs:
+- New configs for Beasts, BetterNether, Bloodmoon, BNBGamingCore, CaveGenerator, Deadly Monsters, Embers, Enemyz, Extra Alchemy, Eyes in the Darkness, Fish's Undead Rising, Hardcore Darkness, In Control, Misty World, Mowzie's Mobs, Mutant Beasts, Mystical Wildlife, Quark, Simply Tea, Special AI, VanillaFix, Zokmbie Awareness, 
+- Added In Control spawning rules for Ingheta, Foglets, Undead Swine, Ciuperca
+- Disabled the following in PotionCore: Absorption, Health Boost, Hunger, Mining Fatigue, Nausea, Resistance, Antidote, Bless, Burst, Chance, Disorganization, Extension, Fire, Flight, Invert, Love, Magic Focus/Inhibition/Shield, Reach, Repair, Teleport Spawn.
+- Enabled the Potion Sickness potion.
+- Reduced the max potions before sickness from 8 to 3.
+- Made BWM Hemp growable in all seasons.
+- Edited the splash.properties to make it pretty.
+
+Scripts:
+- Wrote a HEFTY script to add recipes for the PotionCore potions. I learned how to use for loops! I mean, kinda. Anyway it's done yay.
+
 =====Commit 8 [12/15/19]=====
 Configs:
 - New configs for Vaultopic, Refined Relocation, Simple Storage Network.
