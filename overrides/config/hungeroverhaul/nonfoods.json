@@ -1,0 +1,19 @@
+{
+"foods": [
+		{
+			"name": "simplytea:cup_cocoa",
+			"hunger": 0,
+			"saturationModifier": 0.0
+        },
+        {
+            "name": "xlfoodmod:icecream_cone",
+            "hunger": 0,
+            "saturationModifier": 0.0
+        },
+        {
+            "name": "saltmod:saltwort_seed",
+            "hunger": 0,
+            "saturationModifier": 0.0
+        }
+    ]
+}

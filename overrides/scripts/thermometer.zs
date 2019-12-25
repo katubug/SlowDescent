@@ -1,7 +1,11 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.events.IEventManager;
 
-//Mods required for this script:
+/* -------------------------------------------------------------------------- */
+/*                        Makes Thermometer more useful                       */
+/* -------------------------------------------------------------------------- */
+
+//NOTE Mods required for this script:
 //Tough as Nails
 
 //Executes Command on Right Click w/ Thermometer

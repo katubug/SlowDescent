@@ -1362,7 +1362,31 @@
 			"zawa:rat_raw",
 			"zawa:raw_frog_leg",
 			"zawa:reptile_meat_cooked",
-			"zawa:reptile_meat_raw"
+			"zawa:reptile_meat_raw",
+			"mod_lavacow:canebeef",
+			"mod_lavacow:canepork",
+			"mod_lavacow:canerottenmeat",
+			"mod_lavacow:parasite_item",
+			"mod_lavacow:parasite_item_cooked",
+			"mod_lavacow:piranha",
+			"mod_lavacow:piranha_cooked",
+			"mod_lavacow:cheirolepis",
+			"mod_lavacow:cheirolepis_cooked",
+			"mod_lavacow:mousse",
+			"mod_lavacow:meatball",
+			"mod_lavacow:frozenthigh",
+			"mod_lavacow:plagued_porkchop",
+			"mod_lavacow:green_bacon_and_eggs",
+			"mod_lavacow:mimic_claw",
+			"mod_lavacow:mimic_claw_cooked",
+			"mod_lavacow:ptera_wing",
+			"mod_lavacow:ptera_wing_cooked",
+			"mod_lavacow:sausage_roll",
+			"mod_lavacow:zombiepiranha_item",
+			"mod_lavacow:zombiepiranha_item_cooked",
+			"mod_lavacow:netherstew",
+			"mowziesmobs:glowing_jelly",
+			"pyrotech:egg_roasted"
 		]
 	}
 }

@@ -1,0 +1,17 @@
+{
+	"name": "malnourished",
+	"potion": "nutrition:malnourished",
+	"amplifier": 0,
+	"minimum": 0,
+	"maximum": 35,
+	"detect": "average",
+	"nutrients": [
+		"dairy",
+		"fruit",
+		"grain",
+		"protein",
+        "vegetable",
+        "Sodium"
+	],
+    "enabled": true
+}

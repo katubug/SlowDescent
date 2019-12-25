@@ -6,12 +6,25 @@ import mods.pyrotech.BrickCrucible;
 import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.CrudeDryingRack;
 
-//Mods required for this messy-ass script:
+/* -------------------------------------------------------------------------- */
+/*                    ANCHOR This script is the messy one!                    */
+/* -------------------------------------------------------------------------- */
+
+//NOTE Mods required for this messy-ass script:
 //Pyrotech
 //Better With Mods
 //Project Vibrant Journeys
 //FoodFunk
 //SaltyMod
+
+// REVIEW This is just a test to see if I can make recipes with food yet
+//NOTE This does not work:
+//recipes.addShaped(<minecraft:beef>, [[<minecraft:sand>, <minecraft:apple>, null], [<minecraft:egg>, null, null]]);
+//NOTE This one works:
+//<ore:listAllapple>.add(<minecraft:apple>);
+//recipes.addShapeless(<minecraft:beef>, [<minecraft:sand>, <ore:listAllapple>]);
+
+/* --------- SECTION Makes Pyrotech Crucibles produce purified water -------- */
 
 //Removes plain water recipes from Crucibles
 StoneCrucible.removeRecipes(<liquid:water>);
@@ -22,8 +35,9 @@ StoneCrucible.addRecipe("ice_purified_water", <liquid:purified_water> * 1000, <m
 StoneCrucible.addRecipe("packedice_purified_water", <liquid:purified_water> * 2000, <minecraft:ice>, 4 * 60 * 20, true);
 StoneCrucible.addRecipe("snowblock_purified_water", <liquid:purified_water> * 500, <minecraft:snow>, 15 * 20, true);
 StoneCrucible.addRecipe("snowball_purified_water", <liquid:purified_water> * 125, <minecraft:snowball>, 15 * 20, true);
+//!SECTION 
 
-//====Boats Nonsense====
+/* ------------------------------ SECTION Boat Changing ----------------------------- */
 //Remove BWM Vanilla Boat recipes
 recipes.removeByRecipeName("betterwithmods:higheff/oak_boat");
 recipes.removeByRecipeName("betterwithmods:higheff/spruce_boat");
@@ -53,6 +67,7 @@ for boat in boats {
     recipes.remove(boat);
 }
 
+//FIXME Use loops?
 //And adds the PVJ ones all back, because I don't know a better way of doing this.
 recipes.addShaped(<pvj:redwood_boat>, [[<pvj:planks_redwood>, null, <pvj:planks_redwood>], [<pyrotech:planks_tarred>, <pyrotech:material:23>, <pyrotech:planks_tarred>]]);
 
@@ -80,15 +95,10 @@ recipes.addShaped(<pvj:jacaranda_boat>, [[<pvj:planks_jacaranda>, null, <pvj:pla
 
 recipes.addShaped(<pvj:willow_boat>, [[<pvj:planks_willow>, null, <pvj:planks_willow>], [<pyrotech:planks_tarred>, <pyrotech:material:23>, <pyrotech:planks_tarred>]]);
 
-//Hides disabled PVJ Ground Cover
-mods.jei.JEI.hide(<pvj:mossy_cobblestone_rocks>);
-mods.jei.JEI.hide(<pvj:red_sandstone_rocks>);
+//!SECTION 
 
-//Hides unused Foodfunk items
-mods.jei.JEI.hide(<foodfunk:rotted_item>);
-mods.jei.JEI.hide(<foodfunk:biodegradable_item>);
-
-//===Disable Diamond Nuggets and make Diamond Alloy Ingots use Pyrotech Shards instead===
+/* --------- SECTION Disable Diamond Nuggets and make Diamond Alloy --------- */
+/* ------------------- Ingots use Pyrotech Shards instead ------------------- */
 
 //Remove/Hide Nuggets
 mods.jei.JEI.removeAndHide(<betterwithmods:material:46>);
@@ -101,20 +111,6 @@ mods.betterwithmods.Crucible.remove([<betterwithmods:material:45>]);
 
 //Adds new Crucible recipe for Diamond Ingot w/ Shards (stoked)
 mods.betterwithmods.Crucible.addStoked([<pyrotech:material:18> * 9],[<betterwithmods:material:45>]);
-
-//Removes torch recipes to allow BWM to lock them behind Nethercoal
-recipes.remove(<minecraft:torch>);
-
-//Remove and Hide BWM's Wool Armor in favor of TaN's.
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_boots>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_helmet>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_pants>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_chest>);
-
-//Remove PVJ Limestone Stuff
-mods.jei.JEI.removeAndHide(<pvj:limestone>);
-mods.jei.JEI.removeAndHide(<pvj:limestone_stairs>);
-mods.jei.JEI.removeAndHide(<pvj:limestone_slab>);
 
 //====Adds recipes for Diamond Ingots====
 //Diamond Leggings
@@ -133,7 +129,44 @@ recipes.addShaped("diamond_ingot_chestplate", <minecraft:diamond_chestplate>, [[
 recipes.remove(<minecraft:diamond_boots>);
 recipes.addShaped("diamond_ingot_boots", <minecraft:diamond_boots>, [[<minecraft:diamond>, null, <minecraft:diamond>], [<betterwithmods:material:45>, null, <betterwithmods:material:45>]]);
 
-//====Granite Anvil Recipes====
+//!SECTION 
+
+/* ---------------------- SECTION Misc Remove and Hide ---------------------- */
+
+//Hides unused Foodfunk items
+mods.jei.JEI.hide(<foodfunk:rotted_item>);
+mods.jei.JEI.hide(<foodfunk:biodegradable_item>);
+
+//Hides disabled PVJ Ground Cover
+mods.jei.JEI.hide(<pvj:mossy_cobblestone_rocks>);
+mods.jei.JEI.hide(<pvj:red_sandstone_rocks>);
+
+//Remove and Hide BWM's Wool Armor in favor of TaN's.
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_boots>);
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_helmet>);
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_pants>);
+mods.jei.JEI.removeAndHide(<betterwithmods:wool_chest>);
+
+//Remove PVJ Limestone Stuff
+mods.jei.JEI.removeAndHide(<pvj:limestone>);
+mods.jei.JEI.removeAndHide(<pvj:limestone_stairs>);
+mods.jei.JEI.removeAndHide(<pvj:limestone_slab>);
+
+//Remove PVJ Marble and Basalt
+mods.jei.JEI.removeAndHide(<pvj:basalt>);
+mods.jei.JEI.removeAndHide(<pvj:basalt_brick>);
+mods.jei.JEI.removeAndHide(<pvj:marble>);
+mods.jei.JEI.removeAndHide(<pvj:marble_brick>);
+
+//Make PVJ basalt and marble recipes use Quark's blocks
+recipes.replaceAllOccurences(<pvj:basalt>, <quark:basalt>);
+recipes.replaceAllOccurences(<pvj:marble>, <quark:marble>);
+recipes.replaceAllOccurences(<pvj:basalt_brick>, <quark:world_stone_bricks:3>);
+recipes.replaceAllOccurences(<pvj:marble_brick>, <quark:world_stone_bricks:4>);
+
+//!SECTION 
+
+/* ---------------------- SECTION Granite Anvil Recipes --------------------- */
 
 //Salt
 recipes.removeByRecipeName("saltmod:salt_pinch_from_slab");
@@ -145,10 +178,9 @@ GraniteAnvil.addRecipe("charcoal_flakes_to_dust", <betterwithmods:material:37>, 
 //Charcoal
 GraniteAnvil.addRecipe("coal_pieces_to_dust", <betterwithmods:material:18>, <pyrotech:material:21>, 6, "hammer", true);
 
-//==Adds recipe for Pyrotech Dirt Clumps==
-recipes.addShapeless(<pyrotech:rock:4> * 2, [<betterwithmods:dirt_pile>]);
+//!SECTION 
 
-//====Leather Production====
+/* ----------------------- SECTION Leather Production ----------------------- */
 //Adds Pyrotech Drying Rack recipe for Leather > Tanned Leather
 CrudeDryingRack.addRecipe("leather_to_tanned", <betterwithmods:material:6>, <minecraft:leather>, 2 * 60 * 20, true);
 CrudeDryingRack.addRecipe("cut_leather_to_tanned", <betterwithmods:material:32>, <betterwithmods:material:31>, 2 * 60 * 20, true);
@@ -177,11 +209,14 @@ mods.jei.JEI.removeAndHide(<betterwithmods:bark:4>);
 mods.jei.JEI.removeAndHide(<betterwithmods:bark:5>);
 mods.jei.JEI.removeAndHide(<betterwithmods:bark:6>);
 
+//!SECTION 
+
 //====Stone Tools/Pyrotech Masonry Bricks====
 //Adds anvil recipe for Stone Bricks > Masonry Bricks
 GraniteAnvil.addRecipe("stonebricks_to_masonry", <pyrotech:material:16> * 4, <minecraft:stonebrick>, 8, "pickaxe", true);
 
-//====Farmland Compatibility====
+/* --------------------- SECTION Farmland Compatibility --------------------- */
+
 //Remove recipe for BWM Fertilizer
 mods.betterwithmods.Cauldron.remove([<betterwithmods:fertilizer>]);
 
@@ -195,3 +230,13 @@ mods.jei.JEI.removeAndHide(<betterwithmods:fertile_farmland>);
 
 recipes.remove(<pyrotech:mulch>);
 recipes.addShaped(<pyrotech:mulch> * 4, [[<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>],[<pyrotech:rock:7>, <composter:compost>, <pyrotech:rock:7>], [<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>]]);
+
+//!SECTION 
+
+/* ---------------------- SECTION Completely unsorted --------------------- */
+
+//Removes torch recipes to allow BWM to lock them behind Nethercoal
+recipes.remove(<minecraft:torch>);
+
+//==Adds recipe for Pyrotech Dirt Clumps==
+recipes.addShapeless(<pyrotech:rock:4> * 2, [<betterwithmods:dirt_pile>]);

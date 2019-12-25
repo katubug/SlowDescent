@@ -2,7 +2,11 @@ import mods.pyrotech.PitKiln;
 import mods.pyrotech.BrickKiln;
 import mods.pyrotech.StoneKiln;
 
-//Mods required for this script:
+/* -------------------------------------------------------------------------- */
+/*                    ANCHOR Pyrotech and BWM Compatibility                   */
+/* -------------------------------------------------------------------------- */
+
+//NOTE Mods required for this script:
 //Pyrotech
 //Better With Mods
 

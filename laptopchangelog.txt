@@ -1,6 +1,33 @@
 Changelog
 
 Pre-Beta:
+=====Commit 10 [12/24/19]=====
+Configs:
+- New configs for Pollution of the Realms, Bottle Your Xp, Corpse Complex, Crafting Station, Crafting Tweaks, Embers, ForgeEndertech, Inventory Tweaks, Scaling Health, Toast Control, Wearable Backpacks.
+- Deleted configs from removed mods.
+- Disabled BWM's HCHunger and Improved Flee.
+- Increased the chunking percentage of Food Funk perishables.
+- Made it so items in Stalagnate Bowls do not rot.
+- Altered some rotting times. Meats, esp raw, rot faster. Bread rots slower. Fermented Spider Eyes do not rot, neither do Golden Apples/Glistering Melons or Teas. Twinkies take a long time to rot. I'm funny.
+- Many changes to HungerOverhaul.cfg. Mostly making it a bit less punishing. I really ought to write the changes down but I'm so tired.
+- Began adding non-foods to the HO json to remove their hunger and sat values.
+- Copied the tutorial information for a crop/food item blacklist, but I haven't edited it yet and I may not need to.
+- Let Me Sleep config: Sleep during rain now possible. Food loss during sleep from 3 to 5. Amount healed during sleep from full to 5.
+- Added effect jsons for Nourished and Malnourished from Nutrition, giving them usage scenarios.
+- Tweaked the application of other Nutrition benefits. Made the negative effects a bit easier to get, and the OP ones (Toughness) harder.
+- Removed the special weakness effect for Sodium and simply included that in the Malnourished effect.
+- Added nutrients to some food that needed it.
+- Made nutrition decay 50% faster.
+- Disabled PVJ's Marble and Basalt in favor of Quark's.
+- Made significant changes to Corpse Complex and Scaling Health's configs, which I am too tired to itemize right now.
+- Nerfed the hunger and saturation of teas via simplytea.cfg.
+
+Scripts:
+- Added anchors (plugin) and prettified formatting of all scripts. I also did a tiny bit of organization within the needs_sorting.zs.
+- Added more salty foods to the ore dictionary tag for them.
+- Temporarily renamed inventory.zs to inventory.txt so I can do tests without Vaultopic's log spam.
+- Potions.zs: Revive potions now require a base potion of Reincarnation. Temporarily made Potion Sickness use Emeralds as a placeholder to test something without FoodFunk. Should change this back.
+
 =====Commit 9 [12/21/19]=====
 Configs:
 - New configs for Beasts, BetterNether, Bloodmoon, BNBGamingCore, CaveGenerator, Deadly Monsters, Embers, Enemyz, Extra Alchemy, Eyes in the Darkness, Fish's Undead Rising, Hardcore Darkness, In Control, Misty World, Mowzie's Mobs, Mutant Beasts, Mystical Wildlife, Quark, Simply Tea, Special AI, VanillaFix, Zokmbie Awareness, 

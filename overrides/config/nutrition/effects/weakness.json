@@ -3,14 +3,15 @@
 	"potion": "minecraft:weakness",
 	"amplifier": 0,
 	"minimum": 0,
-	"maximum": 10,
+	"maximum": 20,
 	"detect": "average",
 	"nutrients": [
 		"dairy",
 		"fruit",
 		"grain",
 		"protein",
-		"vegetable"
+		"vegetable",
+		"Sodium"
 	],
 	"enabled": true
 }

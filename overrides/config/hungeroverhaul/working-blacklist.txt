@@ -1,0 +1,32 @@
+{
+	// a list of foods that should not have their food values modified by HO
+	// the foods in this list will not have their values changed by HO at all (even if specified in the 'foods' section above)
+	"foodsBlacklist": [
+		{
+			// the name of the item in "mod:name" format
+			"name": "minecraft:apple",
+			// [optional] the metadata value of the item (default: wildcard (any metadata))
+			"meta": 0
+		}
+	],
+
+	// a list of crop blocks that should not have their drops modified by HO
+	"dropsBlacklist": [
+		{
+			// the name of the block in "mod:name" format
+			"name": "minecraft:wheat",
+			// [optional] the metadata value of the block (default: wildcard (any metadata))
+			"meta": 7
+		}
+	],
+
+	// a list of crop blocks that should not have their right-click behavior modified by HO
+	"harvestBlacklist": [
+		{
+			// the name of the block in "mod:name" format
+			"name": "minecraft:wheat",
+			// [optional] the metadata value of the block (default: wildcard (any metadata))
+			"meta": 7
+		}
+	]
+}

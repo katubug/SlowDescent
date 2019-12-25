@@ -3,7 +3,11 @@ import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerBonemealEvent;
 import crafttweaker.event.IEventCancelable;
 
-//Mods required for this script:
+/* -------------------------------------------------------------------------- */
+/*                              Bone Meal Script                              */
+/* -------------------------------------------------------------------------- */
+
+//NOTE Mods required for this script:
 //None
 
 //Prevents vanilla bonemeal from being effective.

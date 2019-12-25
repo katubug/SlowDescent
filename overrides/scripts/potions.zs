@@ -1,7 +1,11 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//Mods required for this script:
+/* -------------------------------------------------------------------------- */
+/*                           SECTION Potion Recipes                           */
+/* -------------------------------------------------------------------------- */
+
+//NOTE Mods required for this script:
 //PotionCore
 //Better With Mods
 //Project: Vibrant Journeys
@@ -19,7 +23,11 @@ import crafttweaker.item.IIngredient;
 <ore:blockCactus>.add(<pvj:small_cactus>);
 <ore:blockCactus>.add(<betternether:barrel_cactus>);
 
-//==============================================================================Normal Normal Potions
+//First, remove a recipe for Magnetism Potions so I can replace it
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "extraalchemy:magnetism_normal"}), <minecraft:iron_ingot>);
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <ore:slimeball>, <minecraft:potion>.withTag({Potion: "extraalchemy:magnetism_normal"}));
+
+/* ---------------------- SECTION Normal Normal Potions --------------------- */
 val NormalNormalPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:wither"}),
     <minecraft:potion>.withTag({Potion: "potioncore:blindness"}),
@@ -111,7 +119,7 @@ val BaseNormals = [
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Weight
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Launch
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Dispel
-    <minecraft:potion>.withTag({Potion: "minecraft:strong_healing"}),       //Revival
+    <minecraft:potion>.withTag({Potion: "extraalchemy:reincarnation_strong"}),       //Revival
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Klutz
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Broken Armor
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Slow Fall
@@ -122,8 +130,9 @@ val BaseNormals = [
 for i, item in NormalNormalPotions {
     brewing.addBrew(BaseNormals[i], PotionIngredients[i], NormalNormalPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Normal Splash Potions
+/* ---------------------- SECTION Normal Splash Potions --------------------- */
 
 val NormalSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:wither"}),
@@ -183,7 +192,7 @@ val BaseSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"}),
     <minecraft:splash_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"}),
-    <minecraft:splash_potion>.withTag({Potion: "minecraft:strong_healing"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:reincarnation_strong"}),
     <minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"}),
     <minecraft:splash_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:splash_potion>.withTag({Potion: "minecraft:thick"}),
@@ -195,9 +204,9 @@ for i, item in NormalSplashPotions {
     brewing.addBrew(BaseSplashPotions[i], PotionIngredients[i], NormalSplashPotions[i]);
     brewing.addBrew(NormalNormalPotions[i], <minecraft:gunpowder>, NormalSplashPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Normal Lingering Potions
-
+/* -------------------- SECTION Normal Lingering Potions -------------------- */
 val NormalLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:wither"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:blindness"}),
@@ -256,7 +265,7 @@ val BaseLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}),
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}),
-    <minecraft:lingering_potion>.withTag({Potion: "minecraft:strong_healing"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:reincarnation_strong"}),
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}),
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:thick"}),
@@ -268,9 +277,10 @@ for i, item in NormalLingeringPotions {
     brewing.addBrew(BaseLingeringPotions[i], PotionIngredients[i], NormalLingeringPotions[i]);
     brewing.addBrew(NormalSplashPotions[i], <minecraft:dragon_breath>, NormalLingeringPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Long Normal Potions
-
+/* ----------------------- SECTION Long Normal Potions ---------------------- */
+//FIXME 
 val LongNormalPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:long_wither"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_blindness"}),
@@ -299,9 +309,10 @@ val LongNormalPotions = [
 for i, item in LongNormalPotions {
     brewing.addBrew(NormalNormalPotions[i], <minecraft:redstone>, LongNormalPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Long Splash Potions
-
+/* ----------------------- SECTION Long Splash Potions ---------------------- */
+//FIXME 
 val LongSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_wither"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_blindness"}),
@@ -331,9 +342,10 @@ for i, item in LongSplashPotions {
     brewing.addBrew(NormalSplashPotions[i], <minecraft:redstone>, LongSplashPotions[i]);
     brewing.addBrew(LongNormalPotions[i], <minecraft:gunpowder>, LongSplashPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Long Lingering Potions
-
+/* --------------------- SECTION Long Lingering Potions --------------------- */
+//FIXME 
 val LongLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_wither"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_blindness"}),
@@ -363,9 +375,10 @@ for i, item in LongLingeringPotions {
     brewing.addBrew(NormalLingeringPotions[i], <minecraft:redstone>, LongLingeringPotions[i]);
     brewing.addBrew(LongSplashPotions[i], <minecraft:dragon_breath>, LongLingeringPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Strong Normal Potions
-
+/* ---------------------- SECTION Strong Normal Potions --------------------- */
+//FIXME 
 val StrongNormalPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:strong_wither"}),
     <minecraft:potion>.withTag({Potion: "potioncore:strong_blindness"}),
@@ -393,9 +406,10 @@ val StrongNormalPotions = [
 for i, item in StrongNormalPotions {
     brewing.addBrew(NormalNormalPotions[i], <minecraft:glowstone_dust>, StrongNormalPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Strong Splash Potions
-
+/* ---------------------- SECTION Strong Splash Potions --------------------- */
+//FIXME 
 val StrongSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:strong_wither"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:strong_blindness"}),
@@ -424,9 +438,10 @@ for i, item in StrongSplashPotions {
     brewing.addBrew(NormalSplashPotions[i], <minecraft:glowstone_dust>, StrongSplashPotions[i]);
     brewing.addBrew(StrongNormalPotions[i], <minecraft:gunpowder>, StrongSplashPotions[i]);
 }
+//!SECTION 
 
-//==============================================================================Strong Lingering Potions
-
+/* -------------------- SECTION Strong Lingering Potions -------------------- */
+//FIXME 
 val StrongLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_wither"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_blindness"}),
@@ -455,3 +470,94 @@ for i, item in StrongLingeringPotions {
     brewing.addBrew(StrongNormalPotions[i], <minecraft:glowstone_dust>, StrongLingeringPotions[i]);
     brewing.addBrew(StrongSplashPotions[i], <minecraft:dragon_breath>, StrongLingeringPotions[i]);
 }
+//!SECTION 
+
+/* ------- SECTION Disabling and Hiding Unwanted ExtraAlchemy Potions ------- */
+val unwantedPotions = [
+    <minecraft:potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:concentration_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:concentration_normal"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:concentration_normal"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:concentration_normal"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:concentration_normal"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:combustion_normal"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:combustion_strong"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:combustion_long"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:cheat_death_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:combustion_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:combustion_strong"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:combustion_long"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:combustion_normal"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:combustion_strong"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:combustion_long"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:combustion_normal"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:combustion_strong"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:combustion_long"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:combustion_normal"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:combustion_strong"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:combustion_long"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:crumbling_normal"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:crumbling_strong"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:crumbling_long"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:crumbling_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:crumbling_strong"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:crumbling_long"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:crumbling_normal"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:crumbling_strong"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:crumbling_long"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:crumbling_normal"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:crumbling_strong"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:crumbling_long"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:crumbling_normal"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:crumbling_strong"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:crumbling_long"}),
+    <extraalchemy:potion_ring>.withTag({Potion: "extraalchemy:crumbling_normal"}),
+    <extraalchemy:potion_ring>.withTag({Potion: "extraalchemy:crumbling_strong"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:dislocation_normal"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:dislocation_strong"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:dislocation_long"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:dislocation_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:dislocation_strong"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:dislocation_long"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:dislocation_normal"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:dislocation_strong"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:dislocation_long"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:dislocation_normal"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:dislocation_strong"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:dislocation_long"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:dislocation_normal"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:dislocation_strong"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:dislocation_long"}),
+    <extraalchemy:potion_ring>.withTag({Potion: "extraalchemy:dislocation_normal"}),
+    <extraalchemy:potion_ring>.withTag({Potion: "extraalchemy:dislocation_strong"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:recall_normal"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:recall_strong"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:recall_long"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:recall_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:recall_strong"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:recall_long"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:recall_normal"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:recall_strong"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:recall_long"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:recall_strong"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:recall_normal"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:recall_long"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:recall_normal"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:recall_strong"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:recall_long"}),
+    <minecraft:potion>.withTag({Potion: "extraalchemy:return_normal"}),
+    <minecraft:splash_potion>.withTag({Potion: "extraalchemy:return_normal"}),
+    <minecraft:tipped_arrow>.withTag({Potion: "extraalchemy:return_normal"}),
+    <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:return_normal"}),
+    <extraalchemy:breakable_potion>.withTag({Potion: "extraalchemy:return_normal"})
+] as IItemStack[];
+
+for potion in unwantedPotions {
+    mods.jei.JEI.removeAndHide(potion);
+}
+//!SECTION 
+//!SECTION 

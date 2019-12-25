@@ -20,6 +20,24 @@
     "Output item strings are in the format: (domain):(path):(meta)"
   ],
   "oredict": {
+    "oreAluminum": {
+      "slagColor": "e2e2e3",
+      "langKey": [
+        "embers:tile.ore_aluminum"
+      ],
+      "output": [
+        "embers:nugget_aluminum:0"
+      ]
+    },
+    "oreCopper": {
+      "slagColor": "ffaa1c",
+      "langKey": [
+        "embers:tile.ore_copper"
+      ],
+      "output": [
+        "embers:nugget_copper:0"
+      ]
+    },
     "oreGold": {
       "slagColor": "fcee4b",
       "langKey": [
@@ -38,6 +56,42 @@
       ],
       "output": [
         "minecraft:iron_nugget:0"
+      ]
+    },
+    "oreLead": {
+      "slagColor": "95afee",
+      "langKey": [
+        "embers:tile.ore_lead"
+      ],
+      "output": [
+        "embers:nugget_lead:0"
+      ]
+    },
+    "oreNickel": {
+      "slagColor": "e4e5d8",
+      "langKey": [
+        "embers:tile.ore_nickel"
+      ],
+      "output": [
+        "embers:nugget_nickel:0"
+      ]
+    },
+    "oreSilver": {
+      "slagColor": "e8f6fd",
+      "langKey": [
+        "embers:tile.ore_silver"
+      ],
+      "output": [
+        "embers:nugget_silver:0"
+      ]
+    },
+    "oreTin": {
+      "slagColor": "c3e9ff",
+      "langKey": [
+        "embers:tile.ore_tin"
+      ],
+      "output": [
+        "embers:nugget_tin:0"
       ]
     }
   }

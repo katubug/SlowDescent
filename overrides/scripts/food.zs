@@ -2,13 +2,19 @@ import crafttweaker.item.IItemStack;
 import mods.pyrotech.Campfire;
 import mods.pyrotech.StoneOven;
 
-//Mods required for this script:
+/* -------------------------------------------------------------------------- */
+/*                         ANCHOR Food-Related Scripts                        */
+/* -------------------------------------------------------------------------- */
+
+//NOTE Mods required for this script:
 //XL Food Mod
 //Better With Mods
 //Salty Mod
 //Project Vibrant Journeys
 //Pyrotech
 //ExtraTaN
+
+/* ---------------------- SECTION Misc Remove and Hide ---------------------- */
 
 //Remove Energy Drinks from XL Food Mod
 mods.jei.JEI.removeAndHide(<xlfoodmod:super_energy_drink>);
@@ -19,8 +25,25 @@ mods.jei.JEI.removeAndHide(<xlfoodmod:healthy_energy_drink>);
 mods.jei.JEI.removeAndHide(<xlfoodmod:speedy_energy_drink>);
 mods.jei.JEI.removeAndHide(<xlfoodmod:empty_can>);
 
-//Remove XL Food Mod's Salt
+//Hide XL Food Mod's Salt
 mods.jei.JEI.hide(<xlfoodmod:salt>);
+
+//Hide XLFoodMod Rock Salt Ore
+mods.jei.JEI.hide(<xlfoodmod:rock_salt>);
+
+//Disable unused Juices
+mods.jei.JEI.removeAndHide(<extratan:apple_juice>);
+mods.jei.JEI.removeAndHide(<extratan:lemonade>);
+mods.jei.JEI.removeAndHide(<extratan:orange_juice>);
+
+//!SECTION 
+
+/* ----------------------- SECTION Recipe Alterations ----------------------- */
+
+//Change recipes for Allium to use Onions instead (except dye)
+recipes.replaceAllOccurences(<minecraft:red_flower:2>, <xlfoodmod:onion>, <*>.only(function(item) {
+    return !isNull(item) & !<minecraft:dye:13>.matches(item);
+}));
 
 //Change recipe for Marshmallows to be crafting instead of smelting
 furnace.remove(<xlfoodmod:marshmallow>);
@@ -32,6 +55,12 @@ furnace.remove(<betterwithmods:cooked_egg>);
 furnace.remove(<betterwithmods:cooked_egg>, <minecraft:egg>);
 furnace.addRecipe(<xlfoodmod:fried_egg>, <betterwithmods:raw_egg>, 2.0);
 
+//Remove Cookie Crafting recipe to force it to be smelting only
+recipes.removeByRecipeName("minecraft:cookie");
+
+//!SECTION 
+
+/* ------------------- SECTION Ore Dictionary and Tooltips ------------------ */
 //Adds all salted foods to OreDict to allow for easy FoodFunk alteration
 var salted = [
     <saltmod:salt_beef_cooked>,
@@ -59,7 +88,15 @@ var salted = [
     <saltmod:salt_hufc>,
     <saltmod:salt_dandelion_salad>,
     <saltmod:salt_wheat_sprouts>,
-    <xlfoodmod:salty_chips>
+    <saltmod:fish_pie>,
+    <saltmod:fish_salmon_pie>,
+    <saltmod:mushroom_pie>,
+    <saltmod:onion_pie>,
+    <saltmod:potato_pie>,
+    <xlfoodmod:chips>,
+    <xlfoodmod:salty_chips>,
+    <xlfoodmod:butter>,
+    <xlfoodmod:ham>
 ] as IItemStack[];
 
 for item in salted {
@@ -69,17 +106,11 @@ for item in salted {
 
 <saltmod:salt_pinch>.addTooltip(format.gold("Adding salt to foods can protect against spoilage."));
 
-//Hide XLFoodMod Rock Salt Ore
-mods.jei.JEI.hide(<xlfoodmod:rock_salt>);
+<betternether:stalagnate_bowl>.addTooltip(format.gold("This bowl seems to have preservative properties, but the smell it gives off is...odd."));
 
-//==Deleted these because I might do HungerTweaker instead==
-//Remove food values from drinks
-//mods.foodtweaker.changeFoodStats(<pvj:sugarcane_juice>, 0, 0);
-//mods.foodtweaker.changeFoodStats(<xlfoodmod:coffee>, 0, 0);
-//mods.foodtweaker.changeFoodStats(<pvj:coconut_milk>, 0, 0);
-//mods.foodtweaker.changeFoodStats(<xlfoodmod:beer>, 0, 0);
+//!SECTION 
 
-//===Remove Unrealistic Campfire Recipes===
+/* --------------- SECTION Remove Unrealistic Campfire Recipes -------------- */
 
 //Whitelisted:
 Campfire.whitelistSmeltingRecipes([
@@ -113,10 +144,49 @@ Campfire.whitelistSmeltingRecipes([
 //Cake Batter - Add to Stone/Refractory Oven
 StoneOven.addRecipe("pyrotech_oven_cake", <minecraft:cake>, <betterwithmods:raw_pastry>, true);
 
-//Remove Cookie Crafting recipe to force it to be smelting only
-recipes.removeByRecipeName("minecraft:cookie");
+//TODO 
+/*
+List of recipes to add salt to (don't forget to add them to the oredict tag as well!):
+<xlfoodmod:cheese>,
+<xlfoodmod:bacon>,
+<xlfoodmod:bucket_of_fried_chicken>,
+<xlfoodmod:chicken_salad>,
+<xlfoodmod:cucumber_soup>,
+<xlfoodmod:tomato_soup>,
+<xlfoodmod:vegetable_soup>,
+<xlfoodmod:chicken_soup>,
+<xlfoodmod:beef_stew>,
+<xlfoodmod:pumpkin_stew>,
+<xlfoodmod:cheese_pie>,
+<xlfoodmod:chicken_pot_pie>,
+<xlfoodmod:bacon_pie>,
+<xlfoodmod:fish_pie>
+*/
 
-//Disable unused Juices
-mods.jei.JEI.removeAndHide(<extratan:apple_juice>);
-mods.jei.JEI.removeAndHide(<extratan:lemonade>);
-mods.jei.JEI.removeAndHide(<extratan:orange_juice>);
+/* TODO 
+Removing food values from items that shouldn't be directly edible/shouldn't have hunger/saturation values
+Don't forget to exempt them from spoilage
+
+val nonFood = [
+    <betterwithmods:raw_pastry:3>,
+    <betterwithmods:material:44>,
+    <minecraft:pumpkin_seeds>,
+    <pvj:coconut_milk>,
+    <simplytea:cup_tea_black>,
+    <simplytea:cup_tea_green>,
+    <simplytea:cup_tea_floral>,
+    <simplytea:cup_tea_chai>,
+    <simplytea:cup_tea_chorus>,
+    <simplytea:cup_cocoa>,
+    <xlfoodmod:butter>,
+    <xlfoodmod:dough>,
+    <xlfoodmod:top_bun>,
+    <xlfoodmod:bottom_bun>,
+    <xlfoodmod:tortilla>,
+    <xlfoodmod:icecream_cone>,
+    <xlfoodmod:beer>,
+    <xlfoodmod:coffee>,
+    <xlfoodmod:cappuccino>,
+    <saltmod:saltwort_seed>
+] as IItemStack[];
+*/

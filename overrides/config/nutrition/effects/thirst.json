@@ -6,7 +6,7 @@
 	"maximum": 100,
 	"detect": "any",
 	"nutrients": [
-        "salt"
+        "Sodium"
 	],
 	"particles": "transparent",
 	"enabled": true

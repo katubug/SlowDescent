@@ -1078,7 +1078,16 @@
 			"xlfoodmod:tortilla",
 			"xlfoodmod:vegetable_soup",
 			"zawa:bamboo_shoot",
-			"zawa:dried_bamboo_shoot"
+			"zawa:dried_bamboo_shoot",
+			"pyrotech:beetroot_roasted",
+			"mist:sponge_meat",
+			"mist:mushrooms_food",
+			"mod_lavacow:canebeef",
+			"mod_lavacow:canepork",
+			"mod_lavacow:canerottenmeat",
+			"mod_lavacow:netherstew",
+			"pyrotech:mushroom_red_roasted",
+			"pyrotech:carrot_roasted"
 		]
 	}
 }
