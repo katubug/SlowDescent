@@ -26,7 +26,7 @@ Scripts:
 - Added anchors (plugin) and prettified formatting of all scripts. I also did a tiny bit of organization within the needs_sorting.zs.
 - Added more salty foods to the ore dictionary tag for them.
 - Temporarily renamed inventory.zs to inventory.txt so I can do tests without Vaultopic's log spam.
-- Potions.zs: Revive potions now require a base potion of Reincarnation. Temporarily made Potion Sickness use Emeralds as a placeholder to test something without FoodFunk. Should change this back.
+- Potions.zs: Revive potions now require a base potion of Reincarnation.
 
 =====Commit 9 [12/21/19]=====
 Configs:
