@@ -1,6 +1,9 @@
 Changelog
 
 Pre-Beta:
+=====Commit 11 [12/25/19]=====
+- Fixed potions.zs so all recipes should now be correct
+
 =====Commit 10 [12/24/19]=====
 Configs:
 - New configs for Pollution of the Realms, Bottle Your Xp, Corpse Complex, Crafting Station, Crafting Tweaks, Embers, ForgeEndertech, Inventory Tweaks, Scaling Health, Toast Control, Wearable Backpacks.

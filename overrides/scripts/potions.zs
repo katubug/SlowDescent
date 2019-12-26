@@ -19,16 +19,24 @@ import crafttweaker.item.IIngredient;
 //Salty Mod
 //Extra Alchemy
 
+/*
+NOTE To help me remember how I made sense of this. Delete later.
+Short: non-long non-strong [nbttype]
+Regular: non-splash non-lingering [itemtype]
+
+[NBTType] [ItemType] Potions
+*/
+
 //Setting a quick bit of OreDict for the script below
 <ore:blockCactus>.add(<pvj:small_cactus>);
 <ore:blockCactus>.add(<betternether:barrel_cactus>);
 
-//First, remove a recipe for Magnetism Potions so I can replace it
+//First, replace ExtraAlchemy's Magnetism Potion Recipe so I can use Iron Ingots
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "extraalchemy:magnetism_normal"}), <minecraft:iron_ingot>);
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <ore:slimeball>, <minecraft:potion>.withTag({Potion: "extraalchemy:magnetism_normal"}));
 
-/* ---------------------- SECTION Normal Normal Potions --------------------- */
-val NormalNormalPotions = [
+/* ---------------------- SECTION Short Regular Potions --------------------- */
+val ShortRegularPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:wither"}),
     <minecraft:potion>.withTag({Potion: "potioncore:blindness"}),
     <minecraft:potion>.withTag({Potion: "potioncore:levitation"}),
@@ -59,7 +67,7 @@ val NormalNormalPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:slow_fall"}),
     <minecraft:potion>.withTag({Potion: "potioncore:curse"}),
     <minecraft:potion>.withTag({Potion: "potioncore:archery"})
-] as IItemStack[];
+] as IItemStack[]; //30 lines long
 
 val PotionIngredients = [
     <minecraft:skull:1>,                //Wither
@@ -92,9 +100,9 @@ val PotionIngredients = [
     <ore:feather>,                      //Slow Fall
     <pvj:unstable_essence>,             //Curse
     <toughasnails:fruit_juice:3>        //Archery [Carrot Juice]
-] as IIngredient[];
+] as IIngredient[]; //30 lines long
 
-val BaseNormals = [
+val BaseRegulars = [
     <minecraft:potion>.withTag({Potion: "extraalchemy:charged2_normal"}),   //Wither
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Blindness
     <minecraft:potion>.withTag({Potion: "minecraft:mundane"}),              //Levitation
@@ -125,16 +133,16 @@ val BaseNormals = [
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Slow Fall
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Curse
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"})               //Archery
-] as IItemStack[];
+] as IItemStack[]; //30 lines long
 
-for i, item in NormalNormalPotions {
-    brewing.addBrew(BaseNormals[i], PotionIngredients[i], NormalNormalPotions[i]);
+for i, item in ShortRegularPotions {
+    brewing.addBrew(BaseRegulars[i], PotionIngredients[i], ShortRegularPotions[i]);
 }
 //!SECTION 
 
-/* ---------------------- SECTION Normal Splash Potions --------------------- */
+/* ---------------------- SECTION Short Splash Potions --------------------- */
 
-val NormalSplashPotions = [
+val ShortSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:wither"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:blindness"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:levitation"}),
@@ -165,7 +173,7 @@ val NormalSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:slow_fall"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:curse"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:archery"})
-] as IItemStack[];
+] as IItemStack[]; //30
 
 val BaseSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "extraalchemy:charged2_normal"}),
@@ -198,16 +206,16 @@ val BaseSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:splash_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"})
-] as IItemStack[];
+] as IItemStack[]; //30
 
-for i, item in NormalSplashPotions {
-    brewing.addBrew(BaseSplashPotions[i], PotionIngredients[i], NormalSplashPotions[i]);
-    brewing.addBrew(NormalNormalPotions[i], <minecraft:gunpowder>, NormalSplashPotions[i]);
+for i, item in ShortSplashPotions {
+    brewing.addBrew(BaseSplashPotions[i], PotionIngredients[i], ShortSplashPotions[i]);
+    brewing.addBrew(ShortRegularPotions[i], <minecraft:gunpowder>, ShortSplashPotions[i]);
 }
 //!SECTION 
 
-/* -------------------- SECTION Normal Lingering Potions -------------------- */
-val NormalLingeringPotions = [
+/* -------------------- SECTION Short Lingering Potions -------------------- */
+val ShortLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:wither"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:blindness"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:levitation"}),
@@ -238,7 +246,7 @@ val NormalLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:slow_fall"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:curse"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:archery"})
-] as IItemStack[];
+] as IItemStack[]; //30
 
 val BaseLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "extraalchemy:charged2_normal"}),
@@ -271,17 +279,42 @@ val BaseLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:thick"}),
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"})
-] as IItemStack[];
+] as IItemStack[]; //30
 
-for i, item in NormalLingeringPotions {
-    brewing.addBrew(BaseLingeringPotions[i], PotionIngredients[i], NormalLingeringPotions[i]);
-    brewing.addBrew(NormalSplashPotions[i], <minecraft:dragon_breath>, NormalLingeringPotions[i]);
+for i, item in ShortLingeringPotions {
+    brewing.addBrew(BaseLingeringPotions[i], PotionIngredients[i], ShortLingeringPotions[i]);
+    brewing.addBrew(ShortSplashPotions[i], <minecraft:dragon_breath>, ShortLingeringPotions[i]);
 }
 //!SECTION 
 
-/* ----------------------- SECTION Long Normal Potions ---------------------- */
-//FIXME 
-val LongNormalPotions = [
+/* ----------------------- SECTION Long Regular Potions ---------------------- */
+
+val ShortRegularPotionsL = [
+    <minecraft:potion>.withTag({Potion: "potioncore:wither"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:blindness"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:levitation"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:glowing"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:haste"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:recoil"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:iron_skin"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:purity"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:diamond_skin"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:step_up"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:drown"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:climb"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:rust"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:vulnerable"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:solid_core"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:potion_sickness"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:weight"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:revival"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:klutz"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:broken_armor"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:slow_fall"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:archery"})
+] as IItemStack[]; //22
+
+val LongRegularPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:long_wither"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_blindness"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_levitation"}),
@@ -304,15 +337,39 @@ val LongNormalPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:long_broken_armor"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_slow_fall"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_archery"})
-] as IItemStack[];
+] as IItemStack[]; //22
 
-for i, item in LongNormalPotions {
-    brewing.addBrew(NormalNormalPotions[i], <minecraft:redstone>, LongNormalPotions[i]);
+for i, item in LongRegularPotions {
+    brewing.addBrew(ShortRegularPotionsL[i], <minecraft:redstone>, LongRegularPotions[i]);
 }
 //!SECTION 
 
 /* ----------------------- SECTION Long Splash Potions ---------------------- */
-//FIXME 
+val ShortSplashPotionsL = [
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:wither"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:blindness"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:levitation"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:glowing"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:haste"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:recoil"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:iron_skin"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:purity"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:diamond_skin"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:step_up"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:drown"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:climb"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:rust"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:vulnerable"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:solid_core"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:potion_sickness"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:weight"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:revival"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:klutz"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:broken_armor"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:slow_fall"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:archery"})
+] as IItemStack[]; //22
+
 val LongSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_wither"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_blindness"}),
@@ -339,13 +396,38 @@ val LongSplashPotions = [
 ] as IItemStack[];
 
 for i, item in LongSplashPotions {
-    brewing.addBrew(NormalSplashPotions[i], <minecraft:redstone>, LongSplashPotions[i]);
-    brewing.addBrew(LongNormalPotions[i], <minecraft:gunpowder>, LongSplashPotions[i]);
+    brewing.addBrew(ShortSplashPotionsL[i], <minecraft:redstone>, LongSplashPotions[i]);
+    brewing.addBrew(LongRegularPotions[i], <minecraft:gunpowder>, LongSplashPotions[i]);
 }
 //!SECTION 
 
 /* --------------------- SECTION Long Lingering Potions --------------------- */
-//FIXME 
+
+val ShortLingeringPotionsL = [
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:wither"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:blindness"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:levitation"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:glowing"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:haste"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:recoil"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:iron_skin"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:purity"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:diamond_skin"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:step_up"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:drown"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:climb"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:rust"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:vulnerable"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:solid_core"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:potion_sickness"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:weight"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:revival"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:klutz"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:broken_armor"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:slow_fall"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:archery"})
+] as IItemStack[]; //22
+
 val LongLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_wither"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_blindness"}),
@@ -369,17 +451,41 @@ val LongLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_broken_armor"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_slow_fall"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_archery"})
-] as IItemStack[];
+] as IItemStack[]; //22
 
 for i, item in LongLingeringPotions {
-    brewing.addBrew(NormalLingeringPotions[i], <minecraft:redstone>, LongLingeringPotions[i]);
+    brewing.addBrew(ShortLingeringPotionsL[i], <minecraft:redstone>, LongLingeringPotions[i]);
     brewing.addBrew(LongSplashPotions[i], <minecraft:dragon_breath>, LongLingeringPotions[i]);
 }
 //!SECTION 
 
-/* ---------------------- SECTION Strong Normal Potions --------------------- */
-//FIXME 
-val StrongNormalPotions = [
+/* ---------------------- SECTION Strong Regular Potions --------------------- */
+
+val ShortRegularPotionsS = [
+    <minecraft:potion>.withTag({Potion: "potioncore:wither"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:blindness"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:levitation"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:haste"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:recoil"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:iron_skin"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:diamond_skin"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:teleport"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:step_up"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:rust"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:vulnerable"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:explode"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:potion_sickness"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:weight"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:launch"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:revival"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:klutz"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:broken_armor"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:slow_fall"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:curse"}),
+    <minecraft:potion>.withTag({Potion: "potioncore:archery"})
+] as IItemStack[]; //21
+
+val StrongRegularPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:strong_wither"}),
     <minecraft:potion>.withTag({Potion: "potioncore:strong_blindness"}),
     <minecraft:potion>.withTag({Potion: "potioncore:strong_levitation"}),
@@ -401,15 +507,39 @@ val StrongNormalPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:strong_slow_fall"}),
     <minecraft:potion>.withTag({Potion: "potioncore:strong_curse"}),
     <minecraft:potion>.withTag({Potion: "potioncore:strong_archery"})
-] as IItemStack[];
+] as IItemStack[]; //21
 
-for i, item in StrongNormalPotions {
-    brewing.addBrew(NormalNormalPotions[i], <minecraft:glowstone_dust>, StrongNormalPotions[i]);
+for i, item in StrongRegularPotions {
+    brewing.addBrew(ShortRegularPotionsS[i], <minecraft:glowstone_dust>, StrongRegularPotions[i]);
 }
 //!SECTION 
 
 /* ---------------------- SECTION Strong Splash Potions --------------------- */
-//FIXME 
+
+val ShortSplashPotionsS = [
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:wither"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:blindness"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:levitation"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:haste"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:recoil"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:iron_skin"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:diamond_skin"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:teleport"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:step_up"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:rust"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:vulnerable"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:explode"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:potion_sickness"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:weight"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:launch"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:revival"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:klutz"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:broken_armor"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:slow_fall"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:curse"}),
+    <minecraft:splash_potion>.withTag({Potion: "potioncore:archery"})
+] as IItemStack[]; //21
+
 val StrongSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:strong_wither"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:strong_blindness"}),
@@ -432,16 +562,40 @@ val StrongSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:strong_slow_fall"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:strong_curse"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:strong_archery"})
-] as IItemStack[];
+] as IItemStack[]; //21
 
 for i, item in StrongSplashPotions {
-    brewing.addBrew(NormalSplashPotions[i], <minecraft:glowstone_dust>, StrongSplashPotions[i]);
-    brewing.addBrew(StrongNormalPotions[i], <minecraft:gunpowder>, StrongSplashPotions[i]);
+    brewing.addBrew(ShortSplashPotionsS[i], <minecraft:glowstone_dust>, StrongSplashPotions[i]);
+    brewing.addBrew(StrongRegularPotions[i], <minecraft:gunpowder>, StrongSplashPotions[i]);
 }
 //!SECTION 
 
 /* -------------------- SECTION Strong Lingering Potions -------------------- */
-//FIXME 
+
+val ShortLingeringPotionsS = [
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:wither"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:blindness"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:levitation"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:haste"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:recoil"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:iron_skin"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:diamond_skin"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:teleport"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:step_up"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:rust"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:vulnerable"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:explode"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:potion_sickness"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:weight"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:launch"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:revival"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:klutz"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:broken_armor"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:slow_fall"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:curse"}),
+    <minecraft:lingering_potion>.withTag({Potion: "potioncore:archery"})
+] as IItemStack[]; //21
+
 val StrongLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_wither"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_blindness"}),
@@ -464,10 +618,10 @@ val StrongLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_slow_fall"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_curse"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_archery"})
-] as IItemStack[];
+] as IItemStack[]; //21
 
 for i, item in StrongLingeringPotions {
-    brewing.addBrew(StrongNormalPotions[i], <minecraft:glowstone_dust>, StrongLingeringPotions[i]);
+    brewing.addBrew(ShortLingeringPotionsS[i], <minecraft:glowstone_dust>, StrongLingeringPotions[i]);
     brewing.addBrew(StrongSplashPotions[i], <minecraft:dragon_breath>, StrongLingeringPotions[i]);
 }
 //!SECTION 
