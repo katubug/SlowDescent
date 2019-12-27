@@ -17,13 +17,6 @@ import mods.pyrotech.CrudeDryingRack;
 //FoodFunk
 //SaltyMod
 
-// REVIEW This is just a test to see if I can make recipes with food yet
-//NOTE This does not work:
-//recipes.addShaped(<minecraft:beef>, [[<minecraft:sand>, <minecraft:apple>, null], [<minecraft:egg>, null, null]]);
-//NOTE This one works:
-//<ore:listAllapple>.add(<minecraft:apple>);
-//recipes.addShapeless(<minecraft:beef>, [<minecraft:sand>, <ore:listAllapple>]);
-
 /* --------- SECTION Makes Pyrotech Crucibles produce purified water -------- */
 
 //Removes plain water recipes from Crucibles
@@ -211,10 +204,6 @@ mods.jei.JEI.removeAndHide(<betterwithmods:bark:6>);
 
 //!SECTION 
 
-//====Stone Tools/Pyrotech Masonry Bricks====
-//Adds anvil recipe for Stone Bricks > Masonry Bricks
-GraniteAnvil.addRecipe("stonebricks_to_masonry", <pyrotech:material:16> * 4, <minecraft:stonebrick>, 8, "pickaxe", true);
-
 /* --------------------- SECTION Farmland Compatibility --------------------- */
 
 //Remove recipe for BWM Fertilizer
@@ -238,5 +227,44 @@ recipes.addShaped(<pyrotech:mulch> * 4, [[<ore:listAllash>, <pyrotech:rock:7>, <
 //Removes torch recipes to allow BWM to lock them behind Nethercoal
 recipes.remove(<minecraft:torch>);
 
-//==Adds recipe for Pyrotech Dirt Clumps==
-recipes.addShapeless(<pyrotech:rock:4> * 2, [<betterwithmods:dirt_pile>]);
+//Adds recipe for Pyrotech Dirt Clumps
+recipes.addShapeless("dirt_conversion", <pyrotech:rock:4> * 2, [<betterwithmods:dirt_pile>]);
+
+//Adds anvil recipe for Stone Bricks > Masonry Bricks
+GraniteAnvil.addRecipe("stonebricks_to_masonry", <pyrotech:material:16> * 4, <minecraft:stonebrick>, 8, "pickaxe", true);
+
+//Remove BWM Trapdoor recipes
+recipes.removeByRecipeName("betterwithmods:higheff/oak_trapdoor");
+
+//Makes Undead Rising's Golden Heart more expensive
+var regenPotion = <minecraft:lingering_potion>.withTag({Potion: "minecraft:strong_regeneration"});
+
+recipes.remove(<mod_lavacow:goldenheart>);
+
+recipes.addShaped("golden_heart_expensive", <mod_lavacow:goldenheart>, [[regenPotion, <betterwithmods:material:45>, regenPotion],[<ore:blockGold>, <mod_lavacow:mootenheart>, <ore:blockGold>], [regenPotion, <quark:diamond_heart>, regenPotion]]);
+
+//Removes some things from Deadly Monsters and Mowzie's Mobs
+val dMonWat = [
+    <dmonsters:dump>,
+    <dmonsters:purgepill>,
+    <dmonsters:christmas_tree>,
+    <dmonsters:present_box>,
+    <dmonsters:presentblock>,
+    <dmonsters:mobspawneritem_present>,
+    <mowziesmobs:barakoa_mask_misery>,
+    <mowziesmobs:barakoa_mask_bliss>,
+    <mowziesmobs:barakoa_mask_rage>,
+    <mowziesmobs:barakoa_mask_fear>,
+    <mowziesmobs:barakoa_mask_fury>,
+    <mowziesmobs:grant_suns_blessing>,
+    <mowziesmobs:barako_mask>
+//    <dmonsters:barbedwire>,
+//    <dmonsters:meshfence>,
+//    <dmonsters:meshfencepole>
+] as IItemStack[];
+
+for item in dMonWat {
+    mods.jei.JEI.removeAndHide(item);
+}
+
+//!SECTION 

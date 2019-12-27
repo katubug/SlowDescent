@@ -55,7 +55,7 @@ val ShortRegularPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:rust"}),
     <minecraft:potion>.withTag({Potion: "potioncore:vulnerable"}),
     <minecraft:potion>.withTag({Potion: "potioncore:explode"}),
-    <minecraft:potion>.withTag({Potion: "potioncore:solid_core"}),
+//    <minecraft:potion>.withTag({Potion: "potioncore:solid_core"}),
     <minecraft:potion>.withTag({Potion: "potioncore:potion_sickness"}),
     <minecraft:potion>.withTag({Potion: "potioncore:lightning"}),
     <minecraft:potion>.withTag({Potion: "potioncore:weight"}),
@@ -70,7 +70,7 @@ val ShortRegularPotions = [
 ] as IItemStack[]; //30 lines long
 
 val PotionIngredients = [
-    <minecraft:skull:1>,                //Wither
+    <quark:black_ash>,                  //Wither
     <ore:dyeBlack>,                     //Blindness
     <dmonsters:entrailflesh>,           //Levitation
     <dmonsters:sunlightdrop>,           //Glowing
@@ -88,7 +88,7 @@ val PotionIngredients = [
     <pyrotech:generated_slag_iron>,     //Rust
     <minecraft:chorus_flower>,          //Vulnerable
     <betterwithmods:material:29>,       //Explode [Blasting Oil]
-    <dmonsters:widemanspine>,           //Solid Core
+//    <dmonsters:widemanspine>,           //Solid Core
     <foodfunk:rotten_food>,             //Potion Sickness
     <mist:niobium_nugget>,              //Lightning
     <ore:rock>,                         //Weight
@@ -121,7 +121,7 @@ val BaseRegulars = [
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Rust
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Vulnerable
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Explode
-    <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Solid Core
+//    <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Solid Core
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Potion Sickness
     <minecraft:potion>.withTag({Potion: "minecraft:thick"}),                //Lightning
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"}),              //Weight
@@ -161,7 +161,7 @@ val ShortSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:rust"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:vulnerable"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:explode"}),
-    <minecraft:splash_potion>.withTag({Potion: "potioncore:solid_core"}),
+//    <minecraft:splash_potion>.withTag({Potion: "potioncore:solid_core"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:potion_sickness"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:lightning"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:weight"}),
@@ -234,7 +234,7 @@ val ShortLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:rust"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:vulnerable"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:explode"}),
-    <minecraft:lingering_potion>.withTag({Potion: "potioncore:solid_core"}),
+//    <minecraft:lingering_potion>.withTag({Potion: "potioncore:solid_core"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:potion_sickness"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:lightning"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:weight"}),
@@ -304,7 +304,7 @@ val ShortRegularPotionsL = [
     <minecraft:potion>.withTag({Potion: "potioncore:climb"}),
     <minecraft:potion>.withTag({Potion: "potioncore:rust"}),
     <minecraft:potion>.withTag({Potion: "potioncore:vulnerable"}),
-    <minecraft:potion>.withTag({Potion: "potioncore:solid_core"}),
+//    <minecraft:potion>.withTag({Potion: "potioncore:solid_core"}),
     <minecraft:potion>.withTag({Potion: "potioncore:potion_sickness"}),
     <minecraft:potion>.withTag({Potion: "potioncore:weight"}),
     <minecraft:potion>.withTag({Potion: "potioncore:revival"}),
@@ -329,7 +329,7 @@ val LongRegularPotions = [
     <minecraft:potion>.withTag({Potion: "potioncore:long_climb"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_rust"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_vulnerable"}),
-    <minecraft:potion>.withTag({Potion: "potioncore:long_solid_core"}),
+//    <minecraft:potion>.withTag({Potion: "potioncore:long_solid_core"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_potion_sickness"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_weight"}),
     <minecraft:potion>.withTag({Potion: "potioncore:long_revival"}),
@@ -360,7 +360,7 @@ val ShortSplashPotionsL = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:climb"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:rust"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:vulnerable"}),
-    <minecraft:splash_potion>.withTag({Potion: "potioncore:solid_core"}),
+//    <minecraft:splash_potion>.withTag({Potion: "potioncore:solid_core"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:potion_sickness"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:weight"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:revival"}),
@@ -385,7 +385,7 @@ val LongSplashPotions = [
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_climb"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_rust"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_vulnerable"}),
-    <minecraft:splash_potion>.withTag({Potion: "potioncore:long_solid_core"}),
+//    <minecraft:splash_potion>.withTag({Potion: "potioncore:long_solid_core"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_potion_sickness"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_weight"}),
     <minecraft:splash_potion>.withTag({Potion: "potioncore:long_revival"}),
@@ -418,7 +418,7 @@ val ShortLingeringPotionsL = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:climb"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:rust"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:vulnerable"}),
-    <minecraft:lingering_potion>.withTag({Potion: "potioncore:solid_core"}),
+//    <minecraft:lingering_potion>.withTag({Potion: "potioncore:solid_core"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:potion_sickness"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:weight"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:revival"}),
@@ -443,7 +443,7 @@ val LongLingeringPotions = [
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_climb"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_rust"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_vulnerable"}),
-    <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_solid_core"}),
+//    <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_solid_core"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_potion_sickness"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_weight"}),
     <minecraft:lingering_potion>.withTag({Potion: "potioncore:long_revival"}),

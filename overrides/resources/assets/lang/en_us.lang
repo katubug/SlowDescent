@@ -13,3 +13,9 @@ nutrient.nutrition:fat=Fat
 
 tile.refinedrelocation:filtered_hopper.name=Sorting Hopper
 container.refinedrelocation:filtered_hopper=Sorting Hopper
+
+potion.effect.poisonResist=Potion of Poison Resistance
+splash_potion.effect.poisonResist=Splash Potion of Poison Resistance
+lingering_potion.effect.poisonResist=Lingering Potion of Poison Resistance
+
+item.mod_lavacow.sausage_roll.name=Parasitic Sausage Roll

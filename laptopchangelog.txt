@@ -1,7 +1,57 @@
 Changelog
 
 Pre-Beta:
+=====Commit 12 [12/26/19]=====
+Configs:
+- New configs generated for ItemZoom
+- Disabled HCRedstone
+- Hid some items from JEI
+- Disabled "Solid Core" potion from PotionCore because there's another Knockback resist potion.
+- Configured Quark:
+-- Disabled Quark config command and q button.
+-- Disabled animals-eat-floor-food, which wasn't really necessary because it auto disables, but whatever.
+-- Disabled sugar blocks
+-- Chain links cannot craft chainmail armor bc BWM already does that.
+-- Disabled Bark Blocks as this is not a building-focused back and there was a recipe overlap.
+-- Disabled autojump hotkey
+-- Disabled Greener Grass
+-- Disabled "show invalid slots"
+-- Disabled Charcoal blocks because Pyrotech already adds one and it's prettier
+-- Disabled the chest shortcut recipe
+-- Disabled chest buttons and "store to chests" because I don't want them conflicting with Refined Relocation.
+-- Enabled teleporting horses with the horse whistle.
+-- Disabled flint > stone tools recipe for balance reasons.
+-- Turned off Axes Break Leaves because I feared overlap.
+-- Turned off chickens shedding feathers naturally.
+-- Turned off improved sleeping.
+-- Disabled vanilla recipe book.
+-- Disabled minecarts with command blocks and mob spawners.
+-- Right click sign editing requires empty hand.
+-- Emotes disabled.
+-- Turned off sitting in stairs.
+-- Disabled "monster boxes" spawning underground until I can determine whether or not that would be overwhelming.
+- Foods from Undead Rising are now less damaging to sanity.
+- The "Sausage Roll" from Undead Rising has been added to the list of items that decrease sanity.
+- Wearable Backpacks now grant the same amount of armor as a leather chestpiece.
+- Changed the loading screen image to that lovely pixel art by chuckchee (don't forget to credit later!)
+
+Scripts:
+- Added UR's Minced Meat to "foodGroundbeef" oredict tag.
+- Replaced all instances of XLFM's Ground Beef with the "foodGroundbeef" oredict tag.
+- Changed the recipe for Spaghetti to require Meatballs instead of Ground Beef.
+- Deleted/moved some lines from need_sorting.zs
+- Removed BWM's trapdoor recipes.
+- Made UR's Golden Heart much more expensive.
+- Removed childish items from Deadly Monsters, and hid some items from Mowzie's as well (drops from disabled mobs).
+- Removed the recipe for "Solid Core" potion, since it's disabled.
+- Changed the Decay potion to use Wither Ash instead of Wither Skeleton Skulls.
+
+Lang:
+- Fixed unlocalized names for Mowzie's Mobs' Poison Resistance splash and lingering potions
+- Renamed the Sausage Roll from Undead Rising to Parasitic Sausage Roll, to reflect its ingredients.
+
 =====Commit 11 [12/25/19]=====
+Scripts:
 - Fixed potions.zs so all recipes should now be correct
 
 =====Commit 10 [12/24/19]=====

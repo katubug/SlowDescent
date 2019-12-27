@@ -144,6 +144,15 @@ Campfire.whitelistSmeltingRecipes([
 //Cake Batter - Add to Stone/Refractory Oven
 StoneOven.addRecipe("pyrotech_oven_cake", <minecraft:cake>, <betterwithmods:raw_pastry>, true);
 
+//Makes some changes involving ground beef
+//REVIEW Katu do you wanna make the xlfoodmod version more expensive, or? 
+<ore:foodGroundbeef>.add(<mod_lavacow:mousse>);
+recipes.replaceAllOccurences(<xlfoodmod:ground_beef>, <ore:foodGroundbeef>);
+
+//Makes Spaghetti use Meatballs instead of Ground Beef
+recipes.remove(<xlfoodmod:spaghetti>);
+recipes.addShaped(<xlfoodmod:spaghetti>, [[null, <mod_lavacow:meatball>, null],[<xlfoodmod:cooked_dough>, <xlfoodmod:tomato_sauce>, <xlfoodmod:cooked_dough>], [null, <xlfoodmod:bowl>, null]]);
+
 //TODO 
 /*
 List of recipes to add salt to (don't forget to add them to the oredict tag as well!):
