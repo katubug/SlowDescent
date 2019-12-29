@@ -1,6 +1,27 @@
 Changelog
 
 Pre-Beta:
+=====Commit 13 [12/28/19]=====
+- New configs for Aqua Creepers, Better Advancements, Better Animations Collection, Bspkr's Core, Carry On, CTM, Crying Ghasts (cg.cfg), Custom Nausea, Enchanting Plus, FastLeafDecay, Foamfix, Hardcore Buoyance, Light The Night, MiscTweaks_, Ore Core, Performant, Pet Names (pn.cfg), Quality Tools, RandomTweaks, Recall, Respawnable Pets, Shulkers Drop 2, Simple Mob Radar, Simple World Timer, Snow Real Magic, Swing Through Grass, Surge, Treecapitator, Unique Enchantments, Weirding Gadget, Xaero's World Map, Zombie Village Control.
+- Changed the BetterFPS config to be "vanilla" instead of "rivens-half".
+- Enhanced Visuals generated new options for TaN.
+- Made Eyes in the Darkness jumpscares more dangerous.
+- Adjusted Hardcore Darkness to remove alternate skylight (incompatible with Bloodmoon), to make it change darkness based on moon phase, and changed the sky light values from:
+    "0.0
+    0.075
+    0.15
+    0.225
+    0.3"
+to
+    "0.09
+    0.12
+    0.18
+    0.25
+    0.28"
+- ItemZoom now shows stack sizes.
+- Potion Sickness has been changed back to default.
+- I did customize RandomTweaks and I don't feel like writing it all down, sorry.
+
 =====Commit 12 [12/26/19]=====
 Configs:
 - New configs generated for ItemZoom

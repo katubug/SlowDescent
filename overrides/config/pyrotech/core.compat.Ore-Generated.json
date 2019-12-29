@@ -32,7 +32,8 @@
     "oreCopper": {
       "slagColor": "ffaa1c",
       "langKey": [
-        "embers:tile.ore_copper"
+        "embers:tile.ore_copper",
+        "orecore:tile.copper_ore"
       ],
       "output": [
         "embers:nugget_copper:0"
@@ -61,7 +62,8 @@
     "oreLead": {
       "slagColor": "95afee",
       "langKey": [
-        "embers:tile.ore_lead"
+        "embers:tile.ore_lead",
+        "orecore:tile.lead_ore"
       ],
       "output": [
         "embers:nugget_lead:0"
@@ -79,7 +81,8 @@
     "oreSilver": {
       "slagColor": "e8f6fd",
       "langKey": [
-        "embers:tile.ore_silver"
+        "embers:tile.ore_silver",
+        "orecore:tile.silver_ore"
       ],
       "output": [
         "embers:nugget_silver:0"
@@ -88,7 +91,8 @@
     "oreTin": {
       "slagColor": "c3e9ff",
       "langKey": [
-        "embers:tile.ore_tin"
+        "embers:tile.ore_tin",
+        "orecore:tile.tin_ore"
       ],
       "output": [
         "embers:nugget_tin:0"
