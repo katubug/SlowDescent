@@ -1,0 +1,73 @@
+{
+"buttons":
+    {
+        "back":
+        {
+            "text": "Go Back",
+            "posX": -100,
+            "posY": 48,
+            "width": 200,
+            "height": 20,
+            "normalTextColor": 9799840,
+            "hoverTextColor": -1,
+            "texture": "modpack:buttons.png",
+            "action":
+            {
+                "type": "refresh"
+            }
+        },
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -100,
+            "posY" : 72,
+            "width" : 200,
+            "height" : 20,
+            "normalTextColor": 9799840,
+            "hoverTextColor": -1,
+            "texture": "modpack:buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        }
+    
+    },
+    "labels":
+    {
+    "warning1":
+        {
+        "text" : "Note: this modpack is designed to be a singleplayer experience.",
+        "posX" : -160,
+        "posY" : 50,
+        "color" : -1,
+        "alignment" : "top_center"
+        },
+        "warning2":
+        {
+        "text" : "Playing with friends could potentially break balance.",
+        "posX" : -140,
+        "posY" : 60,
+        "color" : -1,
+        "alignment" : "top_center"
+        },
+        "warning3":
+        {
+        "text" : "Or be hilarious. Who knows?",
+        "posX" : -78,
+        "posY" : 80,
+        "color" : -1,
+        "alignment" : "top_center"
+        }
+    },
+
+        "other":
+        {
+            "background":
+            {
+                "image" : "modpack:background.png",
+                "mode" : "fill"
+            }
+        }
+}

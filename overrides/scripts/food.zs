@@ -12,7 +12,6 @@ import mods.pyrotech.StoneOven;
 //Salty Mod
 //Project Vibrant Journeys
 //Pyrotech
-//ExtraTaN
 
 /* ---------------------- SECTION Misc Remove and Hide ---------------------- */
 
@@ -30,11 +29,6 @@ mods.jei.JEI.hide(<xlfoodmod:salt>);
 
 //Hide XLFoodMod Rock Salt Ore
 mods.jei.JEI.hide(<xlfoodmod:rock_salt>);
-
-//Disable unused Juices
-mods.jei.JEI.removeAndHide(<extratan:apple_juice>);
-mods.jei.JEI.removeAndHide(<extratan:lemonade>);
-mods.jei.JEI.removeAndHide(<extratan:orange_juice>);
 
 //!SECTION 
 

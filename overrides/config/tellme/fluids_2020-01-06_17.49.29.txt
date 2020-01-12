@@ -1,0 +1,28 @@
++---------------------+---------+-------------+-----------+------------+--------+-----------+-----------------------------+
+| Name                | Density | Temperature | Viscosity | Luminosity | Rarity | isGaseous | Block                       |
++---------------------+---------+-------------+-----------+------------+--------+-----------+-----------------------------+
+| alchemical_redstone |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:alchemical_redstone  |
+| aluminum            |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:aluminum             |
+| bronze              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:bronze               |
+| coal_tar            |    3000 |         300 |      6000 |          0 | COMMON |     false | pyrotech:fluid.coal_tar     |
+| copper              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:copper               |
+| dawnstone           |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:dawnstone            |
+| electrum            |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:electrum             |
+| glowing_water       |    1000 |         300 |      1000 |          0 | COMMON |     false | ltn:glowing_water           |
+| gold                |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:gold                 |
+| iron                |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:iron                 |
+| lava                |    3000 |        1300 |      6000 |         15 | COMMON |     false | minecraft:lava              |
+| lead                |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:lead                 |
+| liquid_clay         |    6000 |         300 |     12000 |          0 | COMMON |     false | pyrotech:fluid.liquid_clay  |
+| milk                |    1000 |         300 |      1000 |          0 | COMMON |     false | -                           |
+| mist_acid           |    1000 |         300 |      1000 |          0 | COMMON |     false | mist:acid_block             |
+| nickel              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:nickel               |
+| purified_water      |    1000 |         300 |      1000 |          0 | COMMON |     false | toughasnails:purified_water |
+| silver              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:silver               |
+| steam               |   -1000 |         750 |       200 |          0 | COMMON |      true | -                           |
+| tin                 |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:tin                  |
+| water               |    1000 |         300 |      1000 |          0 | COMMON |     false | minecraft:water             |
+| wood_tar            |    3000 |         300 |      6000 |          0 | COMMON |     false | pyrotech:fluid.wood_tar     |
++---------------------+---------+-------------+-----------+------------+--------+-----------+-----------------------------+
+| Name                | Density | Temperature | Viscosity | Luminosity | Rarity | isGaseous | Block                       |
++---------------------+---------+-------------+-----------+------------+--------+-----------+-----------------------------+

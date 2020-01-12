@@ -134,12 +134,6 @@ mods.jei.JEI.hide(<foodfunk:biodegradable_item>);
 mods.jei.JEI.hide(<pvj:mossy_cobblestone_rocks>);
 mods.jei.JEI.hide(<pvj:red_sandstone_rocks>);
 
-//Remove and Hide BWM's Wool Armor in favor of TaN's.
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_boots>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_helmet>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_pants>);
-mods.jei.JEI.removeAndHide(<betterwithmods:wool_chest>);
-
 //Remove PVJ Limestone Stuff
 mods.jei.JEI.removeAndHide(<pvj:limestone>);
 mods.jei.JEI.removeAndHide(<pvj:limestone_stairs>);
@@ -156,6 +150,9 @@ recipes.replaceAllOccurences(<pvj:basalt>, <quark:basalt>);
 recipes.replaceAllOccurences(<pvj:marble>, <quark:marble>);
 recipes.replaceAllOccurences(<pvj:basalt_brick>, <quark:world_stone_bricks:3>);
 recipes.replaceAllOccurences(<pvj:marble_brick>, <quark:world_stone_bricks:4>);
+
+//Remove TaN Collector Block
+mods.jei.JEI.removeAndHide(<toughasnails:rain_collector>);
 
 //!SECTION 
 
@@ -237,11 +234,20 @@ GraniteAnvil.addRecipe("stonebricks_to_masonry", <pyrotech:material:16> * 4, <mi
 recipes.removeByRecipeName("betterwithmods:higheff/oak_trapdoor");
 
 //Makes Undead Rising's Golden Heart more expensive
+//Set a variable
 var regenPotion = <minecraft:lingering_potion>.withTag({Potion: "minecraft:strong_regeneration"});
-
+//Remove old recipe and add new one
 recipes.remove(<mod_lavacow:goldenheart>);
-
 recipes.addShaped("golden_heart_expensive", <mod_lavacow:goldenheart>, [[regenPotion, <betterwithmods:material:45>, regenPotion],[<ore:blockGold>, <mod_lavacow:mootenheart>, <ore:blockGold>], [regenPotion, <quark:diamond_heart>, regenPotion]]);
+
+//Adds a recipe for nametags
+recipes.addShaped("nametag", <minecraft:name_tag> * 2, [[<minecraft:string>, <minecraft:string>, null],[<minecraft:string>, <minecraft:paper>, null], [null, null, <ore:dyeBlack>]]);
+
+//=== Change recipes for BWM Wool Armor, which has been repurposed to Pajamas===
+recipes.addShaped("pajama_boots", <betterwithmods:wool_boots>, [[<ore:string>, null, <ore:string>],[<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>], [<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>]]);
+recipes.addShaped("pajama_pants", <betterwithmods:wool_pants>, [[<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>],[<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>], [<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>]]);
+recipes.addShaped("pajama_shirt", <betterwithmods:wool_chest>, [[<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>],[<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>], [<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>]]);
+recipes.addShaped("pajama_helmet", <betterwithmods:wool_helmet>, [[<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>],[<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>], [<ore:string>, null, <ore:string>]]);
 
 //Removes some things from Deadly Monsters and Mowzie's Mobs
 val dMonWat = [
@@ -268,3 +274,130 @@ for item in dMonWat {
 }
 
 //!SECTION 
+
+//Should I make just one big ol removeAndHide?
+//SECTION Hiding Ore Core stuff
+
+var oreCoreRAH = [
+    <orecore:compressed_coal_ore>,
+    <orecore:compressed_diamond_ore>,
+    <orecore:compressed_emerald_ore>,
+    <orecore:compressed_gold_ore>,
+    <orecore:compressed_iron_ore>,
+    <orecore:compressed_lapis_ore>,
+    <orecore:compressed_redstone_ore>,
+    <orecore:stone>,
+    <orecore:magmarack_block>,
+    <orecore:xp_ore>,
+    <orecore:nether_xp_ore>,
+    <orecore:end_xp_ore>,
+    <orecore:basalt_block>,
+    <orecore:basalt_ore>,
+    <orecore:marmor_block>,
+    <orecore:marmor_ore>,
+    <orecore:slate_block>,
+    <orecore:slate_ore>,
+    <orecore:oil_slate_ore>,
+    <orecore:lava_crystal_block>,
+    <orecore:gold_gravel_ore>,
+    <orecore:iron_gravel_ore>,
+    <orecore:lava_crystal>,
+    <orecore:coal_dust>,
+    <orecore:lava_crystal_ore>,
+    <orecore:iron_dust>,
+    <orecore:gold_dust>,
+    <orecore:lapis_dust>,
+    <orecore:emerald_dust>,
+    <orecore:diamond_dust>,
+    <orecore:tiny_coal_dust>,
+    <orecore:tiny_iron_dust>,
+    <orecore:tiny_gold_dust>,
+    <orecore:tiny_lapis_dust>,
+    <orecore:tiny_emerald_dust>,
+    <orecore:tiny_diamond_dust>,
+    <orecore:emerald_sword>,
+    <orecore:emerald_pickaxe>,
+    <orecore:emerald_axe>,
+    <orecore:emerald_shovel>,
+    <orecore:emerald_hoe>,
+    <orecore:lavacrystal_sword>,
+    <orecore:lavacrystal_pickaxe>,
+    <orecore:lavacrystal_axe>,
+    <orecore:lavacrystal_shovel>,
+    <orecore:lavacrystal_hoe>,
+    <orecore:emerald_helmet>,
+    <orecore:emerald_chestplate>,
+    <orecore:emerald_leggins>,
+    <orecore:emerald_boots>,
+    <orecore:emerald_boots>,
+    <orecore:lavacrystal_helmet>,
+    <orecore:lavacrystal_chestplate>,
+    <orecore:lavacrystal_leggins>,
+    <orecore:lavacrystal_boots>,
+    <orecore:compressed_aluminium_ore>,
+    <orecore:compressed_amethyst_ore>,
+    <orecore:compressed_copper_ore>,
+    <orecore:compressed_iridium_ore>,
+    <orecore:compressed_lead_ore>,
+    <orecore:compressed_platinum_ore>,
+    <orecore:compressed_quartz_ore>,
+    <orecore:compressed_ruby_ore>,
+    <orecore:compressed_sapphire_ore>,
+    <orecore:compressed_silver_ore>,
+    <orecore:compressed_tin_ore>,
+    <orecore:compressed_uranium_ore>,
+    <orecore:nether_aluminium_ore>,
+    <orecore:nether_amethyst_ore>,
+    <orecore:nether_copper_ore>,
+    <orecore:nether_iridium_ore>,
+    <orecore:nether_lead_ore>,
+    <orecore:nether_platin_ore>,
+    <orecore:nether_ruby_ore>,
+    <orecore:nether_sapphire_ore>,
+    <orecore:nether_silver_ore>,
+    <orecore:nether_tin_ore>,
+    <orecore:nether_uranium_ore>,
+    <orecore:end_aluminium_ore>,
+    <orecore:end_amethyst_ore>,
+    <orecore:end_copper_ore>,
+    <orecore:end_iridium_ore>,
+    <orecore:end_lead_ore>,
+    <orecore:end_platin_ore>,
+    <orecore:end_ruby_ore>,
+    <orecore:end_sapphire_ore>,
+    <orecore:end_silver_ore>,
+    <orecore:end_tin_ore>,
+    <orecore:end_uranium_ore>,
+    <orecore:aluminium_ore>,
+    <orecore:amethyst_ore>,
+    <orecore:copper_ore>,
+    <orecore:iridium_ore>,
+    <orecore:lead_ore>,
+    <orecore:platinum_ore>,
+    <orecore:ruby_ore>,
+    <orecore:sapphire_ore>,
+    <orecore:silver_ore>,
+    <orecore:tin_ore>,
+    <orecore:uranium_ore>,
+    <orecore:quartz_ore>,
+    <orecore:copper_ingot>,
+    <orecore:aluminium_ingot>,
+    <orecore:lead_ingot>,
+    <orecore:platinum_ingot>,
+    <orecore:silver_ingot>,
+    <orecore:tin_ingot>,
+    <orecore:iridium>,
+    <orecore:ruby>,
+    <orecore:sapphire>,
+    <orecore:amethyst>,
+    <orecore:quartz>,
+    <orecore:uranium>,
+    <orecore:oil_paste>,
+    <orecore:oil_bucket>
+] as IItemStack[];
+
+for item in oreCoreRAH {
+    mods.jei.JEI.removeAndHide(item);
+}
+
+//!SECTION

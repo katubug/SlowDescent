@@ -19,3 +19,19 @@ splash_potion.effect.poisonResist=Splash Potion of Poison Resistance
 lingering_potion.effect.poisonResist=Lingering Potion of Poison Resistance
 
 item.mod_lavacow.sausage_roll.name=Parasitic Sausage Roll
+
+entity.ZombieVillager.name=Forsaken
+subtitles.entity.zombie_villager.ambient=Forsaken groans
+subtitles.entity.zombie_villager.converted=Forsaken vociferates
+subtitles.entity.zombie_villager.cure=Forsaken snuffles
+subtitles.entity.zombie_villager.death=Forsaken dies
+subtitles.entity.zombie_villager.hurt=Forsaken hurts
+advancements.story.cure_zombie_villager.title=Zombie Doctor
+advancements.story.cure_zombie_villager.description=Weaken and then cure a Forsaken
+
+katusleep.you_may_not_sleep=You can't seem to fall asleep without the sound of rain.
+
+item.bwm:wool_helmet.name=Pajama Cap
+item.bwm:wool_chest.name=Pajama Shirt
+item.bwm:wool_pants.name=Pajama Pants
+item.bwm:wool_boots.name=Pajama Socks

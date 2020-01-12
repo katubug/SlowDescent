@@ -1,0 +1,160 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "modpack:logo.png",
+            "posX" : -180,
+            "posY" : 40,
+            "width" : 360,
+            "height" : 50,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -100,
+            "posY" : 48,
+            "width" : 200,
+            "height" : 20,
+            "normalTextColor": 9799840,
+            "hoverTextColor": -1,
+            "texture": "modpack:buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -100,
+            "posY" : 72,
+            "width" : 200,
+            "height" : 20,
+            "normalTextColor": 9799840,
+            "hoverTextColor": -1,
+            "texture": "modpack:buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.multiplayerredirect"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "fml.menu.mods",
+            "posX" : -100,
+            "posY" : 96,
+            "width" : 200,
+            "height" : 20,
+            "normalTextColor": 9799840,
+            "hoverTextColor": -1,
+            "texture": "modpack:buttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -100,
+            "posY" : 132,
+            "width" : 98,
+            "height" : 20,
+            "normalTextColor": 9799840,
+            "hoverTextColor": -1,
+            "texture": "modpack:smbuttons.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 2,
+            "posY" : 132,
+            "width" : 98,
+            "height" : 20,
+            "normalTextColor": 9799840,
+            "hoverTextColor": -1,
+            "texture": "modpack:smbuttons.png",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : 132,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "mojang":
+        {
+            "text" : "<3 Mojang",
+            "hoverText" : "<3 Mojang",
+            "posX" : -53,
+            "posY" : -10,
+            "color" : 9799840,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "credits"
+            }
+        },
+        
+        "forge":
+        {
+            "text" : "forge #forgeversion#",
+            "posX" : 2,
+            "posY" : -20,
+            "color" : 9799840,
+            "alignment" : "bottom_left"
+        },
+
+        "mods":
+        {
+            "text" : "mods active #modsactive#/#modsloaded#",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : 9799840,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "other":
+    {
+        "background":
+		{
+			"image" : "modpack:background.png",
+			"mode" : "fill"
+		}
+    }
+}

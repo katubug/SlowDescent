@@ -6,7 +6,7 @@
       "toughasnails:jelled_slime_leggings",
       "toughasnails:jelled_slime_boots"
     ],
-    "modifier": -1
+    "modifier": -2
   },
   {
     "names": [
@@ -15,6 +15,24 @@
       "toughasnails:wool_leggings",
       "toughasnails:wool_boots"
     ],
+    "modifier": 2
+  },
+  {
+    "names": [
+      "betterwithmods:wool_boots", 
+      "betterwithmods:wool_pants", 
+      "betterwithmods:wool_chest", 
+      "betterwithmods:wool_helmet"
+    ],
     "modifier": 1
+  },
+  {
+    "names": [
+      "saltmod:mud_helmet", 
+      "saltmod:mud_chestplate", 
+      "saltmod:mud_leggings", 
+      "saltmod:mud_boots"
+    ],
+    "modifier": -1
   }
 ]

@@ -1,0 +1,33 @@
+Tier 1: 
+- Leather: Attack knockback increased 1x
+- Wool: Warms player up a fair amount.
+- Bone: Slowfall effect.
+- Mud: Increases dig speed. Cools player down a bit.
+
+Tier 2:
+- Tanned Leather: Attack knockback increased 0.5x
+- Jelled Slime: Cools player down a fair amount.
+- Swine: Already has set bonus.
+
+Tier 3:
+- Iron: 
+- Chainmail: 
+- Mutant Skeleton: Already has some bonuses.
+
+Tier 4:
+- Gold: Highly enchantable. Bonus xp. (learning)
+- Niobium: Glowing?
+
+Tier 5:
+- Diamond: Max HP +4? Increase 
+- Molten: Already has set bonus.
+
+Tier 6:
+- Ashen: Ember Discount, movement speed. Or maybe Sun's Blessing?
+- Plate Armor: Bonus is crazy durability.
+
+ETC:
+- Pajamas: Allow sleep without rain. Warms player up a bit.
+- Wrought Helmet: 
+
+ARMOR_PROTECTION, ARMOR_TOUGHNESS, ATTACK_DAMAGE, ATTACK_SPEED, DURABILITY, EFFICIENCY, ENCHANTABILITY, HARVEST_LEVEL, STACKSIZE

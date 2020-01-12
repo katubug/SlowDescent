@@ -1,0 +1,16 @@
+For the alert sound, I used an edited version of this:
+https://freesound.org/people/benjaminharveydesign/sounds/315773/
+
+For the "purr" growl, I used the following sounds:
+https://freesound.org/people/Mountain852/sounds/365820/
+https://www.youtube.com/watch?v=ifgCsFPo3jE
+
+For the loading screen and main menu background, I used as a base a piece called "pixel forest" by Dmitrii. Website: https://chuckchee.com/
+
+Additional graphics were edited using photopea.com and pixilart.com, both of which I highly recommend.
+
+Some effects were generated with the utilities at minecraft.tools.
+
+The font for the main title/logo is called 8-Bit Limit, and can be found here: https://fonts2u.com/8-bit-limit-o-brk.font
+
+Huge thanks to Noobanidus for making the sleep restriction mod! <3 He has been absolutely crucial to the development of a ton of fantastic mods, and is an active and helpful member of the modded community. Please consider checking out his Patreon: https://www.patreon.com/posts/32739357

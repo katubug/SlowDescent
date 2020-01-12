@@ -1,6 +1,81 @@
 Changelog
 
 Pre-Beta:
+=====Commit 14 [1/11/20]=====
+Configs - 
+- New configs for: base, Pollution of the Realms, AttributeFix, Blur, CofH World, Fantastic Lib, Fragile Blocks, Katusleep, Mo Villages, Pollutant Pump, Set Bonus, Spawner Control, Too Many Clerics, Triumph, Villager Names, Waterworks, 
+- Made the Misty World Respirator function with Pollution of the Realms.
+- Better Animations: dogs now roll over, villager noses no longer wiggle.
+- BWM:
+- HCArmor has been disabled because it doesn't work on modded armors.
+- HCEnchanting has been disabled.
+- HCStructures custom recipes have been disabled.
+- Wool armor has been reenabled because I have a use for it. However, the recipes have been removed.
+- Made pumpkin seeds inedible.
+- Bloodmoon:
+- Bloodmoon enemies now disappear after the sun rises.
+- Ember Golems no longer spawn during Bloodmoons.
+- Bloodmoon spawn limit multiplier has been slightly nerfed from 4 to 3.
+- Bloodmoon enemies now spawn 10 blocks away instead of 2.
+- Carryon now works with baby animals.
+- Crafting Stations should no longer access Pyrotech's campfires.
+- Created a Custom Main Menu w/ a multiplayer redirect warning.
+- Turned off the config for Haunted Cows because using CarryOn on a cow would cause it to become Haunted 100% of the time, and it would also dupe the animal.
+- Fish's Undead Rising:
+- Glowshroom spawn rate has been reduced, and spread rate drastically reduced.
+- Mimicrab spawn rates have been reduced.
+- Parasite spawn rate has been reduced.
+- Simplytea's Restful effect will now allow players to bypass insomnia.
+- Removed the armor values and decreased the durability on BWM's wool armor so that it can be used as pajamas.
+- Disabled the MiscTweaks' alteration of starvation damage, as it was preventing Parasites from dying.
+- Reduced the spawn rate of Mutant Skeletons because hoo boy.
+- OreCore:
+- Emerald and lava crystal armor and tools have been disabled.
+- Update checker has been disabled.
+- Experience ores are disabled.
+- Gravel ores are disabled.
+- "Modded ores" ie copper, sapphire, etc are disabled.
+- Coal veins no longer spawn in the Nether.
+- Basalt, slate, and "marmor" (marble) are disabled.
+- Compressed ores are disabled.
+- Patchouli temporarily set to disable advancement locking and put into test mode.
+- Project: Vibrant Journeys structures have been disabled because I thought they might be interfering with village generation.
+- Quark: Guardian spawn groups have been slightly reduced.
+- RandomTweaks' "disable potion icons" has been turned off.
+- ScalingHealth's Blights are no longer immune to suffocation.
+- Changed the appearance of the Simple World Timer. REVIEW I am not sure I need this mod anymore.
+- Added the following drops to breaking spawners: Iron Ingots, Diamonds, Blaze Powder, Cookies, Prismarine Crystals, Goopaks, Creeper Oysters, Ember Shards, Golden Shards, Stone Torches, Efferfescent Ash, Heart Crystal Shards, Bandages, Chorus Teabags, Magma Shards, Skeleton Skulls, Creeper Heads, Zombie Heads.
+- Spawners will now run out after 50 enemies instead of 100.
+- Special AI no longer allows mobs to break chests.
+- Splash.properties has been edited to match the main menu.
+- TaN wool and jelled slime armors now give 2 temperature protection instead of one.
+- Pajamas and Mud armor now give 1 temperature protection.
+- Zombie Awareness changes now activate after 2 days instead of 0.
+
+Armor Bonuses (Set Bonus) - 
+- Added the following armor to have potential bonuses: Diamond, Iron, Gold, Leather, Chainmail, Tanned Leather, Ashen, Niobium, Mud, Bone, BWM Wool.
+- Diamond armor currently grants regeneration, but I plan to change this as I was just testing.
+- Gold Armor now gives an increase in exp.
+- Leather Armor now gives extra Knockback. Tanned Leather also gives knockback, but less because its durability is higher.
+- Bone Armor now reduces fall damage.
+- BWM Wool Armor has been changed to Pajamas, and provides the Restful effect.
+
+Scripts - 
+- ExtraTaN's scripts were removed since we got rid of the mod.
+- Deleted lines hiding BWM's wool armor.
+- Disabled the TaN Collector Block in favor of Waterworks'.
+- Created a recipe for nametags.
+- Changed recipes for BWM wool armor/Pajamas.
+- Disabled a ton of unwanted stuff from OreCore.
+
+Lang - 
+- Zombie Villagers have been renamed to "Forsaken."
+- Changed the "you may not sleep now" message from Katusleep to indicate correct conditions.
+- Renamed BWM's Wool Armor to Pajamas.
+
+ETC - 
+- Created a credits file to keep track of people who I want to thank.
+
 =====Commit 13 [12/28/19]=====
 - New configs for Aqua Creepers, Better Advancements, Better Animations Collection, Bspkr's Core, Carry On, CTM, Crying Ghasts (cg.cfg), Custom Nausea, Enchanting Plus, FastLeafDecay, Foamfix, Hardcore Buoyance, Light The Night, MiscTweaks_, Ore Core, Performant, Pet Names (pn.cfg), Quality Tools, RandomTweaks, Recall, Respawnable Pets, Shulkers Drop 2, Simple Mob Radar, Simple World Timer, Snow Real Magic, Swing Through Grass, Surge, Treecapitator, Unique Enchantments, Weirding Gadget, Xaero's World Map, Zombie Village Control.
 - Changed the BetterFPS config to be "vanilla" instead of "rivens-half".
