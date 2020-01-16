@@ -1,0 +1,22 @@
+import crafttweaker.item.IIngredient;
+
+var ingredient = <mist:respirator_single>
+//    .withTag(Tag to display in JEI)
+    .only(function(item){
+            return item.hasTag && item.tag has "carbon" && item.tag has "sulfur";
+        });
+
+//===Initial recipes===
+//Basic
+recipes.addShapeless("resp_sulfur", <mist:respirator_single>.withTag({FULLNESS: {CAPACITY: 600, sulfur: 0}}), [<mist:respirator_single>,<mist:filter_coal>]);
+
+recipes.addShapeless("resp_carbon", <mist:respirator_single>.withTag({FULLNESS: {CAPACITY: 600, carbon: 0}}), [<mist:respirator_single>,<ore:treeLeaves>]);
+
+//Addition
+recipes.addShapeless("resp_sulfur_to_carbon", <mist:respirator_single>.withTag({FULLNESS: {CAPACITY: 600, carbon: 0, sulfur: 0}}), [<mist:respirator_single>.onlyWithTag({FULLNESS: {CAPACITY: 600, sulfur: 0}}),<minecraft:leaves>]);
+
+recipes.addShapeless("resp_carbon_to_sulfur", <mist:respirator_single>.withTag({FULLNESS: {CAPACITY: 600, carbon: 0, sulfur: 0}}), [<mist:respirator_single>.onlyWithTag({FULLNESS: {CAPACITY: 600, carbon: 0}}),<mist:filter_coal>]);
+
+//===Cleaning recipes===
+
+recipes.addShapeless("test_cleaning", <mist:respirator_single>.withTag({FULLNESS: {CAPACITY: 600, carbon: 0, sulfur: 0}}), [<mist:respirator_single:*>.anyDamage().onlyWithTag({FULLNESS: {CAPACITY: 600, carbon: 0, sulfur: 0}}), <minecraft:stone>]);

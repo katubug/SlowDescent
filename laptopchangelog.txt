@@ -1,6 +1,84 @@
 Changelog
 
 Pre-Beta:
+=====Commit 15 [1/16/20=====
+Configs - 
+- New configs have been generated for the following mods: Baubles, Damage Source Configuration, Fluid Funnels, GameStages, Mob Sunscreen, Skeleton Tweaks, SR Parasites, Trinkets and Baubles,  
+- Pollution of the Realms configs have been updated for the new version.
+- BetterNether's "second pass" has been disabled for performance reasons.
+- BWM's barks have been removed from log drops.
+- BWM's EnderChest beacon function has been disabled.
+- BWM's "oof" sound during pain events have been disabled because it was weird and also specifically male.
+- Corpse Complex config has updated to work with Baubles.
+- Added stick drops to PVJ sticks groundcover.
+- Added Niobium to the list of lightsources in Dynamic Lights.
+- Nerfed the rate at which cave-ins would occur (fragile blocks)
+- Used MaterialChanger to edit values for Undead Rising's Scythe and SRParasite's Scythe (the latter did not work, had to do it in the mod config).
+- Used MiscTweaks to make Ender Chests a row bigger.
+- Used Mob Sunscreen to make Zombie Villagers/Forsaken immune to burning in the sun.
+- Disabled Pyrotech's "prevent wool on sheep death".
+- Changed Pyrotech's "replace iron ingots with iron ore" value from true to false. If people loot an ingot, good for them.
+- Added modded hammers to Pyrotech's "hammer list"
+- Reverted changes to pyrotech's ore-custom.json - was producing ingots, now nuggets.
+- [Scaling Health]:
+-- Reduced the Max Health Cap to 200 from 2048.
+-- Set difficulty to decrease when a Mutant Zombie is killed.
+-- Blocked all Mutant Beasts from receiving a damage bonus.
+-- Added Mutant Skeletons and Zombies to the blight blacklist.
+-- Switched "immune to suffocation" back to false for blighted enemies.
+-- Max player health gained from heart containers alone has been set to 20.
+-- Incoming damage scaling now applies to passive mobs.
+-- Turned on debug settings.
+- [Set Bonus]:
+-- Removed Mutant Skeleton stuff because it already has bonuses.
+-- Added BWM Steel and Mowzie's Wrought Helmet.
+-- Diamond Armor now gives Siphon, which gives players the Leeching effect and a significant damage boost.
+-- Gold Armor now gives Scholar, which gives players the Learning effect, boosting exp and making exp homing.
+-- Bone Armor now gives Reinforced Landing, which greatly reduces fall damage.
+-- Pajamas now give Soporific, which give players the Restfull effect, allowing them to sleep. However, they also reduce player speed and visibility, making them unviable as everyday armor.
+-- Leather and Tanned Leather armor now give Knockback with varying values.
+-- Mud armor now gives Adept Digger, which improves dig speed.
+-- Iron armor now gives Cold Iron, which increases magic shielding and gives the Magnetism effect.
+-- Chainmail now gives Sturdy, which increases Knockback resistance.
+-- BWM Steel now gives Tank, which increases overall damage resistance.
+-- Ashen Armor now gives Swiftness to increase movement speed (3 pieces required), and also Floating to give a dramatic slowfall effect to the player (4 pieces required)
+-- Niobium gives All Things Shiny, which causes the player to glow, and increases their Luck.
+-- The Wrought Iron Helmet now gives Intimidating, which increases reach distance and attack bonus; and Corrosive, which periodically causes player's armor to lose durability.
+- Changed the appearance of the Simple World Timer, and also temporarily hid it because of the Scaling Health debug overlay.
+- Added Zombie Villagers to the SpecialAI list.
+- Changed Zombies to only grief blocks they have the tools for.
+- Blacklisted farmland from being griefed.
+- Added a handful of mobs to be hostile to Parasites.
+- Changed Treecapitator config to allow trees to be chopped even if the axe runs out of durability during an attempt.
+- Enabled the shearing of leaves when shears present in hotbar.
+- Enabled drops to stack.
+- [Trinkets and Baubles]:
+-- Disabled Magical Foods.
+-- Disabled Potions.
+-- Disabled creative flight on the Fairy Ring.
+-- Wearing the Ender Queen crown now makes you vulnerable to water.
+-- Endermen attacked while wearing the Ender Queen crown will now retaliate (but I might change this?)
+- Unique Enchantment's config has expanded to include newly added items.
+- Waterworks pumps and rain collectors now produce purified water.
+- Waterworks' Rain rocket is disabled.
+
+Scripts - 
+- Added a script to incentivize the use of Cursed Hearts by giving the player diamonds on use.
+- Added a script to disincentivize the use of [Good] Hearts by summoning a zombie upon use.
+- Changed inventory.txt to inventory.zs.
+- Fixed a typo in juices.zs, making "Sodium" capitalized to match the nutrient.
+- Added a name to the Potash Mulch recipe.
+- Added a section to disable some unwanted JEI categories.
+- Added a tooltip to Pajamas to hint at their unlocking.
+- Added a Sanity Checker, a Thermometer, and a Book (placeholder) to the initial inventory.
+- Removed a couple of recipes for cobblestone, crafting benches, and furnaces, to prevent bypassing intended Pyrotech progression.
+- Added respirators.zs, which allows respirators to be crafted with filter items instead of using the anvil. WIP.
+- Added stages.zs, which currently only locks the Pajamas recipes.
+- Changed the pvj groundcover rocks from 1.5 (vanilla stone) to 0.1 (pyrotech groundcover).
+
+Lang - 
+- Localized the Foggy Sponge blocks from Misty World.
+
 =====Commit 14 [1/11/20]=====
 Configs - 
 - New configs for: base, Pollution of the Realms, AttributeFix, Blur, CofH World, Fantastic Lib, Fragile Blocks, Katusleep, Mo Villages, Pollutant Pump, Set Bonus, Spawner Control, Too Many Clerics, Triumph, Villager Names, Waterworks, 

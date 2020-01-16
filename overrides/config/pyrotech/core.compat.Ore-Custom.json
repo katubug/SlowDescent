@@ -26,7 +26,7 @@
         "minecraft:tile.oreGold"
       ],
       "output": [
-        "minecraft:gold_ingot:0"
+        "minecraft:gold_nugget:0"
       ]
     },
     "oreIron": {
@@ -35,7 +35,7 @@
         "minecraft:tile.oreIron"
       ],
       "output": [
-        "minecraft:iron_ingot:0"
+        "minecraft:iron_nugget:0"
       ]
     }
   }

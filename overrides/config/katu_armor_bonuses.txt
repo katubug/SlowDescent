@@ -1,3 +1,6 @@
+Overall notes:
+- Could adjust player movement speed per armor set with this as a way of encouraging lesser armor sets.
+
 Tier 1: 
 - Leather: Attack knockback increased 1x
 - Wool: Warms player up a fair amount.
@@ -10,24 +13,24 @@ Tier 2:
 - Swine: Already has set bonus.
 
 Tier 3:
-- Iron: 
-- Chainmail: 
+- Iron: Magnetism. Magic shielding.
+- Chainmail: 50% Knockback resistance.
 - Mutant Skeleton: Already has some bonuses.
 
 Tier 4:
-- Gold: Highly enchantable. Bonus xp. (learning)
-- Niobium: Glowing?
+- Gold: Highly enchantable. Learning effect.
+- Niobium: Glowing, Luck.
 
 Tier 5:
-- Diamond: Max HP +4? Increase 
+- Diamond: Attack damage, Leeching.
 - Molten: Already has set bonus.
 
 Tier 6:
-- Ashen: Ember Discount, movement speed. Or maybe Sun's Blessing?
-- Plate Armor: Bonus is crazy durability.
+- Ashen: Ember Discount, movement speed, slowfall.
+- Plate Armor: Bonus is crazy durability, extra damage resistance.
 
 ETC:
-- Pajamas: Allow sleep without rain. Warms player up a bit.
-- Wrought Helmet: 
+- Pajamas: Allow sleep without rain, but also makes player sleepy (no jumping, vulnerable to attacks). Warms player up a bit.
+- Wrought Helmet: Could do pushing (intimidation?) or extend reach, or maybe attack boost. However, should have a periodic negative effect, like blindness maybe? Or slowness, nausea, lightning, rust?
 
 ARMOR_PROTECTION, ARMOR_TOUGHNESS, ATTACK_DAMAGE, ATTACK_SPEED, DURABILITY, EFFICIENCY, ENCHANTABILITY, HARVEST_LEVEL, STACKSIZE

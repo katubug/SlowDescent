@@ -30,8 +30,11 @@ advancements.story.cure_zombie_villager.title=Zombie Doctor
 advancements.story.cure_zombie_villager.description=Weaken and then cure a Forsaken
 
 katusleep.you_may_not_sleep=You can't seem to fall asleep without the sound of rain.
+tile.bed.in_fog=It doesn't seem safe to sleep here.
 
 item.bwm:wool_helmet.name=Pajama Cap
 item.bwm:wool_chest.name=Pajama Shirt
 item.bwm:wool_pants.name=Pajama Pants
 item.bwm:wool_boots.name=Pajama Socks
+
+tile.sponge.name=Foggy Sponge

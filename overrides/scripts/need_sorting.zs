@@ -215,11 +215,15 @@ mods.jei.JEI.removeAndHide(<betterwithmods:fertile_farmland>);
 <ore:listAllash>.add(<betterwithmods:material:21>);
 
 recipes.remove(<pyrotech:mulch>);
-recipes.addShaped(<pyrotech:mulch> * 4, [[<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>],[<pyrotech:rock:7>, <composter:compost>, <pyrotech:rock:7>], [<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>]]);
+recipes.addShaped("new_potash_mulch", <pyrotech:mulch> * 4, [[<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>],[<pyrotech:rock:7>, <composter:compost>, <pyrotech:rock:7>], [<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>]]);
 
 //!SECTION 
 
 /* ---------------------- SECTION Completely unsorted --------------------- */
+
+//Hides unwanted JEI Categories
+mods.jei.JEI.hideCategory("minecraft.anvil");
+mods.jei.JEI.hideCategory("embers.dawnstone_anvil");
 
 //Removes torch recipes to allow BWM to lock them behind Nethercoal
 recipes.remove(<minecraft:torch>);
@@ -248,6 +252,18 @@ recipes.addShaped("pajama_boots", <betterwithmods:wool_boots>, [[<ore:string>, n
 recipes.addShaped("pajama_pants", <betterwithmods:wool_pants>, [[<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>],[<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>], [<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>]]);
 recipes.addShaped("pajama_shirt", <betterwithmods:wool_chest>, [[<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>],[<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>], [<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>]]);
 recipes.addShaped("pajama_helmet", <betterwithmods:wool_helmet>, [[<betterwithmods:material:4>, <betterwithmods:material:4>, <betterwithmods:material:4>],[<betterwithmods:material:4>, <ore:string>, <betterwithmods:material:4>], [<ore:string>, null, <ore:string>]]);
+
+//Adds a tooltip to the pajamas
+var pajamas = [
+    <betterwithmods:wool_helmet>,
+    <betterwithmods:wool_chest>,
+    <betterwithmods:wool_pants>,
+    <betterwithmods:wool_boots>
+] as IItemStack[];
+
+for paj in pajamas {
+    paj.addTooltip(format.gold("An incredibly comfortable garment invented by the citizens before becoming Forsaken."));
+}
 
 //Removes some things from Deadly Monsters and Mowzie's Mobs
 val dMonWat = [
@@ -401,3 +417,28 @@ for item in oreCoreRAH {
 }
 
 //!SECTION
+
+//SECTION Initial inventory
+
+mods.initialinventory.InvHandler.addStartingItem(<sanity:checker>);
+mods.initialinventory.InvHandler.addStartingItem(<toughasnails:thermometer>);
+mods.initialinventory.InvHandler.addStartingItem(<minecraft:book>);
+
+//!SECTION 
+
+//SECTION Recipe removal by ID
+
+var badRecipes = [
+    "pvj:cobblestone_1",
+    "pvj:cobblestone_2",
+    "orecore:cobblestone",
+    "betternether:stalagnate_workbench",
+    "mist:crafting_table",
+    "mist:furnace"
+] as string[];
+
+for recipe in badRecipes {
+    recipes.removeByRecipeName(recipe);
+}
+
+//!SECTION 

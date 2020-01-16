@@ -27,7 +27,7 @@ var rocks = [
 ] as IItemStack[];
 
 for rock in rocks {
-    rock.hardness = 1.5;
+    rock.hardness = 0.1;
 }
 
 var sticks = [

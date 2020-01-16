@@ -39,6 +39,7 @@ uniquee:ender_eyes
 uniquee:focus_impact
 uniquee:bone_crusher
 uniquee:ranged
+uniquee:treasurers_eyes
 uniquee:swiftblade
 uniquee:spartanweapon
 uniquee:perpetualstrike
@@ -59,7 +60,9 @@ uniquee:midas_blessing
 uniquee:ifrits_grace
 uniquee:icarus_aegis
 uniquee:ender_librarian
+uniquee:demeters_soul
 uniquee:pestilences_odium
+uniquee:deaths_odium
 toughasnails:warming
 toughasnails:cooling
 corpsecomplex:soulbound

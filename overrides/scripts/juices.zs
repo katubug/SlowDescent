@@ -29,6 +29,6 @@ for drink in drinks {
 events.onEntityLivingUseItemFinish(function(event as crafttweaker.event.EntityLivingUseItemEvent.Finish){
     if (<ore:drinksPotassium>.matches(event.item))
  {
-    event.player.executeCommand("nutrition subtract @p sodium 3");
+    event.player.executeCommand("nutrition subtract @p Sodium 3");
     }
 });
