@@ -1,0 +1,11 @@
++------+------------------+-------------+-----------------+------------------+-------------------------------------------------------------------------+
+|   ID | DimensionType ID | Name        | shouldLoadSpawn | Currently loaded | WorldProvider class                                                     |
++------+------------------+-------------+-----------------+------------------+-------------------------------------------------------------------------+
+|    0 |                0 | overworld   |            true |             true | net.minecraft.world.WorldProviderSurface                                |
+|    1 |                1 | the_end     |           false |            false | net.minecraft.world.WorldProviderEnd                                    |
+| -546 |             -546 | dungeon     |           false |            false | party.lemons.arcaneworld.gen.dungeon.dimension.DungeonDimensionProvider |
+|   69 |               69 | misty_world |           false |            false | ru.liahim.mist.world.WorldProviderMist                                  |
+|   -1 |               -1 | Nether      |           false |            false | logictechcorp.netherex.world.WorldProviderNetherEx                      |
++------+------------------+-------------+-----------------+------------------+-------------------------------------------------------------------------+
+|   ID | DimensionType ID | Name        | shouldLoadSpawn | Currently loaded | WorldProvider class                                                     |
++------+------------------+-------------+-----------------+------------------+-------------------------------------------------------------------------+

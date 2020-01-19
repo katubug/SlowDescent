@@ -126,6 +126,10 @@ mysticalwildlife:breeding
 mysticalwildlife:breeding_long
 mysticalwildlife:breeding_strong
 mysticalwildlife:breeding_instant
+netherex:freezing
+netherex:frigid_health
+netherex:dispersal
+netherex:sorrow
 potioncore:wither
 potioncore:strong_wither
 potioncore:long_wither

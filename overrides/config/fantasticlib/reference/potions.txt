@@ -79,6 +79,12 @@ mowziesmobs:poison_resist
 mysticalwildlife:shocked
 mysticalwildlife:breeding
 mysticalwildlife:breeding_instant
+netherex:frozen
+netherex:frostbitten
+netherex:infested
+netherex:crying
+netherex:fire_burning
+netherex:soul_sucked
 potioncore:recoil
 potioncore:iron_skin
 potioncore:purity

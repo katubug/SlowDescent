@@ -1,20 +1,11 @@
 import crafttweaker.item.IItemStack;
 
 /* -------------------------------------------------------------------------- */
-/*       SECTION Survival related scripts? Probably needs organizing tbh      */
+/*                         SECTION WorldGen and Blocks                        */
 /* -------------------------------------------------------------------------- */
 
 //NOTE Mods required for this script:
-//Tough As Nails
 //Project Vibrant Journeys
-
-//FIXME This should probably be named something else tbh.
-
-//Disables Tough as Nails' campfire in favor of Pyrotech's.
-mods.jei.JEI.removeAndHide(<toughasnails:campfire>);
-
-//Removes PVJ's Bones > Bone recipe
-recipes.remove(<minecraft:bone>);
 
 //Changes the hardness of PVJ's Rocky Ground Cover to be consistent with Stone/Wood.
 var rocks = [
@@ -56,5 +47,5 @@ var sticks = [
 ] as IItemStack[];
 
 for stick in sticks {
-    stick.hardness = 0.5;
+    stick.hardness = 0.1;
 }

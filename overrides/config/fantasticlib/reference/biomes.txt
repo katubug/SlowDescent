@@ -99,5 +99,9 @@ mist:down
 mist:down_forest
 mist:down_swamp
 mist:down_center
+netherex:ruthless_sands
+netherex:fungi_forest
+netherex:torrid_wasteland
+netherex:arctic_abyss
 arcaneworld:arcane_void
 arcaneworld:arcane_dungeon

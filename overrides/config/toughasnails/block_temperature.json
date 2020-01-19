@@ -29,20 +29,127 @@
       "block": "minecraft:lava",
       "properties": {}
     },
-    "temperature": 15.0
+    "temperature": 10.0
   },
   {
     "state": {
       "block": "minecraft:flowing_lava",
       "properties": {}
     },
-    "temperature": 15.0
+    "temperature": 10.0
   },
   {
     "state": {
       "block": "minecraft:magma",
       "properties": {}
     },
-    "temperature": 12.5
+    "temperature": 8.0
+  },
+  {
+    "state": {
+      "block": "minecraft:end_stone",
+      "properties": {}
+    },
+    "temperature": -3.0
+  },
+  {
+    "state": {
+      "block": "minecraft:ice",
+      "properties": {}
+    },
+    "temperature": -9.0
+  },
+  {
+    "state": {
+      "block": "minecraft:packed_ice",
+      "properties": {}
+    },
+    "temperature": -10.0
+  },
+  {
+    "state": {
+      "block": "netherex:frostburn_ice",
+      "properties": {}
+    },
+    "temperature": -15.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow",
+      "properties": {}
+    },
+    "temperature": -8.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 8
+      }
+    },
+    "temperature": -8.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 7
+      }
+    },
+    "temperature": -7.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 6
+      }
+    },
+    "temperature": -6.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 5
+      }
+    },
+    "temperature": -5.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 4
+      }
+    },
+    "temperature": -4.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 3
+      }
+    },
+    "temperature": -3.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 2
+      }
+    },
+    "temperature": -2.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow_layer",
+      "properties": {
+        "layers": 1
+      }
+    },
+    "temperature": -1.0
   }
 ]

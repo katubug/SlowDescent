@@ -14,8 +14,12 @@ events.onPlayerInteract(function(event as crafttweaker.event.PlayerInteractEvent
 events.onPlayerInteract(function(event as crafttweaker.event.PlayerInteractEvent){
     if (<scalinghealth:difficultychanger:1>.matches(event.player.currentItem)) {
         if(!event.world.remote){
-            //dunno if i want the additional if
+            //Additional "if" prevents it from sending more than once
         event.player.give(<minecraft:diamond>);
+        if(event.world.remote){
+            //REVIEW Hopefully this means that players on servers also get it? I'll need to test eventually.
+        event.player.give(<minecraft:diamond>);
+            }
         }
     }
 });

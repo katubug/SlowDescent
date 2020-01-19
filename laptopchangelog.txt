@@ -1,6 +1,88 @@
 Changelog
 
 Pre-Beta:
+=====Commit 16 [1/18/20]=====
+Mod Changes - 
+- BetterNether (crazy lag)
+- Better Animations Collection (major fps drops)
+- Simple Mob Radar (just not really necessary)
+- Mob Sunscreen (no longer need, Zombie Village Control added config option)
++ Insanity (unreleased mod from nooby <3)
++ LagGoggles (for performance testing, may not keep in pack)
++ NetherEx/Library Ex (to replace BetterNether)
++ LootTweaker
+# Refined Relocation 4.2.36 > 4.2.37
+# Trinkets and Baubles 0.29.1 > 0.29.2
+# Sanity 1.0.2 > 1.0.3
+# Zombie Village Control 1.0.0 > 1.1.0
+
+Configs - 
+- New configs generated for: Insanity, LagGoggles, LootTweaker, NetherEx, 
+- Better With Mods
+-- Custom Fishing Recipes reenabled so that Fishing Rods would have a recipe.
+- Bloodmoon
+-- Bloodmoons occur every full moon now.
+-- The following cannot spawn as part of a Blood Moon: Mutant Zombie, Mutant Skeleton, Mutant Creeper, Mutant Enderman, Spider Pig.
+-- Spawn limit multiplier has been further reduced to 2x for performance reasons.
+-- Spawn speed has been reduced from 4 to 2.
+- Fish's Undead Rising seems to have been reverted to default? Idk.
+- Food Funk
+-- Better Nether's foods have been removed from this config.
+-- Food placed in Ender Chests will now no longer spoil.
+- Forge's version check has been disabled.
+- Hardcore Darkness' Dark Nether has been disabled.
+- Mowzie's Wroughtnaughts now spawn less (40 > 100, larger numbers mean less often)
+- Turned down Mutant Beasts' spawn rates across the board:
+-- Creeper (100 > 60), Enderman (100 > 80), Zombie (100 > 80).
+-- Also Mutant Endermen no longer render while they teleport.
+- Sanity: BetterNether's food items have been removed from the modifiers config.
+-- Also, sanity levels will now be kept upon death.
+- Scaling Health:
+-- Blacklisted Mutant Beasts from being blighted/gaining extra health. Unsure I will keep this. REVIEW 
+-- Also I turned off the debug overlay because it was being more annoying than helpful, since I'm not actively debugging.
+- Serene Seasons:
+-- Removed crop compatibility from mods I don't intend to add.
+-- Added crop fertility for: Hemp (all seasons), Corn (Autumn, Summer), Onion (Autumn, Winter, Spring), Pepper (Autumn, Spring, Summer), Lettuce (Autumn, Spring), Strawberry (Spring, Summer), Tomato (Spring, Summer), Cucumber (Spring, Summer), Tea (Spring, Summer), Rice (Summer).
+- Tough As Nails:
+-- I thought I had already added to this config, but I couldn't find my changes anywhere. Anyway.
+-- Lava heat decreased 15 > 10
+-- Magma heat decreased 12.5 > 8
+-- Added End Stone, -3
+-- Added Ice, -9
+-- Added Packed Ice, -10
+-- Added Frostburn Ice, -15
+-- Added Snow, -8
+-- Added Snow Layers 1 to 8, -1 to -8
+-- Enabled Drinking from rain.
+- Armor Underwear: Added all modded armors to the config.
+- Set survivor villagers from a 1 in 50 chance to be 1 in 5000. Also I disabled zombie villagers burning in sunlight.
+
+Scripts - 
+- Moved some scripts into a separate folder. I gotta organize this shit somehow.
+- Commented out lines containing BetterNether references.
+- Named a handful of recipes.
+- Specified required mods at the beginning of each script.
+- Redid the PVJ Boats script using loops.
+- Forced OreDict recipes for Basalt, Marble, String, Sticks, Cobblestone.
+- Made Ore Core Fossil Stands use existing blocks instead of disabled Ore Core blocks.
+- Moved all the recipe/item removal to its own script, unless it was part of another "module."
+- Changed the Pyrotech Chopping Block recipe to avoid a conflict with all of BWM's planks recipes. Unsure I will keep this. REVIEW 
+- Manually changed the Nametag recipe to use oredict.
+- Moved all Tooltip-adding stuff to its own script, unless it was part of another "module."
+- Uh, apparently I added a butt to Initial Inventory. FIXME 
+- Assigned a preferred tool to wool so it's easier to break.
+- Consolidated all removeAndHide items to a single array. Same thing for removal by recipe name/ID.
+- Added a ritual to summon the Ancient Golem from Embers.
+- Wrote a whole-ass script to make all slabs have consistent recipes.
+- Added Candles from BWM and Quark to a stage, because they're non-expiring, non-extinguishing light sources, which I don't want to have in early game.
+- Added tooltips to all Deadly Monsters items explaining their use.
+- Added tooltips to candles explaining that they're locked.
+- Added tooltips to all armors and liners that provide Tough as Nails temperature protection.
+- Added a tooltip to Quark's Soul Powder, explaining what it does.
+- Renamed survival.zs to "worlgen.zs" - good job Katu FIXME 
+- Changed the PVJ sticks groundcover to be consistent with the stones, because they were harder. Which is silly.
+
+
 =====Commit 15 [1/16/20=====
 Configs - 
 - New configs have been generated for the following mods: Baubles, Damage Source Configuration, Fluid Funnels, GameStages, Mob Sunscreen, Skeleton Tweaks, SR Parasites, Trinkets and Baubles,  

@@ -100,7 +100,7 @@ for item in salted {
 
 <saltmod:salt_pinch>.addTooltip(format.gold("Adding salt to foods can protect against spoilage."));
 
-<betternether:stalagnate_bowl>.addTooltip(format.gold("This bowl seems to have preservative properties, but the smell it gives off is...odd."));
+//<betternether:stalagnate_bowl>.addTooltip(format.gold("This bowl seems to have preservative properties, but the smell it gives off is...odd."));
 
 //!SECTION 
 
@@ -145,7 +145,7 @@ recipes.replaceAllOccurences(<xlfoodmod:ground_beef>, <ore:foodGroundbeef>);
 
 //Makes Spaghetti use Meatballs instead of Ground Beef
 recipes.remove(<xlfoodmod:spaghetti>);
-recipes.addShaped(<xlfoodmod:spaghetti>, [[null, <mod_lavacow:meatball>, null],[<xlfoodmod:cooked_dough>, <xlfoodmod:tomato_sauce>, <xlfoodmod:cooked_dough>], [null, <xlfoodmod:bowl>, null]]);
+recipes.addShaped("spaghet", <xlfoodmod:spaghetti>, [[null, <mod_lavacow:meatball>, null],[<xlfoodmod:cooked_dough>, <xlfoodmod:tomato_sauce>, <xlfoodmod:cooked_dough>], [null, <xlfoodmod:bowl>, null]]);
 
 //TODO 
 /*

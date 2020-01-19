@@ -29,7 +29,7 @@ Regular: non-splash non-lingering [itemtype]
 
 //Setting a quick bit of OreDict for the script below
 <ore:blockCactus>.add(<pvj:small_cactus>);
-<ore:blockCactus>.add(<betternether:barrel_cactus>);
+//<ore:blockCactus>.add(<betternether:barrel_cactus>);
 
 //First, replace ExtraAlchemy's Magnetism Potion Recipe so I can use Iron Ingots
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "extraalchemy:magnetism_normal"}), <minecraft:iron_ingot>);

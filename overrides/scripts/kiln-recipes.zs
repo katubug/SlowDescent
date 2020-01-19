@@ -64,7 +64,7 @@ furnace.addRecipe(<minecraft:brick>, <betterwithmods:unfired_pottery:4>, 0.92592
 
 //Change BWM Unfired Brick to use Pyrotech Lumps
 recipes.remove(<betterwithmods:unfired_pottery:4>);
-recipes.addShapeless(<betterwithmods:unfired_pottery:4>, [<pyrotech:material:17>,<pyrotech:material:17>]);
+recipes.addShapeless("unfired_brick", <betterwithmods:unfired_pottery:4>, [<pyrotech:material:17>,<pyrotech:material:17>]);
 
 //Unfired Brick
 StoneKiln.addRecipe("bwm_brick_kiln", <minecraft:brick>, <betterwithmods:unfired_pottery:4>, 140, 0.1, [
