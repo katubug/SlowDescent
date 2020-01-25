@@ -3,12 +3,12 @@
 +---------------------+---------+-------------+-----------+------------+--------+-----------+-----------------------------+
 | alchemical_redstone |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:alchemical_redstone  |
 | aluminum            |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:aluminum             |
+| blood               |    1000 |         300 |      3500 |          0 | COMMON |     false | netherex:ichor              |
 | bronze              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:bronze               |
 | coal_tar            |    3000 |         300 |      6000 |          0 | COMMON |     false | pyrotech:fluid.coal_tar     |
 | copper              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:copper               |
 | dawnstone           |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:dawnstone            |
 | electrum            |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:electrum             |
-| glowing_water       |    1000 |         300 |      1000 |          0 | COMMON |     false | ltn:glowing_water           |
 | gold                |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:gold                 |
 | iron                |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:iron                 |
 | lava                |    3000 |        1300 |      6000 |         15 | COMMON |     false | minecraft:lava              |
@@ -17,6 +17,7 @@
 | milk                |    1000 |         300 |      1000 |          0 | COMMON |     false | -                           |
 | mist_acid           |    1000 |         300 |      1000 |          0 | COMMON |     false | mist:acid_block             |
 | nickel              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:nickel               |
+| polluted_water      |    1000 |         300 |      1000 |          0 | COMMON |     false | adpother:polluted_water     |
 | purified_water      |    1000 |         300 |      1000 |          0 | COMMON |     false | toughasnails:purified_water |
 | silver              |    2000 |         900 |      6000 |         15 | COMMON |     false | embers:silver               |
 | steam               |   -1000 |         750 |       200 |          0 | COMMON |      true | -                           |

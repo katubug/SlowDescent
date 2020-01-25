@@ -1,0 +1,122 @@
+Chests:
+
+minecraft:chests/abandoned_mineshaft
+minecraft:chests/desert_pyramid
+minecraft:chests/end_city_treasure
+minecraft:chests/igloo_chest
+minecraft:chests/jungle_temple
+minecraft:chests/nether_bridge
+minecraft:chests/simple_dungeon
+minecraft:chests/stronghold_corridor
+minecraft:chests/stronghold_crossing
+minecraft:chests/stronghold_library (enchanting plus books?)
+minecraft:chests/village_blacksmith
+minecraft:chests/woodland_mansion
+netherex:chest/base_arctic_abyss
+netherex:chest/base_fungi_forest
+netherex:chest/base_grave
+netherex:chest/base_ruthless_sands
+netherex:chest/base_temple
+netherex:chest/base_torrid_wasteland
+netherex:chest/base_village
+netherex:chest/grave_arctic_abyss
+netherex:chest/grave_fungi_forest
+netherex:chest/grave_rare
+netherex:chest/grave_ruthless_sands
+netherex:chest/grave_torrid_wasteland
+netherex:chest/temple_arctic_abyss
+netherex:chest/temple_fungi_forest
+netherex:chest/temple_rare
+netherex:chest/temple_ruthless_sands
+netherex:chest/temple_torrid_wasteland
+pvj:abandoned_farm
+pvj:ruins
+quark:chests/pirate_chest
+quark:entities/stoneling_carry
+arcaneworld:raid_1
+
+
+# ------------------------------- Common Loot ------------------------------- #
+
+<xlfoodmod:chocolate_cake>
+<xlfoodmod:oreo_cake>
+<xlfoodmod:cheese_cake>
+<xlfoodmod:nether_cake>
+<xlfoodmod:strawberry_cake>
+<xlfoodmod:pumpkin_cake>
+<xlfoodmod:pizza>
+<toughasnails:ice_cube>
+<toughasnails:fruit_juice:2>    //Cactus
+<toughasnails:fruit_juice:5>    //Glistering Melon
+<toughasnails:fruit_juice:6>    //Golden Apple
+<simplytea:teabag_black>
+<simplytea:teabag_green>
+<simplytea:teabag_floral>
+<simplytea:teabag_chorus>
+<saltmod:soda>
+<pyrotech:cog_iron>
+<pyrotech:sawmill_blade_iron>
+<pyrotech:material:19>          //Iron Shard
+<pvj:unstable_essence>
+<embers:shard_ember>
+<cave_expansion:stonepot>
+<betterwithmods:kibble>
+<betterwithmods:material:6>     //Tanned Leather
+<minecraft:glass_bottle>
+<toughasnails:purified_water_bottle>
+
+# -------------------------------- Less Common ------------------------------- #
+
+<xat:glowing_ingot>
+<toughasnails:magma_shard>
+<toughasnails:canteen>
+<sereneseasons:greenhouse_glass>
+<respawnablepets:etheric_gem>
+<quark:golden_frog_leg>
+<quark:diamond_heart>
+<quark:horse_whistle>
+<quark:black_ash>
+<pyrotech:sawmill_blade_gold>
+<pyrotech:cog_gold>
+<pyrotech:bag_durable>
+<orecore:meteor>
+<pyrotech:material:34>          //Gold Shard
+<mod_lavacow:cursed_fabric>
+<mod_lavacow:cursed_bandage>
+<extraalchemy:empty_ring>
+<embers:ember_amulet>
+<embers:ember_belt>
+<embers:ember_ring>
+<betterwithmods:material:29>    //Blasting Oil
+<baubles:ring>
+<minecraft:torch>
+<betterwithmods:material:1>     //Nethercoal
+
+# --------------------------------- Rare Loot -------------------------------- #
+
+<arcaneworld:glowing_chorus>
+<xat:glowing_gem>
+<recall:item_recall>
+<pyrotech:sawmill_blade_diamond>
+<pyrotech:cog_diamond>
+<pyrotech:material:18>      //Diamond Shard
+<pyrotech:material:33>      //Obsidian Shard
+<netherex:obsidian_boat>
+<netherex:dull_mirror>
+<mod_lavacow:fissionpotion>
+<eplus:table_upgrade>
+<embers:glimmer_shard>
+<cave_expansion:treasurelvl2>
+<betterwithmods:ender_spectacles>
+<scalinghealth:crystalshard>
+<scalinghealth:difficultychanger>
+<scalinghealth:difficultychanger:1>
+
+# ------------------------------ Very Rare Loot ------------------------------ #
+
+<xat:sea_stone>
+<mowziesmobs:foliaath_seed>
+<netherex:amethyst_crystal>
+<mod_lavacow:war>
+<embers:dawnstone_mail>
+<cave_expansion:treasurelvl3>

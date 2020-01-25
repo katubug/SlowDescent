@@ -148,20 +148,20 @@ recipes.addShaped("diamond_ingot_boots", <minecraft:diamond_boots>, [[<minecraft
 <ore:basaltBrick>.add(<netherex:basalt_brick>);
 <ore:stoneBasaltBrick>.add(<quark:world_stone_bricks:3>);
 <ore:cobblestone>.add(<mist:cobblestone>);
-
-//FIXME The following scripts somehow make all recipes take <ore:string> instead of <ore:twine>. I have no goshdang clue why, and no one in the CrT discord has responded yet. So I'll set this aside for later.
 <ore:twine>.add(<betterwithmods:material:3>);
-<ore:string>.add(<pyrotech:material:14>);
-<ore:string>.add(<pyrotech:material:26>);
-<ore:string>.add(<betterwithmods:material:3>);
-
-//Makes stick recipes more compatible
-recipes.replaceAllOccurences(<minecraft:stick>, <ore:stickWood>);
 
 //Change String recipes to use OreDict
 recipes.replaceAllOccurences(<minecraft:string>, <ore:twine>, <*>.only(function(item) {
     return !isNull(item) & !<minecraft:bow>.matches(item);
 }));
+
+//Salt compatibility
+recipes.replaceAllOccurences(<xlfoodmod:salt>, <saltmod:salt_pinch>, <*>.only(function(item) {
+    return !isNull(item) & !<xlfoodmod:beef_jerky>.matches(item);
+}));
+
+//Makes stick recipes more compatible
+recipes.replaceAllOccurences(<minecraft:stick>, <ore:stickWood>);
 
 /*
 SECTION Test Later
@@ -174,6 +174,12 @@ var cobbleRecipeArray = [
 recipes.replaceAllOccurences(<minecraft:cobblestone>, <ore:cobblestone>, <*>.only(function(item) {
     return !isNull(item) & cobbleRecipeArray[i].matches(item);
 }));
+From nooby:
+
+so basically the recipes export should give you a list of recipes in the format of adding them back in?
+so you'd just need to filter out everything that isn't minecraft:string
+then generate a recipe removal
+
 !SECTION 
 */
 
@@ -313,3 +319,7 @@ mods.initialinventory.InvHandler.addStartingItem(butt);
 //Makes Wool have a preferred tool.
 var wool = (<minecraft:wool>.asBlock().definition);
 wool.setHarvestLevel("axe", 0);
+
+//Changes Backpack recipe
+recipes.remove(<wearablebackpacks:backpack>);
+recipes.addShaped(<wearablebackpacks:backpack>, [[<betterwithmods:material:32>, <ore:ingotGold>, <betterwithmods:material:32>],[<betterwithmods:material:32>, <ore:chest>, <betterwithmods:material:32>], [<betterwithmods:material:6>, <betterwithmods:material:6>, <betterwithmods:material:6>]]);

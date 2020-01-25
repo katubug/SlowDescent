@@ -1,0 +1,9 @@
+{
+    "foods": [
+            {
+                "name": "xlfoodmod:beef_jerky",
+                "hunger": 7,
+                "saturationModifier": 0.6
+            }
+        ]
+    }

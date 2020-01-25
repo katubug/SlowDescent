@@ -53,6 +53,9 @@ var remAndHide = [
     <mowziesmobs:barakoa_mask_fury>,
     <mowziesmobs:grant_suns_blessing>,
     <mowziesmobs:barako_mask>,
+    <mowziesmobs:dart>,
+    <mowziesmobs:spear>,
+    <mowziesmobs:blowgun>,
 //Remove OreCore Stuff
     <orecore:compressed_coal_ore>,
     <orecore:compressed_diamond_ore>,
@@ -168,7 +171,20 @@ var remAndHide = [
     <orecore:quartz>,
     <orecore:uranium>,
     <orecore:oil_paste>,
-    <orecore:oil_bucket>
+    <orecore:oil_bucket>,
+//Unwanted Foods
+    <betterwithmods:chicken_soup>,
+    <saltmod:salt_beetroot>,
+    <saltmod:corned_beef>,
+    <xlfoodmod:super_energy_drink>,
+    <xlfoodmod:deadly_energy_drink>,
+    <xlfoodmod:strong_energy_drink>,
+    <xlfoodmod:stealthy_energy_drink>,
+    <xlfoodmod:healthy_energy_drink>,
+    <xlfoodmod:speedy_energy_drink>,
+    <xlfoodmod:empty_can>,
+    <xlfoodmod:salt>,
+    <xlfoodmod:rock_salt>
 ] as IItemStack[];
 
 for item in remAndHide {
@@ -195,13 +211,13 @@ var badRecipes = [
     "pvj:cobblestone_1",
     "pvj:cobblestone_2",
     "orecore:cobblestone",
-//    "betternether:stalagnate_workbench",
     "mist:crafting_table",
     "mist:furnace",
     "mist:dispenser",
     "mist:dropper",
     "mist:brewing_stand",
-    "betterwithmods:higheff/oak_trapdoor"
+    "betterwithmods:higheff/oak_trapdoor",
+    "xlfoodmod:beef_jerky"
 ] as string[];
 
 for recipe in badRecipes {

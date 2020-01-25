@@ -1,6 +1,55 @@
 Changelog
 
 Pre-Beta:
+=====Commit 17 [1/25/20]=====
+Mod Changes - 
++ Loot Drop (for testing)
++ Garbage Bins
++ Wild Crops
+# Extra Alchemy 0.5.2 > 0.5.3
+# LootTweaker 0.1.4 > 0.1.5
+# SRParasites 1.5.1 > 1.5.2
+# Unique Enchantments 1.7 > 1.8
+# Universal Bestiary 1.1.0 > 1.2.0
+
+Configs - 
+- New configs generated for: ContentTweaker, NetherEx (technically just overwritten), Wild Crops, 
+- Adjusted some of the Enhanced Visuals overlays because they were nuts when on low health.
+- Temporarily added MC chests to the Food Funk container config for texting purposes. FIXME 
+- Changed the food values for Beef Jerky via HungerOverhaul.
+- katu-loot.txt created to make notes of loot tables etc.
+- Mo Villages village distance changed from 4 (testing) to 16 (default).
+- Quark's Pickarang is disabled.
+- Added some mobs to ScalingHealth's blight blacklist: Eyes, Parasites (Undead Rising), Aqua Creepers, and Parasites (SR Parasites).
+- Mowzie's Frostmaw and Ferrous Wroughtnaught were added to the extra-health blacklist.
+- SRParasite's Dorpa and Alafha are disabled.
+
+Scripts - 
+- Moved a handful of scripts around.
+- Created a script to craft respirators together in a grid. Unfinished. FIXME 
+- Shuffled some code within/between scripts, ie all removal lines put in a remove-and-hide file.
+- Made recipes requiring water bottles require purified water bottles instead.
+- Added Misty World mushrooms to oredict.
+- Removed Cooked Fish, Squid, and Bat Wings from the Campfire whitelist.
+- Corrected the recipe for XLFM's Cappuccino.
+- Added all milk items to oredict.
+- Used ContentTweaker to create salted versions of a bunch of foods for preservation purposes. Still have to add them into Nutrition and Food Funk. REVIEW 
+- kiln_recipes.zs: added drying rack recipes for a handful of foods, and removed the associated smelting recipes. Still needs a bit of work to remove Stone Oven etc recipes. REVIEW 
+- Created loot_tweaker.zs: Added a bunch of modded items to the loottables in Vanilla's Abandoned Mineshaft and Desert Temples. Also added seeds to PVJ's Abandoned Farm loot table, but I might skip that and generate my own structures. REVIEW 
+- Fixed an issue with a script changing all <minecraft:string> to <ore:twine> so it's now correct.
+- Made all salt-using recipes require a pinch of salt instead of XLFM's salt. Except Beef Jerky, which no longer requires salt.
+- Changed the recipe of Wearable Backpacks.
+- Added oredict tags to all axes that didn't have one.
+- Disabled some Mowzie's stuff I missed: dart, spear, blowgun.
+- Disabled BWM Chicken Soup and SaltyMod's Salted Beetroot and Corned Beef, to avoid overlap.
+
+Lang - 
+- Added localization for all of the ContentTweaker items.
+- Changed the names of Cooked Fish/Salmon/Squid/Bat Wings to be Dried instead of Cooked.
+
+Misc - 
+- Replaced ZombieAwareness sounds. Still need work though. REVIEW 
+
 =====Commit 16 [1/18/20]=====
 Mod Changes - 
 - BetterNether (crazy lag)
@@ -79,9 +128,8 @@ Scripts -
 - Added tooltips to candles explaining that they're locked.
 - Added tooltips to all armors and liners that provide Tough as Nails temperature protection.
 - Added a tooltip to Quark's Soul Powder, explaining what it does.
-- Renamed survival.zs to "worlgen.zs" - good job Katu FIXME 
+- Renamed survival.zs to "worlgen.zs" - good job Katu [fixed now]
 - Changed the PVJ sticks groundcover to be consistent with the stones, because they were harder. Which is silly.
-
 
 =====Commit 15 [1/16/20=====
 Configs - 

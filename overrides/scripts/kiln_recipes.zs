@@ -1,6 +1,8 @@
 import mods.pyrotech.PitKiln;
 import mods.pyrotech.BrickKiln;
 import mods.pyrotech.StoneKiln;
+import mods.pyrotech.CrudeDryingRack;
+import mods.pyrotech.DryingRack;
 
 /* -------------------------------------------------------------------------- */
 /*                    ANCHOR Pyrotech and BWM Compatibility                   */
@@ -72,3 +74,23 @@ StoneKiln.addRecipe("bwm_brick_kiln", <minecraft:brick>, <betterwithmods:unfired
     <pyrotech:material:7>,
     <pyrotech:material>
 ], true);
+
+/* ----------------------- SECTION Drying Rack Recipes ---------------------- */
+
+//FIXME don't forget to remove other recipes if necessary (tea, beef jerky).
+
+furnace.remove(<xlfoodmod:beef_jerky>);
+//recipe.remove(<xlfoodmod:beef_jerky>);
+furnace.remove(<pvj:cooked_squid>);
+furnace.remove(<minecraft:cooked_fish>);
+furnace.remove(<minecraft:cooked_fish:1>);
+furnace.remove(<simplytea:black_tea>);
+furnace.remove(<betterwithmods:cooked_bat_wing>);
+
+CrudeDryingRack.addRecipe("dried_cod", <minecraft:cooked_fish>, <minecraft:fish>, 1 * 60 * 20, true);
+CrudeDryingRack.addRecipe("dried_salmon", <minecraft:cooked_fish:1>, <minecraft:fish:1>, 1 * 60 * 20, true);
+CrudeDryingRack.addRecipe("dried_squid", <pvj:cooked_squid>, <pvj:raw_squid>, 1 * 60 * 20, true);
+CrudeDryingRack.addRecipe("beef_jerky", <xlfoodmod:beef_jerky>, <minecraft:beef>, 2 * 60 * 20, true);
+CrudeDryingRack.addRecipe("bat_wing_jerky", <betterwithmods:cooked_bat_wing>, <betterwithmods:bat_wing>, 2 * 60 * 20, true);
+CrudeDryingRack.addRecipe("mud_to_dirt", <minecraft:dirt>, <pvj:mud>, 30 * 20, true);
+DryingRack.addRecipe("tea_drying", <simplytea:black_tea>, <simplytea:leaf_tea>, 3 * 60 * 20);
