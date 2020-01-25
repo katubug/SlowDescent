@@ -98,25 +98,6 @@ recipes.replaceAllOccurences(<xlfoodmod:ground_beef>, <ore:foodGroundbeef>);
 recipes.remove(<xlfoodmod:spaghetti>);
 recipes.addShaped("spaghet", <xlfoodmod:spaghetti>, [[null, <mod_lavacow:meatball>, null],[<xlfoodmod:cooked_dough>, <xlfoodmod:tomato_sauce>, <xlfoodmod:cooked_dough>], [null, <xlfoodmod:bowl>, null]]);
 
-//TODO 
-/*
-List of recipes to add salt to (don't forget to add them to the oredict tag as well!):
-<xlfoodmod:cheese>,
-<xlfoodmod:bacon>,
-<xlfoodmod:bucket_of_fried_chicken>,
-<xlfoodmod:chicken_salad>,
-<xlfoodmod:cucumber_soup>,
-<xlfoodmod:tomato_soup>,
-<xlfoodmod:vegetable_soup>,
-<xlfoodmod:chicken_soup>,
-<xlfoodmod:beef_stew>,
-<xlfoodmod:pumpkin_stew>,
-<xlfoodmod:cheese_pie>,
-<xlfoodmod:chicken_pot_pie>,
-<xlfoodmod:bacon_pie>,
-<xlfoodmod:fish_pie>
-*/
-
 /* TODO 
 Removing food values from items that shouldn't be directly edible/shouldn't have hunger/saturation values
 Don't forget to exempt them from spoilage
