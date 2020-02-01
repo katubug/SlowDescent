@@ -159,10 +159,11 @@ var otto = [
 <armorunder:antifreeze_leggings_liner>,
 <armorunder:antifreeze_chestplate_liner>,
 <armorunder:antifreeze_helmet_liner>
-<armorunder:barrier_leggings_liner>
-<armorunder:barrier_boots_liner>
-<armorunder:barrier_chestplate_liner>
-<armorunder:barrier_helmet_liner>
+] as IItemStack[];
+
+for otters in otto {
+    otters.addTooltip(format.gold("When applied to armor, provides 4 points of cooling. Does not")); //FIXME 
+}
 */
 //!SECTION 
 
