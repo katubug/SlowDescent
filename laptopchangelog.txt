@@ -1,6 +1,98 @@
 Changelog
 
 Pre-Beta:
+=====Commit 18 [1/31/20]=====
+Mod Changes -
++ Better Bread
++ Better Caves (Yung's)
++ FastFurnace
++ FastWorkbench
++ Rex's Additional Structures
+- Cave Expansion because it was MCreator. Real shame.
+- Cave Generator because it was just too laggy.
+- Skeleton Tweaks because it made skellies too derpy.
+# Temporarily disabled Hardcore Darkness
+# FantasticLib 032 > 033
+# Mutant Beasts 0.6.0 > 0.6.1
+
+Configs - 
+- New configs generated for: Additional Structures, Better Bread, FastFurnace, FastWorkbench.
+- Better With Mods
+    - Disabled HCPiles so I could handle block drops with Dropt.
+- Corpse Complex
+    - Changed the chance of inventory items dropping to 30%, up from 20%.
+    - Fizzy Drinks will always remain in inventory.
+- Damage Source Configurator
+    - The following mobs can survive in the lower level of the Misty World: All parasites, Ghost Zombies, Light Seekers, Wraiths, Stonelings, Dwellers, Watchers, Shades, Banshees, Dusk Lurkers, Lanterns, Grottol, Skeleton Horses, Skeletons, Endermen, Creepers, Ciuperca, Zombie Piranhas, Sludgelords, Lil Sludges, Mimics, Foglets, Eyes, Ancient Golems, Entrails, Climbers, Undead Babies.
+- Dropt
+    - Added BWM dirt piles to drop from dirt blocks.
+    - Grass blocks now drop Clumps of Grass when dug by hand.
+- Extra Alchemy
+    - Added the following potion types to Potion Rings: Poison Resist, Climb, Iron Skin, Recoil, Step-Up, Resiliance, Resistance, Cold Resist, Heat Resist. May add more later.
+- Foamfix
+    - Changed checkNonUnloadedWorldTimeout from 60 to 90 because I got a crash that told me to do so.
+- Food Funk
+    - Chunking percentage changed from 60 > 100. REVIEW may change this.
+    - Removed vanilla chests from the list of protective inventories.
+- Hunger Overhaul
+    - Disabled the changing of food stack sizes, as it was affecting smelting recipes.
+    - Well-Fed effect duration decreased from 0.5 to 0.1.
+    - Turned off the "low stats" GUI warning.
+- LagGoggles
+    - Values that are within normal modded parameters will no longer appear as red.
+- Pyrotech
+    - Disabled handling of grass and dirt blocks so I could override manually.
+- Quark
+    - Buffed dungeon spawn chance from 8 to 20.
+    - Nerfed Lava Lake chance from 80 to 40.
+    - Broken Nether Portals can now spawn in the Overworld.
+    - Dungeons are now allowed to spawn in the Misty World and the Nether.
+- Sanity
+    - Salted Mystery Meat and Parasites now decrease sanity correctly.
+- Spawner Control
+    - Made a test spawner called "butts" because I am 34 and a Grown Adult.
+    - Changed it so all custom spawners will appear in a creative tab.
+- Special AI
+    - Glowstone has been added to the "no griefing" list.
+- SR Parasites
+    - Flight height limits for all mobs have been set to 16, to match those of Undead Rising.
+    - Creatures called as reinforcement can now despawn.
+    - Reinforcement system sounds have been disabled (the gong noise).
+- Zombie Awareness
+    - The following creatures will now have enhanced AI: Foglets, Wendigo, Mutant Steve, 
+    - The following won't: Parasites.
+
+Scripts - 
+- kiln_recipes
+    - Removed Stone/Refractory Oven recipes for a few Drying Rack items.
+    - Added in a Compacting Bin recipe for reconstituting Wither Bones.
+- loot_tweaker
+    - Removed all references to Cave Expansion.
+    - Made some tweaks to Abandoned Mineshaft. It was a bit OP.
+    - Added loot to the following tables: Igloo Chest, Stoneling Carry, Simple Dungeon, Stronghold Library, End City Treasure, Jungle Temple, Jungle Temple Dispenser, Village Blacksmith, Woodland Mansion.
+- need_sorting
+    - Removed a lot of unnecessary imports.
+    - Changed oreDict for BWM and Pyrotech from listAllash to dustAsh.
+    - Changed Potash recipe to use dustAsh instead of listAllash.
+    - Removed test entry from Initial Inventory.
+    - Wearable Backpacks are now made with tanned leather AND cut tanned leather.
+    - Tested out a recipe for crafting Potion Rings. REVIEW 
+- oredict
+    - Added ashWither to NEX and Quark ashes.
+    - Added dustAsh to the following: Ember's Ash, OreCore's Ashe, Mystical Wildlife's Dusk Ash, and Pyrotech's Ash. FIXME Is that last one necessary?
+- remove_hide
+    - Removed recipe for Wither Bones to force the Compacting Bin one.
+- rituals
+    - Did a whole bunch of nonsense testing here. It needs to be completely redone.
+- tooltips
+    - Made some changes regarding temperature alteration tooltips. Needs redoing.
+    - Added tooltip to Fizzy Drinks stating that they are not lost on death.
+
+Lang - 
+- Fixed errors in names and descriptions of Unique Enchantment's items.
+
+Misc - 
+
 =====Commit 17 [1/25/20]=====
 Mod Changes - 
 + Loot Drop (for testing)

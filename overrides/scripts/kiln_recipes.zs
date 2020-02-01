@@ -3,6 +3,9 @@ import mods.pyrotech.BrickKiln;
 import mods.pyrotech.StoneKiln;
 import mods.pyrotech.CrudeDryingRack;
 import mods.pyrotech.DryingRack;
+import mods.pyrotech.StoneOven;
+import mods.pyrotech.BrickOven;
+import mods.pyrotech.CompactingBin;
 
 /* -------------------------------------------------------------------------- */
 /*                    ANCHOR Pyrotech and BWM Compatibility                   */
@@ -77,10 +80,7 @@ StoneKiln.addRecipe("bwm_brick_kiln", <minecraft:brick>, <betterwithmods:unfired
 
 /* ----------------------- SECTION Drying Rack Recipes ---------------------- */
 
-//FIXME don't forget to remove other recipes if necessary (tea, beef jerky).
-
 furnace.remove(<xlfoodmod:beef_jerky>);
-//recipe.remove(<xlfoodmod:beef_jerky>);
 furnace.remove(<pvj:cooked_squid>);
 furnace.remove(<minecraft:cooked_fish>);
 furnace.remove(<minecraft:cooked_fish:1>);
@@ -94,3 +94,20 @@ CrudeDryingRack.addRecipe("beef_jerky", <xlfoodmod:beef_jerky>, <minecraft:beef>
 CrudeDryingRack.addRecipe("bat_wing_jerky", <betterwithmods:cooked_bat_wing>, <betterwithmods:bat_wing>, 2 * 60 * 20, true);
 CrudeDryingRack.addRecipe("mud_to_dirt", <minecraft:dirt>, <pvj:mud>, 30 * 20, true);
 DryingRack.addRecipe("tea_drying", <simplytea:black_tea>, <simplytea:leaf_tea>, 3 * 60 * 20);
+
+//Removes some Stone/Brick Oven recipes for these
+StoneOven.removeRecipes(<minecraft:cooked_fish:*>);
+StoneOven.removeRecipes(<pvj:cooked_squid>);
+StoneOven.removeRecipes(<xlfoodmod:beef_jerky>);
+StoneOven.removeRecipes(<betterwithmods:cooked_bat_wing>);
+StoneOven.removeRecipes(<simplytea:black_tea>);
+BrickOven.removeRecipes(<minecraft:cooked_fish:*>);
+BrickOven.removeRecipes(<pvj:cooked_squid>);
+BrickOven.removeRecipes(<xlfoodmod:beef_jerky>);
+BrickOven.removeRecipes(<betterwithmods:cooked_bat_wing>);
+BrickOven.removeRecipes(<simplytea:black_tea>);
+//!SECTION 
+
+/* ------------------------------ SECTION Misc ------------------------------ */
+
+CompactingBin.addRecipe("wither_bone_from_ash", <netherex:wither_bone>, <ore:ashWither>, 3, true);

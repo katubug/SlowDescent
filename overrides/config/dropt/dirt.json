@@ -4,29 +4,68 @@
         "match": {
           "blocks": {
             "blocks": [
-              "minecraft:dirt:*",
-              "minecraft:grass"
+              "minecraft:dirt"
             ]
+          },
+          "harvester": {
+            "heldItemMainHand": {
+              "type": "BLACKLIST",
+              "harvestLevel": "shovel;0;-1"
+            }
           }
         },
-        "replaceStrategy": "ADD",
+        "dropCount": {
+          "fixed": 4
+        },
         "drops": [
           {
             "selector": {
               "weight": {
-                "value": 30
-              }
-            }
-          },
-          {
-            "selector": {
-              "weight": {
-                "value": 70
+                "value": 60
               }
             },
             "item": {
               "items" : [
                 "pyrotech:rock:4"
+              ]
+            }
+          },
+          {
+            "selector": {
+              "weight": {
+                "value": 40
+              }
+            },
+            "item": {
+              "items" : [
+                "betterwithmods:dirt_pile"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "match": {
+          "blocks": {
+            "blocks": [
+              "minecraft:grass:0"
+            ]
+          },
+          "harvester": {
+            "heldItemMainHand": {
+              "type": "BLACKLIST",
+              "harvestLevel": "shovel;0;-1"
+            }
+          }
+        },
+        "dropCount": {
+          "fixed": 4
+        },
+        "drops": [
+          {
+            "item": {
+              "items" : [
+                "pyrotech:rock_grass"
               ]
             }
           }

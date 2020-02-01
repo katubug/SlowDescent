@@ -85,8 +85,8 @@ for paj in pajamas {
 }
 //!SECTION 
 
-/* ------------------------ //SECTION Tough As Nails ------------------------ */
-
+/* ------------------------ SECTION Tough As Nails ------------------------ */
+//FIXME Applications differ between armor pieces. Helmet = 2, Chest, Legs = 3, Boots = 1
 //Adds tooltips for items that provide exposure bonuses
 var mudArmor = [
     <saltmod:mud_helmet>,
@@ -153,11 +153,11 @@ var slimeArmor = [
 for slarmor in slimeArmor {
     slarmor.addTooltip(format.aqua("When worn, provides 2 points of cooling. Can also be applied to armor for 1 point of cooling."));
 }
-
 /*
-<armorunder:antifreeze_boots_liner>
-<armorunder:antifreeze_leggings_liner>
-<armorunder:antifreeze_chestplate_liner>
+var otto = [
+<armorunder:antifreeze_boots_liner>,
+<armorunder:antifreeze_leggings_liner>,
+<armorunder:antifreeze_chestplate_liner>,
 <armorunder:antifreeze_helmet_liner>
 <armorunder:barrier_leggings_liner>
 <armorunder:barrier_boots_liner>
@@ -170,5 +170,8 @@ for slarmor in slimeArmor {
 
 //Soul Bead
 <quark:soul_powder>.addTooltip(format.gold("Right click while in the Nether to locate the nearest Nether Fortress."));
+
+//Fizzy Drink
+<saltmod:fizzy_drink>.addTooltip(format.gold("This curative can never be lost upon death."));
 
 //!SECTION 

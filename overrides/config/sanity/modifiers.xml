@@ -15,9 +15,11 @@
     <entry value="-1.0">betterwithmods:kibble</entry>
     <entry value="-10.0">betterwithmods:mystery_meat</entry>
     <entry value="-10.0">betterwithmods:cooked_mystery_meat</entry>
+    <entry value="-10.0">contenttweaker:salted_cooked_mystery_meat</entry>
     <entry value="-9.0">mod_lavacow:netherstew</entry>
     <entry value="-1.5">mod_lavacow:parasite_item</entry>
     <entry value="-1.0">mod_lavacow:parasite_item_cooked</entry>
+    <entry value="-1.0">contenttweaker:salted_parasite_item_cooked</entry>
     <entry value="-7.0">mod_lavacow:canerottenmeat</entry>
     <entry value="-3.0">mod_lavacow:plagued_porkchop</entry>
     <entry value="-3.0">mod_lavacow:green_bacon_and_eggs</entry>

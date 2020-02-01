@@ -1,17 +1,22 @@
 Chests:
 
+Done:
 minecraft:chests/abandoned_mineshaft
 minecraft:chests/desert_pyramid
-minecraft:chests/end_city_treasure
 minecraft:chests/igloo_chest
+pvj:abandoned_farm
+quark:entities/stoneling_carry
+minecraft:chests/simple_dungeon         //Quark's
+minecraft:chests/stronghold_library
+minecraft:chests/end_city_treasure
 minecraft:chests/jungle_temple
-minecraft:chests/nether_bridge
-minecraft:chests/simple_dungeon
-minecraft:chests/stronghold_corridor
-minecraft:chests/stronghold_crossing
-minecraft:chests/stronghold_library (enchanting plus books?)
 minecraft:chests/village_blacksmith
 minecraft:chests/woodland_mansion
+
+To Do:
+minecraft:chests/nether_bridge
+minecraft:chests/stronghold_corridor
+minecraft:chests/stronghold_crossing
 netherex:chest/base_arctic_abyss
 netherex:chest/base_fungi_forest
 netherex:chest/base_grave
@@ -29,11 +34,23 @@ netherex:chest/temple_fungi_forest
 netherex:chest/temple_rare
 netherex:chest/temple_ruthless_sands
 netherex:chest/temple_torrid_wasteland
-pvj:abandoned_farm
-pvj:ruins
 quark:chests/pirate_chest
-quark:entities/stoneling_carry
 arcaneworld:raid_1
+
+# ------------------------------------ ETC ----------------------------------- #
+<minecraft:dye:3>       //Cactus Green
+<minecraft:experience_bottle>
+<minecraft:slime_ball>
+<arcaneworld:recaller>
+<betterwithmods:vase:13>
+<betterwithmods:vase:14>
+<betterwithmods:creeper_oyster>
+<betterwithmods:mystery_meat>
+<betterwithmods:broadhead_arrow>
+<mutantbeasts:chemical_x>
+<mod_lavacow:poisonspore>
+<pyrotech:obsidian_sword>
+<simplytea:tea_sapling>
 
 
 # ------------------------------- Common Loot ------------------------------- #
@@ -59,7 +76,6 @@ arcaneworld:raid_1
 <pyrotech:material:19>          //Iron Shard
 <pvj:unstable_essence>
 <embers:shard_ember>
-<cave_expansion:stonepot>
 <betterwithmods:kibble>
 <betterwithmods:material:6>     //Tanned Leather
 <minecraft:glass_bottle>
@@ -106,7 +122,6 @@ arcaneworld:raid_1
 <mod_lavacow:fissionpotion>
 <eplus:table_upgrade>
 <embers:glimmer_shard>
-<cave_expansion:treasurelvl2>
 <betterwithmods:ender_spectacles>
 <scalinghealth:crystalshard>
 <scalinghealth:difficultychanger>
@@ -119,4 +134,3 @@ arcaneworld:raid_1
 <netherex:amethyst_crystal>
 <mod_lavacow:war>
 <embers:dawnstone_mail>
-<cave_expansion:treasurelvl3>

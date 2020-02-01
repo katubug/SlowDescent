@@ -12,3 +12,4 @@ setShowToast(false)
 setAnnounceToChat(false)
 
 addCriteria("consumed_item", "minecraft:consume_item")
+setPos(0,47)

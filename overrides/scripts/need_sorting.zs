@@ -1,12 +1,10 @@
 import crafttweaker.item.IItemStack;
-import mods.pyrotech.PitKiln;
-import mods.pyrotech.StoneKiln;
-import mods.pyrotech.StoneCrucible;
 import mods.pyrotech.BrickCrucible;
-import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.CrudeDryingRack;
-import crafttweaker.block.IBlockDefinition;
-import crafttweaker.block.IBlock;
+import mods.pyrotech.GraniteAnvil;
+import mods.pyrotech.PitKiln;
+import mods.pyrotech.StoneCrucible;
+import mods.pyrotech.StoneKiln;
 
 /* -------------------------------------------------------------------------- */
 /*                    ANCHOR This script is the messy one!                    */
@@ -262,11 +260,11 @@ mods.jei.JEI.removeAndHide(<betterwithmods:fertilizer>);
 mods.jei.JEI.removeAndHide(<betterwithmods:fertile_farmland>);
 
 //Changes Potash Mulch recipe to require Compost instead of "mulchNitrogen," and also to use either type of ash.
-<ore:listAllash>.add(<pyrotech:material>);
-<ore:listAllash>.add(<betterwithmods:material:21>);
+<ore:dustAsh>.add(<pyrotech:material>);
+<ore:dustAsh>.add(<betterwithmods:material:21>);
 
 recipes.remove(<pyrotech:mulch>);
-recipes.addShaped("new_potash_mulch", <pyrotech:mulch> * 4, [[<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>],[<pyrotech:rock:7>, <composter:compost>, <pyrotech:rock:7>], [<ore:listAllash>, <pyrotech:rock:7>, <ore:listAllash>]]);
+recipes.addShaped("new_potash_mulch", <pyrotech:mulch> * 4, [[<ore:dustAsh>, <pyrotech:rock:7>, <ore:dustAsh>],[<pyrotech:rock:7>, <composter:compost>, <pyrotech:rock:7>], [<ore:dustAsh>, <pyrotech:rock:7>, <ore:dustAsh>]]);
 
 //!SECTION 
 
@@ -306,11 +304,9 @@ recipes.addShaped("pajama_helmet", <betterwithmods:wool_helmet>, [[<betterwithmo
 //!SECTION 
 
 /* ------------------------ SECTION Initial inventory ----------------------- */
-var butt = <minecraft:beef>;
 
 mods.initialinventory.InvHandler.addStartingItem(<sanity:checker>);
 mods.initialinventory.InvHandler.addStartingItem(<toughasnails:thermometer>);
-mods.initialinventory.InvHandler.addStartingItem(butt);
 
 //!SECTION 
 
@@ -323,3 +319,11 @@ wool.setHarvestLevel("axe", 0);
 //Changes Backpack recipe
 recipes.remove(<wearablebackpacks:backpack>);
 recipes.addShaped(<wearablebackpacks:backpack>, [[<betterwithmods:material:32>, <ore:ingotGold>, <betterwithmods:material:32>],[<betterwithmods:material:32>, <ore:chest>, <betterwithmods:material:32>], [<betterwithmods:material:6>, <betterwithmods:material:6>, <betterwithmods:material:6>]]);
+
+//Testing ring replacement recipes REVIEW
+//Success! Except for the adding to JEI thing. Boo. Ask about that later. FIXME 
+val pring = <extraalchemy:potion_ring>.withTag({Potion: "mowziesmobs:poison_resist"});
+
+recipes.remove(pring);
+recipes.addShapeless(pring, [<extraalchemy:empty_ring>,<minecraft:cobblestone>]);
+mods.jei.JEI.addItem(pring);

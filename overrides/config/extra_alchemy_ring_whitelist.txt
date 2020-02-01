@@ -1,0 +1,9 @@
+mowziesmobs:poison_resist
+potioncore:climb
+potioncore:iron_skin
+potioncore:recoil
+potioncore:step_up
+quark:resilience
+quark:resistance
+toughasnails:cold_resistance_type
+toughasnails:heat_resistance_type

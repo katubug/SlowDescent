@@ -1,0 +1,76 @@
++---------------------------------+-----------------------------------------+-------------+-----------+----+
+| Registry name                   | Name                                    | Type        | Rarity    | ID |
++---------------------------------+-----------------------------------------+-------------+-----------+----+
+| corpsecomplex:soulbound         | enchantment.corpsecomplex.soulbound     | ALL         | RARE      | 15 |
+| minecraft:aqua_affinity         | enchantment.waterWorker                 | ARMOR_HEAD  | RARE      |  6 |
+| minecraft:bane_of_arthropods    | enchantment.damage.arthropods           | WEAPON      | UNCOMMON  | 18 |
+| minecraft:binding_curse         | enchantment.binding_curse               | WEARABLE    | VERY_RARE | 10 |
+| minecraft:blast_protection      | enchantment.protect.explosion           | ARMOR       | RARE      |  3 |
+| minecraft:depth_strider         | enchantment.waterWalker                 | ARMOR_FEET  | RARE      |  8 |
+| minecraft:efficiency            | enchantment.digging                     | DIGGER      | COMMON    | 32 |
+| minecraft:feather_falling       | enchantment.protect.fall                | ARMOR_FEET  | UNCOMMON  |  2 |
+| minecraft:fire_aspect           | enchantment.fire                        | WEAPON      | RARE      | 20 |
+| minecraft:fire_protection       | enchantment.protect.fire                | ARMOR       | UNCOMMON  |  1 |
+| minecraft:flame                 | enchantment.arrowFire                   | BOW         | RARE      | 50 |
+| minecraft:fortune               | enchantment.lootBonusDigger             | DIGGER      | RARE      | 35 |
+| minecraft:frost_walker          | enchantment.frostWalker                 | ARMOR_FEET  | RARE      |  9 |
+| minecraft:infinity              | enchantment.arrowInfinite               | BOW         | VERY_RARE | 51 |
+| minecraft:knockback             | enchantment.knockback                   | WEAPON      | UNCOMMON  | 19 |
+| minecraft:looting               | enchantment.lootBonus                   | WEAPON      | RARE      | 21 |
+| minecraft:luck_of_the_sea       | enchantment.lootBonusFishing            | FISHING_ROD | RARE      | 61 |
+| minecraft:lure                  | enchantment.fishingSpeed                | FISHING_ROD | RARE      | 62 |
+| minecraft:mending               | enchantment.mending                     | BREAKABLE   | RARE      | 70 |
+| minecraft:power                 | enchantment.arrowDamage                 | BOW         | COMMON    | 48 |
+| minecraft:projectile_protection | enchantment.protect.projectile          | ARMOR       | UNCOMMON  |  4 |
+| minecraft:protection            | enchantment.protect.all                 | ARMOR       | COMMON    |  0 |
+| minecraft:punch                 | enchantment.arrowKnockback              | BOW         | RARE      | 49 |
+| minecraft:respiration           | enchantment.oxygen                      | ARMOR_HEAD  | RARE      |  5 |
+| minecraft:sharpness             | enchantment.damage.all                  | WEAPON      | COMMON    | 16 |
+| minecraft:silk_touch            | enchantment.untouching                  | DIGGER      | VERY_RARE | 33 |
+| minecraft:smite                 | enchantment.damage.undead               | WEAPON      | UNCOMMON  | 17 |
+| minecraft:sweeping              | enchantment.sweeping                    | WEAPON      | RARE      | 22 |
+| minecraft:thorns                | enchantment.thorns                      | ARMOR_CHEST | VERY_RARE |  7 |
+| minecraft:unbreaking            | enchantment.durability                  | BREAKABLE   | UNCOMMON  | 34 |
+| minecraft:vanishing_curse       | enchantment.vanishing_curse             | ALL         | VERY_RARE | 71 |
+| mod_lavacow:lifesteal           | enchantment.mod_lavacow.Lifesteal       | WEAPON      | VERY_RARE | 14 |
+| mod_lavacow:poisonous           | enchantment.mod_lavacow.Poisonous       | WEAPON      | VERY_RARE | 13 |
+| toughasnails:cooling            | enchantment.cooling                     | ARMOR       | COMMON    | 24 |
+| toughasnails:warming            | enchantment.warming                     | ARMOR       | COMMON    | 23 |
+| uniquee:alchemistsgrace         | enchantment.uniquee.alchemistsgrace     | WEAPON      | VERY_RARE | 44 |
+| uniquee:all                     | enchantment.uniquee.all                 | WEAPON      | VERY_RARE | 38 |
+| uniquee:aresblessing            | enchantment.uniquee.aresblessing        | ARMOR_CHEST | VERY_RARE | 58 |
+| uniquee:arthropods              | enchantment.uniquee.arthropods          | WEAPON      | RARE      | 27 |
+| uniquee:berserk                 | enchantment.uniquee.berserk             | WEAPON      | RARE      | 25 |
+| uniquee:bone_crusher            | enchantment.uniquee.bone_crusher        | WEAPON      | VERY_RARE | 29 |
+| uniquee:climate_tranquility     | enchantment.uniquee.climate_tranquility | WEAPON      | RARE      | 41 |
+| uniquee:cloudwalker             | enchantment.uniquee.cloudwalker         | ARMOR_FEET  | RARE      | 45 |
+| uniquee:deaths_odium            | enchantment.uniquee.deaths_odium        | ALL         | UNCOMMON  | 67 |
+| uniquee:demeters_soul           | enchantment.uniquee.demeters_soul       | BREAKABLE   | VERY_RARE | 12 |
+| uniquee:ecological              | enchantment.uniquee.ecological          | BREAKABLE   | RARE      | 52 |
+| uniquee:ender_eyes              | enchantment.uniquee.ender_eyes          | ARMOR_HEAD  | UNCOMMON  | 37 |
+| uniquee:ender_librarian         | enchantment.uniquee.ender_librarian     | FISHING_ROD | VERY_RARE | 65 |
+| uniquee:ender_mending           | enchantment.uniquee.ender_mending       | BREAKABLE   | VERY_RARE | 40 |
+| uniquee:endermarksmen           | enchantment.uniquee.endermarksmen       | BOW         | VERY_RARE | 46 |
+| uniquee:fastfood                | enchantment.uniquee.fastfood            | WEAPON      | RARE      | 55 |
+| uniquee:focus_impact            | enchantment.uniquee.focus_impact        | WEAPON      | RARE      | 28 |
+| uniquee:icarus_aegis            | enchantment.uniquee.icarus_aegis        | ARMOR_CHEST | VERY_RARE | 56 |
+| uniquee:ifrits_grace            | enchantment.uniquee.ifrits_grace        | DIGGER      | RARE      | 63 |
+| uniquee:midas_blessing          | enchantment.uniquee.midas_blessing      | DIGGER      | VERY_RARE | 60 |
+| uniquee:momentum                | enchantment.uniquee.momentum            | DIGGER      | RARE      | 39 |
+| uniquee:naturesgrace            | enchantment.uniquee.naturesgrace        | ARMOR_CHEST | VERY_RARE | 54 |
+| uniquee:perpetualstrike         | enchantment.uniquee.perpetualstrike     | WEAPON      | VERY_RARE | 47 |
+| uniquee:pestilences_odium       | enchantment.uniquee.pestilences_odium   | ALL         | UNCOMMON  | 66 |
+| uniquee:phoenixs_blessing       | enchantment.uniquee.phoenixs_blessing   | ALL         | RARE      | 53 |
+| uniquee:ranged                  | enchantment.uniquee.ranged              | WEAPON      | COMMON    | 30 |
+| uniquee:sages_blessing          | enchantment.uniquee.sages_blessing      | DIGGER      | COMMON    | 26 |
+| uniquee:smart_ass               | enchantment.uniquee.smart_ass           | DIGGER      | RARE      | 64 |
+| uniquee:spartanweapon           | enchantment.uniquee.spartanweapon       | WEAPON      | RARE      | 36 |
+| uniquee:swift                   | enchantment.uniquee.swift               | ARMOR_LEGS  | RARE      | 43 |
+| uniquee:swiftblade              | enchantment.uniquee.swiftblade          | WEAPON      | VERY_RARE | 31 |
+| uniquee:treasurers_eyes         | enchantment.uniquee.treasurers_eyes     | ARMOR_HEAD  | RARE      | 11 |
+| uniquee:undead                  | enchantment.uniquee.undead              | WEAPON      | RARE      | 42 |
+| uniquee:vitae                   | enchantment.uniquee.vitae               | ARMOR       | VERY_RARE | 57 |
+| uniquee:warriorsgrace           | enchantment.uniquee.warriorsgrace       | WEAPON      | VERY_RARE | 59 |
++---------------------------------+-----------------------------------------+-------------+-----------+----+
+| Registry name                   | Name                                    | Type        | Rarity    | ID |
++---------------------------------+-----------------------------------------+-------------+-----------+----+

@@ -203,6 +203,9 @@ recipes.remove(<minecraft:torch>);
 //Removes PVJ's Bones > Bone recipe
 recipes.remove(<minecraft:bone>);
 
+//Remove crafting grid recipe for wither bones
+recipes.remove(<netherex:wither_bone>);
+
 //!SECTION 
 
 /* ---------------------- SECTION Recipe removal by ID ---------------------- */

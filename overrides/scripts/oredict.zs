@@ -24,3 +24,19 @@ for axe in axes {
     <ore:toolAxe>.add(axe);
 }
 //!SECTION 
+
+//Ash oredict
+
+<ore:ashWither>.add(<netherex:wither_dust>);
+<ore:ashWither>.add(<quark:black_ash>);
+
+val ashes = [
+<mysticalwildlife:dusk_ash>,
+<orecore:ashe>,
+<pyrotech:material>,
+<embers:dust_ash>
+] as IItemStack[];
+
+for ash in ashes {
+    <ore:dustAsh>.add(ash);
+}
