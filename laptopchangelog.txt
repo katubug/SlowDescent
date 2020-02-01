@@ -91,8 +91,6 @@ Scripts -
 Lang - 
 - Fixed errors in names and descriptions of Unique Enchantment's items.
 
-Misc - 
-
 =====Commit 17 [1/25/20]=====
 Mod Changes - 
 + Loot Drop (for testing)
